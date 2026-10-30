@@ -1,0 +1,36 @@
+# ISOs and Game Dumps (GitHub blocks files > 100MB)
+*.iso
+*.bin
+*.cue
+*.img
+
+# Ghidra and Tools binaries
+ghidra_*
+ghidra_project/
+GhidraMCP*
+*.rep/
+*.gpr
+*.zip
+*.7z
+*.rar
+
+# Node / Electron build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-electron/
+**/dist-electron/
+release/
+**/release/
+
+# Temporary and extraction caches
+__pycache__/
+*.pyc
+extracted/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,2085 @@
+[
+  {
+    "id": "act-1",
+    "title": "Ato 1: O Orfanato & A Campanha de Eisengrad",
+    "region": "Europa Central & Ocidental",
+    "chapters": [
+      {
+        "id": "ch-prologue",
+        "title": "Prólogo: O Despertar & O Ataque ao Orfanato",
+        "location": "Marie's Place & G System 01",
+        "summary": "Tristan e Fritz despertam o G System 01 e encontram Aeon em animação suspensa. Ao retornarem ao orfanato, encontram o vilarejo em chamas destruído pelas tropas de Eisengrad comandadas pelo misterioso homem da cicatriz.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-1-1",
+            "text": "Explore o interior de G System 01 e ative o gerador central.",
+            "hint": "Avance pelo corredor oeste de G System 01 derrotando os tanques de patrulha. Colete os Repair Kits e ative o terminal de energia na câmara central B1.",
+            "highlight": false
+          },
+          {
+            "id": "obj-1-2",
+            "text": "Derrote o pelotão de Type 61 Tanks e o Zaku I Commander.",
+            "hint": "Use ataques corporais de Tristan para focar os tanques primeiro. Mantenha Fritz focado no suporte com Repair Kit e finalize o Zaku I com golpes na cabeça.",
+            "highlight": true
+          },
+          {
+            "id": "obj-1-3",
+            "text": "Investigue a cápsula criogênica no subsolo para libertar Aeon.",
+            "hint": "Após a vitória, interaja com a cápsula no fundo da câmara para acordar a misteriosa jovem Aeon, que se junta à comitiva.",
+            "highlight": true
+          },
+          {
+            "id": "obj-1-4",
+            "text": "Retorne a Marie's Place e colete todos os suprimentos no orfanato.",
+            "hint": "Abra os 4 baús em Marie's Place: Restorative Drink (Leste), Regeneration Kit (Nordeste), GPS System (atrás do MS) e Armor Upgrade Kit (parede oculta a oeste).",
+            "highlight": false
+          },
+          {
+            "id": "obj-1-5",
+            "text": "Fale com Marie no orfanato e receba a Carta de Recomendação.",
+            "hint": "Entre na residência em chamas e converse com Marie para receber a Carta de Apresentação (Marie's Introduction), liberando o acesso ao mapa-múndi rumo a Angelia.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Zaku I Commander & Type 61 Tanks",
+          "hp": 950,
+          "weakness": "Solid Pierce / Beam",
+          "danger_attacks": [
+            "High-Explosive Shell",
+            "Commander Strike"
+          ],
+          "strategy": "Elimine os tanques Type 61 primeiro utilizando o ataque corporal padrão de Tristan para não sofrer fogo cruzado. Mantenha Fritz focado no suporte com Repair Kit caso Tristan receba dano crítico, e concentre os turnos seguintes com Heat Hawk na cabeça do Zaku I Commander."
+        },
+        "chests": [
+          {
+            "id": "ch-mp-1",
+            "location": "Marie's Place - Canto Leste",
+            "item": "Restorative Drink x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mp-2",
+            "location": "Marie's Place - Canto Nordeste",
+            "item": "Regeneration Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mp-3",
+            "location": "Marie's Place - Atrás do Mobile Suit (Noroeste)",
+            "item": "GPS System x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mp-4",
+            "location": "Marie's Place - Parede Oculta (Oeste do MS)",
+            "item": "Armor Upgrade Kit x1",
+            "opened": false,
+            "type": "hidden"
+          },
+          {
+            "id": "ch-g1-1",
+            "location": "G System 01 - Corredor de Entrada",
+            "item": "Repair Kit x3",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g1-2",
+            "location": "G System 01 - Sala de Controle B1",
+            "item": "Regeneration Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g1-3",
+            "location": "G System 01 - Câmara da Cápsula",
+            "item": "Armor Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-1-moon-ark",
+        "title": "Capítulo 1: A Metrópole de Angelia & A Arca Lunar (Moon Ark)",
+        "location": "Angelia -> Moon Ark",
+        "summary": "Chegada à próspera cidade tecnológica de Angelia. Obtenha o Database Disc com o Professor Gould e explore os níveis inferiores da nave acidentada Moon Ark para recuperar peças essenciais e dados de combate.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-1-6",
+            "text": "Chegue à cidade de Angelia e colete os 3 baús iniciais.",
+            "hint": "Siga para o nordeste pelo mapa. Em Angelia, recolha 150 Credits atrás da casa oeste, Regeneration Kit ao leste e ECAP (S) no quarto da mansão.",
+            "highlight": false
+          },
+          {
+            "id": "obj-1-7",
+            "text": "Fale com o Prof. Gould no 2º andar da mansão e receba o Database Disc.",
+            "hint": "Converse com o Prof. Gould para registrar o Database Disc (Enciclopédia de Inimigos). Em seguida, fale com Ox no centro para obter informações táticas.",
+            "highlight": true
+          },
+          {
+            "id": "obj-1-8",
+            "text": "Adentre a Moon Ark ao norte de Angelia e colete a Machine Gun e Metal Shield no B1.",
+            "hint": "Desça até o subsolo B1 da carcaça da Moon Ark. Derrote patrulhas de Magella Attack e colete a Machine Gun (equipe em Fritz imediatamente) e o Metal Shield.",
+            "highlight": false
+          },
+          {
+            "id": "obj-1-9",
+            "text": "Use Hacking Tool no baú de armadura reforçada no piso B2.",
+            "hint": "Gaste 1 Hacking Tool no cofre trancado do B2 para resgatar 2x Armor Upgrade Kits. Guarde-os para aumentar a durabilidade do Zaku de Tristan.",
+            "highlight": false
+          },
+          {
+            "id": "obj-1-10",
+            "text": "Alcance o terminal do reator no B3 e baixe os dados Zaku II Special Data.",
+            "hint": "No nível mais profundo da Moon Ark, baixe 30x Zaku II Special Data e derrote a guarda mecânica automatizada antes de retornar à superfície.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Zaku II Sentinel (Guardião da Moon Ark)",
+          "hp": 1100,
+          "weakness": "Heat / Solid Impact",
+          "danger_attacks": [
+            "Cracker Grenade",
+            "Machine Gun Burst"
+          ],
+          "strategy": "Tristan deve alternar ataques corporais com a lança/Heat Hawk. O Zaku II Sentinel lança Cracker Grenades que atingem toda a linha frontal; cure com Fritz sempre que a vida cair de 40% e finalize com Boost Attack."
+        },
+        "chests": [
+          {
+            "id": "ch-ang-1",
+            "location": "Angelia - Atrás da Casa Oeste",
+            "item": "150 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ang-2",
+            "location": "Angelia - Lado Leste da Casa Residencial",
+            "item": "Regeneration Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ang-3",
+            "location": "Angelia - Quarto da Mansão do Prof. Gould",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ang-4",
+            "location": "Angelia - Casa Trancada (Retorno com Lockpick)",
+            "item": "Recovery System II x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-ma-1",
+            "location": "Moon Ark B1 - Sala de Carga",
+            "item": "Machine Gun x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ma-2",
+            "location": "Moon Ark B1 - Ala Sul",
+            "item": "Metal Shield x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ma-3",
+            "location": "Moon Ark B2 - Cofre Trancado",
+            "item": "Armor Upgrade Kit x2",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-ma-4",
+            "location": "Moon Ark B2 - Terminal Central",
+            "item": "Zaku II Special Data x30",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ma-5",
+            "location": "Moon Ark B3 - Plataforma Elevada",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ma-6",
+            "location": "Moon Ark B3 - Depósito de Manutenção",
+            "item": "High Grade Armor Plate x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-2-angelia",
+        "title": "Capítulo 2: A Invasão de Fort Verde & Resgate no G System 02",
+        "location": "Fort Verde -> G System 02",
+        "summary": "O avanço contra o cordão de isolamento de Eisengrad! Invada a fortificação militar de Fort Verde para derrubar o posto avançado e rume ao G System 02 para resgatar o veterano Gavenger e desbloquear a oficina de Mobile Suits.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-2-1",
+            "text": "Infiltre-se no complexo militar de Fort Verde a leste de Angelia.",
+            "hint": "Atravesse o desfiladeiro leste no mapa-múndi até Fort Verde. Não há encontros aleatórios aqui, apenas emboscadas visíveis de Mobile Suits.",
+            "highlight": false
+          },
+          {
+            "id": "obj-2-2",
+            "text": "Varra o pátio de Fort Verde e recolha o Hacking Tool e Zaku Shield L.",
+            "hint": "Elimine o primeiro grupo a sudoeste para pegar Repair Kit x3. Em seguida, limpe o pátio noroeste para garantir 1x Hacking Tool, Metal Guard e Zaku Shield L.",
+            "highlight": false
+          },
+          {
+            "id": "obj-2-3",
+            "text": "Derrote o Comandante Gouf e a guarnição de Zakus em Fort Verde.",
+            "hint": "Concentre fogo nos dois Zaku II de escolta no turno 1. Contra o Gouf, mantenha Smoke Screen de Fritz ativo para anular a precisão do Heat Rod.",
+            "highlight": true
+          },
+          {
+            "id": "obj-2-4",
+            "text": "Siga para G System 02 ao sul e salve Gavenger do cerco inimigo.",
+            "hint": "Ao entrar no G System 02, ajude o veterano Gavenger encurralado por forças de Eisengrad. Vencer a batalha faz Gavenger se unir oficialmente ao grupo!",
+            "highlight": true
+          },
+          {
+            "id": "obj-2-5",
+            "text": "Ligue o interruptor branco do gerador e fabrique seus primeiros Mobile Suits.",
+            "hint": "Ative o painel branco na sala de força para energizar a instalação. Use o terminal para construir o Gouf, Zaku II Special e GM Command para sua equipe.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Guarnição de Fort Verde (Zaku II x2 & Commander Gouf)",
+          "hp": 1400,
+          "weakness": "Beam / Solid Pierce",
+          "danger_attacks": [
+            "Heat Rod (Paralisia)",
+            "Giant Bazooka"
+          ],
+          "strategy": "Concentre fogo nos dois Zaku II de escolta na primeira rodada para reduzir as ações inimigas. O comandante Gouf possui Heat Rod capaz de infligir paralisia; utilize Fritz com Smoke Screen para aumentar a evasão do esquadrão e explore a lentidão do Gouf com ataques perfurantes de Tristan."
+        },
+        "chests": [
+          {
+            "id": "ch-fv-1",
+            "location": "Fort Verde - Portão Principal",
+            "item": "Repair Kit x3",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fv-2",
+            "location": "Fort Verde - Posto de Vigia Leste",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fv-3",
+            "location": "Fort Verde - Pátio Interno",
+            "item": "Metal Guard x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fv-4",
+            "location": "Fort Verde - Ala Médica",
+            "item": "Regeneration Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fv-5",
+            "location": "Fort Verde - Depósito de Armaduras",
+            "item": "Zaku Shield L x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g2-1",
+            "location": "G System 02 - Cofre Central (Trancado)",
+            "item": "HP Parts II x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-g2-2",
+            "location": "G System 02 - Depósito de Propelentes",
+            "item": "Extra Propellant x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-3-forts-arid-berg",
+        "title": "Capítulo 3: As Linhas de Fronteira - Fort Arid & Fort Berg",
+        "location": "Fort Arid -> Fort Berg",
+        "summary": "Para alcançar as rotas marítimas e a capital, o esquadrão deve romper o cinturão de defesa fronteiriço de Eisengrad em Fort Arid e Fort Berg. Um encontro explosivo com a rebelde Tremmie mudará os rumos da batalha.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-3-1",
+            "text": "Aproxime-se de Fort Arid e enfrente a emboscada do GM Command vermelho.",
+            "hint": "Na entrada de Fort Arid, Tremmie ataca o grupo pilotando seu rápido GM Command vermelho. Prepare escudos pesados para conter suas saraivadas de mísseis.",
+            "highlight": true
+          },
+          {
+            "id": "obj-3-2",
+            "text": "Recrute Tremmie e seu GM Command para o esquadrão.",
+            "hint": "Após a luta, Tremmie esclarece o mal-entendido e junta-se permanentemente à equipe com seu GM Command e excelente atributo de velocidade reflexa.",
+            "highlight": true
+          },
+          {
+            "id": "obj-3-3",
+            "text": "Infiltre-se nas instalações de Fort Arid e desative as baterias de canhões.",
+            "hint": "Desative os consoles de artilharia. Abra a caixa trancada nível 1 com 1 Hacking Tool para receber 2x Hacking Tools de volta (lucro líquido de ferramentas!).",
+            "highlight": false
+          },
+          {
+            "id": "obj-3-4",
+            "text": "Colete o Sniper Arm L e Back Charge nos corredores de Fort Arid.",
+            "hint": "Varra a passarela superior e o depósito para pegar Armor Upgrade Kit, ECAP (S), Dom Data x8 e a peça Sniper Arm L (ótima para Fritz).",
+            "highlight": false
+          },
+          {
+            "id": "obj-3-5",
+            "text": "Breche as defesas de Fort Berg e recolha o Extra Wing e Short Barrier.",
+            "hint": "Cruze para Fort Berg logo a leste. Use Hacking Tools nas duas caixas trancadas para obter o Extra Wing (vital para anular a lentidão do Gouf) e Short Barrier.",
+            "highlight": false
+          }
+        ],
+        "boss": {
+          "name": "Tremmie (GM Command Vermelho) & Baterias de Defesa",
+          "hp": 1900,
+          "weakness": "Beam / Sonic Shock",
+          "danger_attacks": [
+            "Arm Missile Barrage",
+            "Quick Step"
+          ],
+          "strategy": "Tremmie ataca com altíssima iniciativa graças aos propulsores do GM Command. Equipe escudos pesados no Zaku II e GM do seu esquadrão para absorver a saraivada de mísseis. Use ataques de energia ou golpes concentrados para quebrar sua guarda no turno de recarga. Vencê-la encerra a batalha e ela se une ao time!"
+        },
+        "chests": [
+          {
+            "id": "ch-fa-1",
+            "location": "Fort Arid - Caixa Trancada Nível 1",
+            "item": "Hacking Tool x2",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-fa-2",
+            "location": "Fort Arid - Ala de Blindagem",
+            "item": "Armor Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fa-3",
+            "location": "Fort Arid - Passarela Superior",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fa-4",
+            "location": "Fort Arid - Depósito Leste",
+            "item": "Sniper Arm L x1 (GM Sniper Arm)",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fa-5",
+            "location": "Fort Arid - Corredor B1",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fa-6",
+            "location": "Fort Arid - Terminal de Dados",
+            "item": "Dom Data x8",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fa-7",
+            "location": "Fort Arid - Câmara do Gerador",
+            "item": "Back Charge x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fb-1",
+            "location": "Fort Berg - Plataforma Elevada (Trancada)",
+            "item": "Extra Wing x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-fb-2",
+            "location": "Fort Berg - Arsenal Sul (Trancado)",
+            "item": "Short Barrier x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          }
+        ]
+      },
+      {
+        "id": "ch-4-port-marley-pirates",
+        "title": "Capítulo 4: O Porto Marley & O Covil dos Piratas (A Chave Lockpick)",
+        "location": "Port Marley -> Pirate Base",
+        "summary": "Em Port Marley, a travessia oceânica está bloqueada por corsários da marinha anfíbia. Invada a caverna submersa da Base Pirata para obter a ferramenta suprema LOCKPICK e derrotar o temido Zock.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-4-1",
+            "text": "Explore a cidade costeira de Port Marley e compre o Medium Shield.",
+            "hint": "Fale com o capitão do porto e mercadores. Colete os 5 baús abertos na cidade (ECAP S, General Purpose Med, Hacking Tools e 200 Credits). Compre o Medium Shield na loja naval.",
+            "highlight": false
+          },
+          {
+            "id": "obj-4-2",
+            "text": "Adentre a Base Pirata ao sul contornando os canais de água salgada.",
+            "hint": "Cuidado com encontros de Acguy e Zaku Marine Type. Colete o Dom Legs no depósito inicial e equipe escudos com proteção a ácido se possível.",
+            "highlight": false
+          },
+          {
+            "id": "obj-4-3",
+            "text": "CRÍTICO: Colete a LOCKPICK no baú do 2º piso antes da sala do líder!",
+            "hint": "ITEM CHAVE VITAL: Abra o baú metálico no mezanino antes do salão do trono para adquirir a LOCKPICK permanente. Ela abre todos os baús com cadeado roxo do mundo!",
+            "highlight": true
+          },
+          {
+            "id": "obj-4-4",
+            "text": "Derrote o sub-chefe Z'Gok e o Comandante Zock na doca subterrânea.",
+            "hint": "Elimine o Z'Gok no 1º turno. Quando o Zock concentrar energia luminosa, ative Chaff Field ou defenda no turno do Mega Particle Cannon duplo.",
+            "highlight": true
+          },
+          {
+            "id": "obj-4-5",
+            "text": "Retorne a Port Marley e use a nova Lockpick nos 3 baús da cidade.",
+            "hint": "Com a Lockpick em mãos, abra os 3 baús trancados da cidade para pegar 3,000 Credits, Sensor Plus II e Power Device II antes de navegar.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Esquadrão Pirata (Z'Gok & Boss Zock)",
+          "hp": 2400,
+          "weakness": "Solid Impact / Beam Melee",
+          "danger_attacks": [
+            "Iron Nail Pierce",
+            "Twin Mega Particle Cannon"
+          ],
+          "strategy": "Elimine o Z'Gok ágil no início para evitar o Iron Nail crítico. Contra o pesado Zock, fique atento quando ele carregar energia: defenda ou use Chaff Field no turno do disparo do Mega Particle Cannon. Use a velocidade de Tremmie com Arm Missiles para causar dano contínuo."
+        },
+        "chests": [
+          {
+            "id": "ch-pm-1",
+            "location": "Port Marley - Cais Norte",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pm-2",
+            "location": "Port Marley - Casa dos Pescadores",
+            "item": "General Purpose Med x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pm-3",
+            "location": "Port Marley - Atrás do Armazém",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pm-4",
+            "location": "Port Marley - Calçadão",
+            "item": "200 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pm-5",
+            "location": "Port Marley - Beco da Oficina",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pm-6",
+            "location": "Port Marley - Cofre Naval (Lockpick)",
+            "item": "3000 Credits",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-pm-7",
+            "location": "Port Marley - Sala Trancada 1 (Lockpick)",
+            "item": "Sensor Plus II x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-pm-8",
+            "location": "Port Marley - Sala Trancada 2 (Lockpick)",
+            "item": "Power Device II x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-pb-1",
+            "location": "Pirate Base - Entrada Caverna",
+            "item": "General Purpose Med x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-2",
+            "location": "Pirate Base - Depósito de Suprimentos",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-3",
+            "location": "Pirate Base - Ala Médica",
+            "item": "Medical System x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-4",
+            "location": "Pirate Base - Passarela do Hangar",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-5",
+            "location": "Pirate Base - Sala do Capitão",
+            "item": "Lockpick x1 (ITEM CHAVE)",
+            "opened": false,
+            "type": "key_item"
+          },
+          {
+            "id": "ch-pb-6",
+            "location": "Pirate Base - Cofre Trancado (Hacking Tool)",
+            "item": "Acid Barrier x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-pb-7",
+            "location": "Pirate Base - Plataforma de Lançamento",
+            "item": "Extra Propellant x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-8",
+            "location": "Pirate Base - Oficina Subterrânea",
+            "item": "Dom Legs x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-9",
+            "location": "Pirate Base - Armazém Sul",
+            "item": "Metal Guard II x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-10",
+            "location": "Pirate Base - Pátio Inferior",
+            "item": "SOS Signal Flare x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pb-11",
+            "location": "Pirate Base - Ninho de Metralhadoras",
+            "item": "Small Cannon x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-5-eisengrad-capital",
+        "title": "Capítulo 5: A Capital de Eisengrad & O Confronto com o Supertanque Xamel",
+        "location": "Eisengrad -> Mining Base",
+        "summary": "Audiência na magnífica capital murada de Eisengrad. O governo comissiona o esquadrão a caçar a máquina de cerco renegada Xamel, oculta nas galerias da Base de Mineração abandonada.",
+        "missable_ids": [
+          "short-barrel-beam-rifle"
+        ],
+        "objectives": [
+          {
+            "id": "obj-5-1",
+            "text": "Explore a vasta capital de Eisengrad e colete todos os 17 baús.",
+            "hint": "Ande pelos telhados usando as pranchas e becos. Colete 4,000+ Credits, ECAP (S), Hacking Tools, GM Sniper Data x10 e kits de melhoria espalhados.",
+            "highlight": false
+          },
+          {
+            "id": "obj-5-2",
+            "text": "Compre o Short Barrel Beam Rifle nas lojas antes da missão.",
+            "hint": "ALERTA DE ITEM LIMITADO: Compre ao menos 1 Short Barrel Beam Rifle na loja de armas de Eisengrad antes de partir para a expedição.",
+            "highlight": true
+          },
+          {
+            "id": "obj-5-3",
+            "text": "Apresente-se ao Ancião e ao Comando Militar no Palácio Central.",
+            "hint": "Fale com o general Hal Vizardt e receba a autorização para investigar a Mining Base abandonada ao norte.",
+            "highlight": false
+          },
+          {
+            "id": "obj-5-4",
+            "text": "Desça as galerias da Mining Base e use Hacking Tool para pegar a Heavy Lance.",
+            "hint": "Infiltre-se na mina. Abra a caixa trancada no B1 com Hacking Tool para pegar a Heavy Lance e colete o Stealth System e Guncannon Data x15.",
+            "highlight": false
+          },
+          {
+            "id": "obj-5-5",
+            "text": "Destrua os 2 Dark Guards e o supertanque de artilharia Xamel.",
+            "hint": "Use Shoot All de Fritz no turno 1 para destruir os dois Dark Guards. Anule o colossal canhão de 680mm do Xamel com Chaff Field e liquide-o com Power Charge de Tristan.",
+            "highlight": true
+          },
+          {
+            "id": "obj-5-6",
+            "text": "Equipe o Xamel Cannon e embarque em Port Marley rumo ao novo continente.",
+            "hint": "Pegue o devastador Xamel Cannon como espólio. Retorne ao porto para embarcar no navio mercante rumo ao Continente Sombrio!",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Supertanque Pesado Xamel & 2x Dark Guards",
+          "hp": 3400,
+          "weakness": "Beam / Armor Piercing",
+          "danger_attacks": [
+            "680mm Cannonade",
+            "Overheat Shell"
+          ],
+          "strategy": "Elimine os dois Dark Guards (470 HP cada) imediatamente no turno 1 usando Shoot All de Fritz com Energy Capacitor para evitar que ativem Counter Zone. Contra o colossal Xamel, o canhão de 680mm causa dano letal em linha reta; ative Chaff Field nos turnos de recarga de EN do Xamel e cause dano massivo com Power Charge de Tristan e lança perfurante."
+        },
+        "chests": [
+          {
+            "id": "ch-es-1",
+            "location": "Eisengrad - Atrás dos Jeeps no Norte",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-2",
+            "location": "Eisengrad - Torre Sudoeste (Prancha de Telhado)",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-3",
+            "location": "Eisengrad - Mercado Central",
+            "item": "1000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-4",
+            "location": "Eisengrad - Beco da Oficina Militar",
+            "item": "Repair Kit DX x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-5",
+            "location": "Eisengrad - Pátio do Quartel",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-6",
+            "location": "Eisengrad - Escadaria Residencial",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-7",
+            "location": "Eisengrad - Varanda da Praça",
+            "item": "Restorative Drink x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-8",
+            "location": "Eisengrad - Terminal Tático",
+            "item": "GM Sniper Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-9",
+            "location": "Eisengrad - Ala Leste Superior",
+            "item": "Mobility Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-10",
+            "location": "Eisengrad - Depósito Subterrâneo",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-11",
+            "location": "Eisengrad - Sala de Comando",
+            "item": "EN Pack x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-12",
+            "location": "Eisengrad - Corredor do Palácio",
+            "item": "Hizack Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-13",
+            "location": "Eisengrad - Arquivo de Protótipos",
+            "item": "Kaempfer Data x5",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-14",
+            "location": "Eisengrad - Cofre da Tesouraria",
+            "item": "3000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-15",
+            "location": "Eisengrad - Hangar Leste",
+            "item": "Armor Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-16",
+            "location": "Eisengrad - Oficina de Armas Pesadas",
+            "item": "Attack Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-es-17",
+            "location": "Eisengrad - Terraço de Vigilância",
+            "item": "ECAP (L) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-1",
+            "location": "Mining Base - Entrada da Galeria 1",
+            "item": "Attack Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-2",
+            "location": "Mining Base - Caixa Trancada B1 (Hacking Tool)",
+            "item": "Heavy Lance x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-mb-3",
+            "location": "Mining Base - Beco Sem Saída Oeste",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-4",
+            "location": "Mining Base - Circuito Espiral B2",
+            "item": "ECAP (L) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-5",
+            "location": "Mining Base - Câmara dos Mineiros",
+            "item": "Guncannon Data x15",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-6",
+            "location": "Mining Base - Nicho Escondido",
+            "item": "Knuckle Guard x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act-2",
+    "title": "Ato 2: As Terras Áridas & O Esquadrão Sombrio",
+    "region": "América do Norte & Deserto de Samnia",
+    "chapters": [
+      {
+        "id": "ch-7-el-dar-samnia",
+        "title": "Capítulo 6: O Oásis de El Dar Samnia & G System 03",
+        "location": "El Dar Samnia -> G System 03",
+        "summary": "Cruzando o oceano, o grupo desembarca no continente árido de Samnia. Explore a metrópole do deserto, instale blindagens anti-calor e ative o G System 03 nas cavernas rochosas para adquirir novos protótipos.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-6-1",
+            "text": "Chegue a El Dar Samnia e colete todos os 10 baús da cidade.",
+            "hint": "Nenhum hack é necessário aqui. Vasculhe o terraço da estalagem, poço, praça e becos para obter Guncannon Data x10, Attack Kits, Hacking Tool e créditos.",
+            "highlight": false
+          },
+          {
+            "id": "obj-6-2",
+            "text": "Equipe a barreira de calor Heat Barrier para suportar os perigos desérticos.",
+            "hint": "Compre módulos de filtro no bazar de Samnia para evitar superaquecimento de EN nos terrenos de areia profunda.",
+            "highlight": false
+          },
+          {
+            "id": "obj-6-3",
+            "text": "Viaje para o oeste até o G System 03 e derrote os patrulheiros.",
+            "hint": "No interior do G System 03, enfrente formações de GM Sniper e Speed Cannons. Use armas de impacto perfurante para quebrar as defesas.",
+            "highlight": false
+          },
+          {
+            "id": "obj-6-4",
+            "text": "Colete o Speed Upgrade Kit e ative o núcleo de propulsão do G System.",
+            "hint": "Abra os 2 baús de G System 03 (ECAP S e Speed Upgrade Kit) e acione o terminal de comando para liberar o desenvolvimento de modelos pesados.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Pelotão de Assalto do Deserto (Desert Zaku x2 & Desert Gouf)",
+          "hp": 3800,
+          "weakness": "Solid Impact / Beam",
+          "danger_attacks": [
+            "Sand Cloud",
+            "Heat Sword Slash"
+          ],
+          "strategy": "As unidades do deserto têm alta mobilidade nas dunas. Instale filtros de areia e use a velocidade de Tremmie para quebrar a postura do Desert Gouf. Mantenha Gavane na retaguarda disparando canhões pesados e use Fritz para neutralizar a cegueira da tempestade de areia."
+        },
+        "chests": [
+          {
+            "id": "ch-eds-1",
+            "location": "El Dar Samnia - Terraço da Estalagem",
+            "item": "Guncannon Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-2",
+            "location": "El Dar Samnia - Próximo ao Poço",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-3",
+            "location": "El Dar Samnia - Casa do Mercador",
+            "item": "Restorative Drink DX x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-4",
+            "location": "El Dar Samnia - Pátio das Tendas",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-5",
+            "location": "El Dar Samnia - Muro Sul",
+            "item": "Heat Barrier x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-6",
+            "location": "El Dar Samnia - Beco dos Artesãos",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-7",
+            "location": "El Dar Samnia - Depósito de Sucata 1",
+            "item": "Gelgoog Data x20",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-8",
+            "location": "El Dar Samnia - Depósito de Sucata 2",
+            "item": "Gyan Data x20",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-9",
+            "location": "El Dar Samnia - Hangar Antigo",
+            "item": "Zaku II Special Data x30",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-eds-10",
+            "location": "El Dar Samnia - Canto Nordeste",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g3-1",
+            "location": "G System 03 - Entrada",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g3-2",
+            "location": "G System 03 - Núcleo de Propulsão",
+            "item": "Speed Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-8-tohai-black-assassin",
+        "title": "Capítulo 7: Tohai, Wyvern Ravine & O Temido Black Assassin (#270)",
+        "location": "Tohai -> Wyvern Ravine",
+        "summary": "Chegada à encruzilhada de Tohai. Esta é a ÚNICA janela para enfrentar o lendário Black Assassin nas colinas e desbravar Wyvern Ravine ao lado de Li Fang antes que o canhão da Apsalus destrua a passagem.",
+        "missable_ids": [
+          "black-assassin",
+          "impact-lance"
+        ],
+        "objectives": [
+          {
+            "id": "obj-7-1",
+            "text": "ALERTA MÁXIMO: Encontre e derrote o Black Assassin (#270) ao redor de Tohai!",
+            "hint": "INIMIGO PERDÍVEL CRÍTICO: No mapa-múndi ao redor de Tohai, force combates aleatórios ANTES de prosseguir na trama. Derrote o Black Assassin (#270) para registrar o bestiário e obter a Ninja Sword!",
+            "highlight": true
+          },
+          {
+            "id": "obj-7-2",
+            "text": "Entre em Tohai e use a Lockpick na residência para pegar 3,000 Credits.",
+            "hint": "Abra os 5 baús locais em Tohai: ECAP (S), Hacking Tool, 1,000 Credits, Speed Upgrade Kit e 3,000 Credits (trancado com Lockpick).",
+            "highlight": false
+          },
+          {
+            "id": "obj-7-3",
+            "text": "Siga para Wyvern Ravine a noroeste e explore a trilha rochosa.",
+            "hint": "A taxa de encontros é alta. Encontre Li Fang em seu Guncannon prestando auxílio contra os reforços inimigos; Li Fang junta-se à luta!",
+            "highlight": true
+          },
+          {
+            "id": "obj-7-4",
+            "text": "ATENÇÃO: Em Wyvern Ravine, colete a IMPACT LANCE no baú ANTES do chefe!",
+            "hint": "ARMA PERDÍVEL: Na câmara do chefe no fundo do cânion, abra o baú com a IMPACT LANCE antes de disparar o combate, pois vencer o chefe teletransporta o time para fora!",
+            "highlight": true
+          },
+          {
+            "id": "obj-7-5",
+            "text": "Destrua a Mobile Armor gigante Apsalus e escape do desfiladeiro.",
+            "hint": "Use Mind Field de Aeon para conter o Mega Particle Cannon de área total e ataque os propulsores inferiores com a lança de impacto de Tristan.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Mobile Armor Apsalus (Boss de Wyvern Ravine)",
+          "hp": 4800,
+          "weakness": "High-Energy Beam / Solid Impact",
+          "danger_attacks": [
+            "Mega Particle Cannon (Área Total)",
+            "Sonic Shock"
+          ],
+          "strategy": "Li Fang junta-se à luta com seu Guncannon prestando suporte de artilharia pesada. O Apsalus flutua e desfere ataques devastadores em toda a linha de Mobile Suits. Mantenha barreiras de feixe (Beam Field / Mind Field de Aeon) ativas nos turnos ímpares e aproveite o suporte de Li Fang para quebrar os propulsores centrais."
+        },
+        "chests": [
+          {
+            "id": "ch-th-1",
+            "location": "Tohai - Depósito de Carvão",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-th-2",
+            "location": "Tohai - Atrás da Estação",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-th-3",
+            "location": "Tohai - Beco das Oficinas",
+            "item": "1000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-th-4",
+            "location": "Tohai - Casa Trancada (Lockpick)",
+            "item": "3000 Credits",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-th-5",
+            "location": "Tohai - Escombros do Muro",
+            "item": "Smoke Bomb x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-wr-1",
+            "location": "Wyvern Ravine - Entrada Oeste",
+            "item": "Kaempfer Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-wr-2",
+            "location": "Wyvern Ravine - Ponte de Pedra",
+            "item": "High-Grade Armor Plate x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-wr-3",
+            "location": "Wyvern Ravine - Fenda da Montanha",
+            "item": "1200 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-wr-4",
+            "location": "Wyvern Ravine - Câmara do Chefe Noroeste (PERDÍVEL)",
+            "item": "Impact Lance x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-wr-5",
+            "location": "Wyvern Ravine - Recanto Alto",
+            "item": "Buster Zaku Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-wr-6",
+            "location": "Wyvern Ravine - Trilha Leste",
+            "item": "ECAP (S) x2",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-9-dark-alliance-tunnel",
+        "title": "Capítulo 8: A Base da Dark Alliance & O Resgate no Túnel Subterrâneo",
+        "location": "Dark Alliance Base -> Underground Tunnel",
+        "summary": "Infiltre-se no quartel-general da Dark Alliance para confiscar o Mirror Cannon. Em seguida, rume ao Túnel Subterrâneo aquático para resgatar Bazuli e desbloquear o caminho até as terras orientais de Falldust.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-8-1",
+            "text": "Passe por Fort Taiga para recolher o Long Range Rifle e EN Max.",
+            "hint": "No posto avançado nevado de Fort Taiga, abra as caixas para obter o Long Range Rifle e EN Max para turbinar seus atiradores.",
+            "highlight": false
+          },
+          {
+            "id": "obj-8-2",
+            "text": "Invada a Dark Alliance Base e recupere o Mirror Cannon no hangar.",
+            "hint": "Derrote as patrulhas de Marasai e Nemo. Vasculhe o arsenal de mísseis e a sala do gerador para pegar o Mirror Cannon e Gelgoog Shield Kai.",
+            "highlight": true
+          },
+          {
+            "id": "obj-8-3",
+            "text": "Derrote o Comandante da Dark Alliance e sua guarda de elite.",
+            "hint": "Foque no líder primeiro com Power Charge e armas perfurantes. Cuidado com os escudos refletores do esquadrão Marasai.",
+            "highlight": true
+          },
+          {
+            "id": "obj-8-4",
+            "text": "Desça ao Túnel Subterrâneo e resgate Bazuli cercado por Acguys.",
+            "hint": "No setor inundado do túnel, salve o artilheiro Bazuli em apuros. Bazuli se une permanentemente à equipe com seu tremendo poder de fogo!",
+            "highlight": true
+          },
+          {
+            "id": "obj-8-5",
+            "text": "Recupere o Gelgoog Shield Kai e a Unidade Psycommu no fim do túnel.",
+            "hint": "Abra os 8 baús do túnel, desarme as minas de contato e atravesse para o outro lado da cordilheira rumo a Falldust.",
+            "highlight": false
+          }
+        ],
+        "boss": {
+          "name": "Comandante Dark Alliance (Marasai & Nemo Squad)",
+          "hp": 5500,
+          "weakness": "Beam / Pierce",
+          "danger_attacks": [
+            "Beam Rifle Kai",
+            "High Mega Launcher"
+          ],
+          "strategy": "O esquadrão Marasai utiliza escudos refletores. Use armas de impacto físico e bazucas com Gavane e Bazuli para quebrar os escudos. Tristan deve usar Power Charge com Hyper Lance para eliminar o líder antes que a frota de reforços submarinos chegue."
+        },
+        "chests": [
+          {
+            "id": "ch-da-1",
+            "location": "Dark Alliance Base - Pátio Central",
+            "item": "Nemo Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-2",
+            "location": "Dark Alliance Base - Arsenal de Mísseis",
+            "item": "Arm Missile Kai x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-3",
+            "location": "Dark Alliance Base - Sala do Gerador",
+            "item": "Energy Capacitor x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-4",
+            "location": "Dark Alliance Base - Hangar de Testes",
+            "item": "Mirror Cannon x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-5",
+            "location": "Dark Alliance Base - Plataforma Superior",
+            "item": "Enhanced Wing x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-6",
+            "location": "Dark Alliance Base - Arquivo Tático",
+            "item": "Rick Dias Data x7",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-7",
+            "location": "Dark Alliance Base - Oficina de Propulsores",
+            "item": "Kaempfer Thruster L x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-da-8",
+            "location": "Dark Alliance Base - Posto de Recarga",
+            "item": "EN Pack x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ut-1",
+            "location": "Underground Tunnel - Setor 1",
+            "item": "Repair Unit x3",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ut-2",
+            "location": "Underground Tunnel - Caixa Trancada 1",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-ut-3",
+            "location": "Underground Tunnel - Bifurcação Norte",
+            "item": "ECAP (L) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ut-4",
+            "location": "Underground Tunnel - Setor de Drenagem",
+            "item": "Large Type Propellant x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ut-5",
+            "location": "Underground Tunnel - Câmara Oculta (Trancada)",
+            "item": "Psycommu Unit x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-ut-6",
+            "location": "Underground Tunnel - Galeria das Tubulações",
+            "item": "ECAP (S) x3",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ut-7",
+            "location": "Underground Tunnel - Terminal de Dados",
+            "item": "Bawoo Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-ut-8",
+            "location": "Underground Tunnel - Sala Final",
+            "item": "Gelgoog Shield Kai x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act-3",
+    "title": "Ato 3: O Império de Ferro, Falldust & Os Diggings",
+    "region": "Ásia Oriental & Terras Escavadas",
+    "chapters": [
+      {
+        "id": "ch-10-falldust-unicorn",
+        "title": "Capítulo 9: As Areias de Falldust, Vila Abandonada & Quartel Unicorn",
+        "location": "Falldust -> Unicorn Headquarters",
+        "summary": "Chegada à cidade mineradora de Falldust. Descubra os segredos da Vila Abandonada para conquistar o Card Key L2 e reabasteça no quartel dos Unicorns para iniciar a produção do transformável Bawoo.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-9-1",
+            "text": "Explore a cidade de Falldust e abra os armazéns trancados com Lockpick.",
+            "hint": "Use a Lockpick nos 2 depósitos trancados para pegar Charge Plus e ECAP (L). Colete 10x Bawoo Data e 10x Marasai Data nas oficinas.",
+            "highlight": false
+          },
+          {
+            "id": "obj-9-2",
+            "text": "Visite a Vila Abandonada ao norte e durma na estalagem.",
+            "hint": "Vasculhe os suprimentos perto do urso a nordeste. Durma na estalagem local para disparar o evento que entrega o crucial CARD KEY (L2)!",
+            "highlight": true
+          },
+          {
+            "id": "obj-9-3",
+            "text": "Apresente-se no Quartel General Unicorn e reencontre Ox.",
+            "hint": "Entre na Unicorn HQ. Abra os cofres da sala de reuniões com Lockpick para obter 3,000 + 2,000 Credits, GPS System extra e 10x Bawoo Data.",
+            "highlight": false
+          },
+          {
+            "id": "obj-9-4",
+            "text": "Construa o chassi do Mobile Suit Bawoo na oficina do quartel.",
+            "hint": "Com os dados reunidos em Falldust e na sede, construa o poderoso Bawoo transformável para aumentar brutalmente o dano aéreo do grupo.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Guarnição das Dunas (Bawoo Prototype & Marasai Heavy)",
+          "hp": 6200,
+          "weakness": "Solid Impact / Armor Piercing",
+          "danger_attacks": [
+            "Wing Cutter",
+            "Mega Particle Cannon"
+          ],
+          "strategy": "O Bawoo possui modos alternados de voo que mudam sua evasão. Fritz deve abrir com System Hack para forçar sobreaquecimento (Overheat), enquanto Tremmie e Tristan desferem ataques combinados de Gatling e golpes corporais para derrubar a blindagem antes da transformação."
+        },
+        "chests": [
+          {
+            "id": "ch-fd-1",
+            "location": "Falldust - Armazém Trancado 1 (Lockpick)",
+            "item": "Charge Plus x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-fd-2",
+            "location": "Falldust - Armazém Trancado 2 (Lockpick)",
+            "item": "ECAP (L) x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-fd-3",
+            "location": "Falldust - Pátio das Oficinas",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fd-4",
+            "location": "Falldust - Beco dos Sucateiros",
+            "item": "Attack Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fd-5",
+            "location": "Falldust - Telhado da Ferraria",
+            "item": "Marasai Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fd-6",
+            "location": "Falldust - Casa dos Refugiados",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fd-7",
+            "location": "Falldust - Plataforma de Guindastes",
+            "item": "Internal Propellant x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-fd-8",
+            "location": "Falldust - Fundo do Hangar",
+            "item": "Bawoo Data x10",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-uh-1",
+            "location": "Unicorn HQ - Entrada Principal",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-uh-2",
+            "location": "Unicorn HQ - Sala de Reuniões",
+            "item": "3000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-uh-3",
+            "location": "Unicorn HQ - Armário Trancado 1 (Lockpick)",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-uh-4",
+            "location": "Unicorn HQ - Farmácia Trancada (Lockpick)",
+            "item": "Restorative Drink SP x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-uh-5",
+            "location": "Unicorn HQ - Arsenal de Guerra",
+            "item": "Hacking Tool x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-uh-6",
+            "location": "Unicorn HQ - Sala de Radar",
+            "item": "GPS System x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-uh-7",
+            "location": "Unicorn HQ - Cofre Operacional",
+            "item": "2000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-uh-8",
+            "location": "Unicorn HQ - Terminal Estratégico",
+            "item": "Bawoo Data x10",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-11-diggins-rock-forest",
+        "title": "Capítulo 10: As Relíquias de Diggins Rock & Floresta de Hory",
+        "location": "Diggins Rock -> Hory Forest -> Crash Point",
+        "summary": "Descubra as relíquias do lendário RX-78 Gundam nas escavações de Diggins Rock, purifique a sagrada Floresta de Hory e resgate o veterano Vargas no local de queda da nave aliada.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-10-1",
+            "text": "Escave os 10 tesouros arqueológicos no sítio de Diggins Rock.",
+            "hint": "Use Lockpick nas galerias A, B e C para desenterrar Bawoo Data x10, High Speed Kit, Mind Barrier, Gundam RX-78 Armor Plate e kits de ataque.",
+            "highlight": false
+          },
+          {
+            "id": "obj-10-2",
+            "text": "Adentre a misteriosa Floresta Antiga de Hory e abra os 4 baús.",
+            "hint": "Caminhe pela trilha das sombras. Use Hacking Tool na clareira dos totens para obter 2x Armor Upgrade Kits e Heat Hawk.",
+            "highlight": false
+          },
+          {
+            "id": "obj-10-3",
+            "text": "Derrote os Guardiões da Floresta (Black Zaku II & Black Gouf).",
+            "hint": "Inimigos atacam com dano escuro e alto índice crítico. Equipe Mind Barrier e utilize feixes de alta energia para derrotar o Gouf primeiro.",
+            "highlight": true
+          },
+          {
+            "id": "obj-10-4",
+            "text": "ÁREA ÚNICA: Colete os 5 baús em Crash Point e resgate Vargas!",
+            "hint": "ÁREA DE VISITA ÚNICA: No local de queda do dirigível, colete todos os baús antes de falar com Vargas. Vargas se junta permanentemente à equipe com seu GM Sniper II!",
+            "highlight": true
+          },
+          {
+            "id": "obj-10-5",
+            "text": "Teste seus novos Mobile Suits nos duelos da Mobile Coliseum.",
+            "hint": "Visite a arena do Mobile Coliseum para obter recompensas especiais de créditos e peças raras enfrentando esquadrões veteranos.",
+            "highlight": false
+          }
+        ],
+        "boss": {
+          "name": "Guardiões da Floresta (Black Zaku II & Black Gouf)",
+          "hp": 6800,
+          "weakness": "Beam / Heat",
+          "danger_attacks": [
+            "Dark Sonic Blade",
+            "Shadow Cracker"
+          ],
+          "strategy": "Os guardiões atacam com dano sombrio e alto índice de críticos. Equipe Mind Barrier e utilize o RX-78 recém-montado com Beam Rifle. Mantenha a equipe protegida com Smoke Screen e concentre ataques de fogo no Black Gouf primeiro."
+        },
+        "chests": [
+          {
+            "id": "ch-dr-1",
+            "location": "Diggins Rock - Galeria A (Lockpick)",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-dr-2",
+            "location": "Diggins Rock - Cofre dos Fósseis (Lockpick)",
+            "item": "Bawoo Data x10",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-dr-3",
+            "location": "Diggins Rock - Armazém B (Lockpick)",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-dr-4",
+            "location": "Diggins Rock - Nível Médio",
+            "item": "Hacking Tool x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-dr-5",
+            "location": "Diggins Rock - Plataforma dos Guindastes",
+            "item": "ECAP (S) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-dr-6",
+            "location": "Diggins Rock - Sítio de Escavação 3",
+            "item": "Marasai Data x8",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-dr-7",
+            "location": "Diggins Rock - Ala Médica dos Mineiros (Lockpick)",
+            "item": "Restorative Drink x2",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-dr-8",
+            "location": "Diggins Rock - Cofre Antigo (Lockpick)",
+            "item": "Mind Barrier x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-dr-9",
+            "location": "Diggins Rock - Sala de Pesquisa (Lockpick)",
+            "item": "Attack Upgrade Kit x1",
+            "opened": false,
+            "type": "lockpick",
+            "req": "Lockpick"
+          },
+          {
+            "id": "ch-dr-10",
+            "location": "Diggins Rock - Fundo da Mina",
+            "item": "High Speed Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-hf-1",
+            "location": "Hory Forest - Clareira dos Totens (Hacking Tool)",
+            "item": "Armor Upgrade Kit x2",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-hf-2",
+            "location": "Hory Forest - Trilha das Sombras",
+            "item": "Attack Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-hf-3",
+            "location": "Hory Forest - Recanto Oculto",
+            "item": "Heat Hawk x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-hf-4",
+            "location": "Hory Forest - Saída do Santuário",
+            "item": "Regeneration Kit x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act-4",
+    "title": "Ato 4: O Desafio dos Deuses & O Contra-Ataque de Tristan",
+    "region": "Montanhas Sagradas & Fortaleza de Eisengrad",
+    "chapters": [
+      {
+        "id": "ch-12-mt-trial-lost-city",
+        "title": "Capítulo 11: A Prova Máxima no Mt. Trial, Lost City & G System 04",
+        "location": "Mt. Trial -> Lost City -> G System 04",
+        "summary": "O Monte das Provações aguarda apenas os maiores comandantes. Vença o trio de ases Red Ravens no cume para conquistar os projetos completos de Gundam Heavyarms e Altron Gundam, explore a Cidade Perdida e ative o G System 04.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-11-1",
+            "text": "Escale os 7 andares do Mt. Trial coletando dados de Heavyarms e Altron.",
+            "hint": "Em cada piso, recolha os 7 tesouros sagrados: 50x Gundam Heavyarms Data, 50x Altron Data, 10,000 Credits, Armor Upgrade Kit x2 e Mobility Kit.",
+            "highlight": false
+          },
+          {
+            "id": "obj-11-2",
+            "text": "Vença o combate épico contra os Red Ravens no cume da montanha.",
+            "hint": "Confronto contra o trio de Gundams customizados. Use Chaff Field para conter a saraivada de Gatling do Heavyarms e derrote o Altron rapidamente com Power Charge.",
+            "highlight": true
+          },
+          {
+            "id": "obj-11-3",
+            "text": "Adentre as ruínas da Lost City e colete o Hyper Mega Launcher com Hacking Tool.",
+            "hint": "Use Hacking Tool na câmara subterrânea selada de Lost City para extrair o devastador Hyper Mega Launcher e colete Zeta Gundam Data x25.",
+            "highlight": true
+          },
+          {
+            "id": "obj-11-4",
+            "text": "Ative o G System 04 para desbloquear peças e geradores de Classe III.",
+            "hint": "Abra os 4 baús do G System 04 (Large Type Wing, HP Parts III, Armor Kit) e ligue o reator principal para liberar montagens de Gundam de alto escalão.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Esquadrão Red Ravens (Gundam Heavyarms & Altron Custom)",
+          "hp": 9200,
+          "weakness": "High Energy Beam / Armor Piercing",
+          "danger_attacks": [
+            "Dragon Fang",
+            "Gatling Barrage",
+            "Plasma Lancer"
+          ],
+          "strategy": "A batalha de elite do Mt. Trial. O Altron avança com Dragon Fang causando dano perfurante corpo-a-corpo massivo, enquanto o Heavyarms bombardeia à distância. Ative Chaff Field para anular a saraivada de Gatling do Heavyarms e derrote o Altron rapidamente usando Power Charge e ataques concentrados de feixe de Tristan e Lapis."
+        },
+        "chests": [
+          {
+            "id": "ch-mt-1",
+            "location": "Mt. Trial - Andar 1 Plataforma",
+            "item": "Gundam Heavyarms Data x50",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mt-2",
+            "location": "Mt. Trial - Andar 2 Câmara Leste",
+            "item": "Armor Upgrade Kit x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mt-3",
+            "location": "Mt. Trial - Andar 3 Tesouro dos Campeões",
+            "item": "10,000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mt-4",
+            "location": "Mt. Trial - Andar 4 Passagem Estreita",
+            "item": "ECAP (L) x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mt-5",
+            "location": "Mt. Trial - Andar 5 Altar Sagrado",
+            "item": "Altron Gundam Data x50",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mt-6",
+            "location": "Mt. Trial - Andar 6 Galeria dos Ventos",
+            "item": "ECAP (S) x3",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mt-7",
+            "location": "Mt. Trial - Andar 7 Cume do Desafio",
+            "item": "Mobility Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-lc-1",
+            "location": "Lost City - Câmara Subterrânea Trancada (Hacking Tool)",
+            "item": "Hyper Mega Launcher x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-lc-2",
+            "location": "Lost City - Praça Central em Ruínas",
+            "item": "Bawoo Data x20",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-lc-3",
+            "location": "Lost City - Monumento do G-System",
+            "item": "Zeta Gundam Data x25",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-lc-4",
+            "location": "Lost City - Gerador Antigo",
+            "item": "High-Output Generator x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-lc-5",
+            "location": "Lost City - Templo Subterrâneo",
+            "item": "ECAP (L) x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g4-1",
+            "location": "G System 04 - Entrada",
+            "item": "Restorative Drink x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g4-2",
+            "location": "G System 04 - Ala dos Propulsores",
+            "item": "Large Type Wing x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g4-3",
+            "location": "G System 04 - Câmara dos Módulos",
+            "item": "HP Parts III x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-g4-4",
+            "location": "G System 04 - Núcleo de Blindagem",
+            "item": "Armor Upgrade Kit x1",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-6-fortress-eisengrad-climax",
+        "title": "Capítulo 12: O Contra-Ataque de Tristan & Cerco à Fortaleza Eisengrad",
+        "location": "Fortress Eisengrad",
+        "summary": "O grande retorno à Europa! As forças de Eisengrad foram usurpadas pela influência nefasta das células malignas do Devil Gundam. Ao lado de Rezner, lidere o assalto definitivo para libertar a cidadela antes do lançamento espacial.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-12-1",
+            "text": "Retorne a Eisengrad com a aliança; Rezner se junta ao esquadrão!",
+            "hint": "Na assembleia de assalto, a comandante Rezner junta-se permanentemente à sua equipe de combate para liderar a invasão da fortaleza.",
+            "highlight": true
+          },
+          {
+            "id": "obj-12-2",
+            "text": "Infiltre-se pelos níveis B1 e B2 de Fortress Eisengrad.",
+            "hint": "Derrube as patrulhas de Dark Soldiers e Dark Bombers. Cuidado com contra-ataques automáticos (Counter Zone) dos guardas.",
+            "highlight": false
+          },
+          {
+            "id": "obj-12-3",
+            "text": "PONTO DE NÃO-RETORNO: Abra TODOS os 8 baús ANTES do elevador do chefe!",
+            "hint": "ALERTA MÁXIMO DE BAÚS PERDÍVEIS: Colete todos os 8 baús da fortaleza (Small-sized Beam Rifle, Armor Upgrade Kit, ECAP L, Repair Kit DX) antes de subir o elevador central, pois a área fica permanentemente inacessível após a vitória!",
+            "highlight": true
+          },
+          {
+            "id": "obj-12-4",
+            "text": "Derrote o Devil Gundam (15,000 HP) e as 4 Gundam Heads no salão do trono.",
+            "hint": "O Devil Gundam regenera HP a cada turno! Use Full Cannonade de Gavane para limpar as 4 cabeças no turno 1 e concentre todos os Hyper Boosts de Tristan e Rezner no corpo central para superar a regeneração!",
+            "highlight": true
+          },
+          {
+            "id": "obj-12-5",
+            "text": "Liberte Eisengrad e prepare o foguete orbital rumo ao espaço.",
+            "hint": "Com o general Vizardt e Gabriel recuando para a órbita lunar, embarque na nave espacial White Base para a batalha final nas estrelas!",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Devil Gundam (Dark Gundam) + 4x Gundam Heads",
+          "hp": 15000,
+          "weakness": "Hyper Mega Energy / Critical Melee",
+          "danger_attacks": [
+            "Grand Press",
+            "Dark Finger",
+            "Hellfire Barrage",
+            "Regeneração Contínua"
+          ],
+          "strategy": "O clímax monumental da Terra! Rezner entra na equipe para a batalha final. O Devil Gundam REGENERA HP a cada turno; estratégias de dano baixo serão derrotadas pelo desgaste. Use Shoot All / Full Cannonade de Gavane para limpar as 4 Gundam Heads no turno 1. Em seguida, encadeie todos os Hyper Boosts de Tristan, Rezner e Tremmie no corpo principal do Devil Gundam para causar mais de 2.500 de dano por turno e superar sua regeneração!"
+        },
+        "chests": [
+          {
+            "id": "ch-fe-1",
+            "location": "Fortress Eisengrad B1 - Hall de Entrada (PERDÍVEL)",
+            "item": "Restorative Drink x3",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-2",
+            "location": "Fortress Eisengrad B1 - Sala de Guarda (PERDÍVEL)",
+            "item": "Hacking Tool x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-3",
+            "location": "Fortress Eisengrad B2 - Arsenal Tático (PERDÍVEL)",
+            "item": "Small-sized Beam Rifle x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-4",
+            "location": "Fortress Eisengrad B2 - Enfermaria Central (PERDÍVEL)",
+            "item": "Regeneration Kit DX x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-5",
+            "location": "Fortress Eisengrad B3 - Depósito de Manutenção (PERDÍVEL)",
+            "item": "Restorative Drink DX x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-6",
+            "location": "Fortress Eisengrad B3 - Plataforma Elevatória (PERDÍVEL)",
+            "item": "High Armor Kit x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-7",
+            "location": "Fortress Eisengrad B4 - Terminal de Dados (PERDÍVEL)",
+            "item": "Zaku III Data x8",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true
+          },
+          {
+            "id": "ch-fe-8",
+            "location": "Fortress Eisengrad B4 - Cofre Blindado (Hacking Tool - PERDÍVEL)",
+            "item": "Chobham Armor Plate x1",
+            "opened": false,
+            "type": "missable",
+            "is_missable": true,
+            "req": "Hacking Tool"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "act-5",
+    "title": "Ato 5: A Fronteira Espacial, Moon Base & O Devil Gundam",
+    "region": "Órbita Lunar & Núcleo da Arca",
+    "chapters": [
+      {
+        "id": "ch-13-moon-base-final",
+        "title": "Capítulo 13: O Ataque à Base Lunar & O Supremo Sazabi de Gabriel",
+        "location": "Moon Base Alpha / Beta -> Giant G System",
+        "summary": "A batalha final pela Terra acontece no espaço. Invada a Base Lunar, enfrente as hordas da Death Army, confisque o Beam Rifle Nu Gundam e derrote o General Gabriel a bordo de seu Sazabi Custom no reator lunar.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-13-1",
+            "text": "Atravesse as eclusas de vácuo da Moon Base Alpha coletando kits SP.",
+            "hint": "Desembarque na Base Lunar. Recolha Repair Unit SP x2, Power Booster e Restorative Drink SP x2 nos hangares pressurizados.",
+            "highlight": false
+          },
+          {
+            "id": "obj-13-2",
+            "text": "Use Hacking Tool no laboratório da Base Beta para pegar o Beam Rifle (Nu Gundam).",
+            "hint": "No setor selado da Moon Base Beta, use Hacking Tool na câmara de pesquisa para extrair o lendário Beam Rifle (Nu Gundam Type) e pegue Sazabi Shield Data x15.",
+            "highlight": true
+          },
+          {
+            "id": "obj-13-3",
+            "text": "Derrote o General Gabriel a bordo do temível Sazabi Custom no reator.",
+            "hint": "Mantenha Mind Field de Aeon ativo para anular a chuva de Funnels. Desfira dano massivo perfurante de Tristan logo após o Sazabi disparar o Mega Particle Cannon.",
+            "highlight": true
+          },
+          {
+            "id": "obj-13-4",
+            "text": "Adentre o Giant G System e encerre a guerra mundial.",
+            "hint": "Avance ao núcleo do Giant G System para purificar a matriz central e desmantelar a produção desenfreada de armas de destruição em massa.",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "General Gabriel (Sazabi Custom)",
+          "hp": 12500,
+          "weakness": "Critical Melee / Hyper Mega Energy",
+          "danger_attacks": [
+            "Mega Particle Cannon",
+            "Funnel Swarm",
+            "Beam Tomahawk"
+          ],
+          "strategy": "Gabriel comanda o lendário Sazabi no reator lunar. Os Funnels ignoram a formação e atacam os pontos mais fracos. Use Aeon com Psycommu Link / Mind Field para dissipar o ataque de Funnels. Desfira dano concentrado com Nu Gundam Beam Rifle e golpes perfurantes pesados logo após o Mega Particle Cannon disparar, quando a EN do Sazabi está em recarga."
+        },
+        "chests": [
+          {
+            "id": "ch-mb-alpha-1",
+            "location": "Moon Base Alpha - Eclusa 1",
+            "item": "Repair Unit SP x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-alpha-2",
+            "location": "Moon Base Alpha - Hangar de Caças",
+            "item": "Power Booster x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-alpha-3",
+            "location": "Moon Base Alpha - Ala Médica Lunar",
+            "item": "Restorative Drink SP x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-beta-1",
+            "location": "Moon Base Beta - Eclusa 2",
+            "item": "Regeneration Kit SP x2",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-beta-2",
+            "location": "Moon Base Beta - Setor de Energia",
+            "item": "ECAP (S) x3",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-mb-beta-3",
+            "location": "Moon Base Beta - Laboratório Trancado (Hacking Tool)",
+            "item": "Beam Rifle (Nu Gundam Type) x1",
+            "opened": false,
+            "type": "locked",
+            "req": "Hacking Tool"
+          },
+          {
+            "id": "ch-mb-beta-4",
+            "location": "Moon Base Beta - Câmara do Reator",
+            "item": "Sazabi Shield Data x15",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      },
+      {
+        "id": "ch-14-postgame-devil-gundam",
+        "title": "Pós-Jogo: Another G System & A Ameaça Suprema do Devil Gundam",
+        "location": "Another G System & Profundezas do Caos",
+        "summary": "O desafio supremo de fim de jogo! Carregue seu Clear Save para adentrar as 50 camadas do Another G-System, caçar o lendário Ghost Zaku e purificar as 3 fases sucessivas do Devil Gundam Final Form.",
+        "missable_ids": [],
+        "objectives": [
+          {
+            "id": "obj-14-1",
+            "text": "Carregue o Clear Save de jogo concluído e abra o Another G System.",
+            "hint": "Com o jogo zerado, interaja com o terminal dimensional no menu principal ou na nave para adentrar o labirinto de 50 andares do Another G System.",
+            "highlight": false
+          },
+          {
+            "id": "obj-14-2",
+            "text": "Colete a Master Halberd e o Dark Energy Core nos andares profundos.",
+            "hint": "Explore os pisos subterrâneos do labirinto para garantir a Master Halberd (arma de haste definitiva) e o Dark Energy Core.",
+            "highlight": false
+          },
+          {
+            "id": "obj-14-3",
+            "text": "Abra a tesouraria lacrada para obter 50,000 Credits e o God Finger Manual.",
+            "hint": "Desbloqueie o manual do lendário ataque God Finger e colete 50,000 Credits para financiar todas as melhorias finais de seu esquadrão.",
+            "highlight": true
+          },
+          {
+            "id": "obj-14-4",
+            "text": "Derrote o Devil Gundam Final Form em suas 3 fases consecutivas!",
+            "hint": "A luta suprema de 30,000 HP. O chefe é imune a debuffs e regenera vigor a cada turno. Mantenha Grand Repair de Fritz pronto e encadeie Hyper Boosts e God Finger para a vitória 100% canônica!",
+            "highlight": true
+          }
+        ],
+        "boss": {
+          "name": "Devil Gundam (Dark Gundam) - Forma Final (3 Fases Consecutivas)",
+          "hp": 30000,
+          "weakness": "Nenhuma (Imune a debuffs e status)",
+          "danger_attacks": [
+            "Dark Evolution",
+            "Apocalypse Cannon",
+            "Chaos Storm"
+          ],
+          "strategy": "O desafio definitivo de MS Saga. Todos os Mobile Suits devem estar configurados com Chobham Armor, Propellant Tanks máximos e as melhores armas de feixe e lanças do jogo. Mantenha ciclos constantes de cura total com Fritz (Grand Repair) e concentre todo o dano em Hyper Boost Attacks combinados de Tristan e God Finger para aniquilar as 3 fases sucessivas!"
+        },
+        "chests": [
+          {
+            "id": "ch-pg-1",
+            "location": "Another G System - Subsolo Nível 1",
+            "item": "Master Halberd x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pg-2",
+            "location": "Another G System - Subsolo Nível 2",
+            "item": "Dark Energy Core x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pg-3",
+            "location": "Another G System - Altar Secreto",
+            "item": "God Finger Manual x1",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pg-4",
+            "location": "Another G System - Tesouraria Antiga",
+            "item": "50,000 Credits",
+            "opened": false,
+            "type": "normal"
+          },
+          {
+            "id": "ch-pg-5",
+            "location": "Another G System - Câmara do Trono Sombrio",
+            "item": "Devil Gundam Data x50",
+            "opened": false,
+            "type": "normal"
+          }
+        ]
+      }
+    ]
+  }
+]

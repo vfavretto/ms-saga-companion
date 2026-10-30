@@ -1,0 +1,101 @@
+[
+  {
+    "id": "beam-saber",
+    "name": "Beam Saber",
+    "category": "Melee (Corpo-a-corpo)",
+    "damage": 320,
+    "type": "Beam / Energy",
+    "en_cost": 1,
+    "grid": "1x3",
+    "obtain": "Oficinas de Marie Foley / Padrão GM",
+    "description": "Lâmina de plasma contida por campo magnético. Ignora armaduras físicas pesadas."
+  },
+  {
+    "id": "heat-hawk",
+    "name": "Heat Hawk",
+    "category": "Melee (Corpo-a-corpo)",
+    "damage": 290,
+    "type": "Physical / Thermal",
+    "en_cost": 1,
+    "grid": "2x2",
+    "obtain": "Padrão Zaku I e Zaku II",
+    "description": "Machado térmico com lâmina superaquecida. Causa dano físico consistente a baixo custo."
+  },
+  {
+    "id": "beam-scythe",
+    "name": "Beam Scythe",
+    "category": "Melee (Corpo-a-corpo)",
+    "damage": 880,
+    "type": "Beam / Energy",
+    "en_cost": 3,
+    "grid": "2x4",
+    "obtain": "Arma do Gundam Deathscythe",
+    "description": "Foice de energia colossal com altíssima taxa de acerto crítico e efeito de varredura."
+  },
+  {
+    "id": "impact-lance",
+    "name": "Impact Lance",
+    "category": "Melee (Perfurante)",
+    "damage": 520,
+    "type": "Physical / Pierce",
+    "en_cost": 2,
+    "grid": "1x4",
+    "obtain": "Wyvern Ravine - Sala do Chefe (MISSABLE!)",
+    "description": "Lança de impacto cinética. Causa dano massivo em linha reta e quebra escudos de concreto."
+  },
+  {
+    "id": "zaku-machine-gun",
+    "name": "120mm Zaku Machine Gun",
+    "category": "Ranged (Projétil)",
+    "damage": 240,
+    "type": "Physical / Solid",
+    "en_cost": 1,
+    "grid": "2x3",
+    "obtain": "Lojas de Marie Foley / Zakus",
+    "description": "Dispara rajadas rápidas de 120mm com munição tambor. Alta taxa de acertos."
+  },
+  {
+    "id": "beam-rifle",
+    "name": "Beam Rifle (RX-78)",
+    "category": "Ranged (Feixe)",
+    "damage": 650,
+    "type": "Beam / Energy",
+    "en_cost": 2,
+    "grid": "2x4",
+    "obtain": "Desbloqueado com o RX-78 Gundam",
+    "description": "Poder de fogo comparável ao canhão de um encouraçado estelar. Excelente precisão."
+  },
+  {
+    "id": "giant-bazooka",
+    "name": "Giant Bazooka (360mm)",
+    "category": "Heavy (Explosivo)",
+    "damage": 780,
+    "type": "Physical / Explosive",
+    "en_cost": 3,
+    "grid": "2x5",
+    "obtain": "Equipamento original do Dom / Lojas dos Diggings",
+    "description": "Munição pesada explosiva de 360mm capaz de causar dano em área com efeito de atordoamento."
+  },
+  {
+    "id": "gatling-shield",
+    "name": "Gatling Shield",
+    "category": "Hybrid (Escudo & Arma)",
+    "damage": 580,
+    "type": "Physical / Rapid",
+    "en_cost": 2,
+    "grid": "3x4",
+    "obtain": "Wyvern Ravine (Drop raro ou Gouf Custom)",
+    "description": "Escudo defensivo reforçado com canhão Gatling multicanos de 75mm embutido."
+  },
+  {
+    "id": "funnel-rack",
+    "name": "Funnel Container System",
+    "category": "Psycommu (Psíquico)",
+    "damage": 920,
+    "type": "Remote / All-Range",
+    "en_cost": 4,
+    "grid": "3x3",
+    "obtain": "Ruínas de Neo Zarth / G-System 03",
+    "description": "Módulos de ataque sem fio teleguiados. Disparam contra todos os alvos ignorando defesas normais."
+  }
+]

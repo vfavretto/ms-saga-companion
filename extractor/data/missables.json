@@ -1,0 +1,35 @@
+[
+  {
+    "id": "black-assassin",
+    "title": "Black Assassin (Inimigo Exclusivo - Entrada 270 da Enciclopédia)",
+    "category": "Inimigo Perdível",
+    "severity": "CRITICAL",
+    "location": "Arredores de Tohai / Área de Transição",
+    "window": "Primeira visita à região de Tohai",
+    "cutoff_point": "Avançar a história além dos eventos de Tohai sem ter enfrentado o Black Assassin bloqueia permanentemente o encontro.",
+    "consequence": "Impossibilita completar 100% dos 270 registros do Bestiário e trava a conquista máxima do G-System Interno.",
+    "instructions": "Assim que alcançar a região de Tohai, circule pelos arredores no mapa e force encontros aleatórios até que o Black Assassin apareça. Derrote-o e certifique-se de que a entrada foi registrada antes de prosseguir com a trama principal."
+  },
+  {
+    "id": "impact-lance",
+    "title": "Impact Lance (Lança de Impacto em Wyvern Ravine)",
+    "category": "Arma Única em Baú",
+    "severity": "HIGH",
+    "location": "Wyvern Ravine - Sala do Chefe",
+    "window": "Durante a exploração da caverna antes de abater o Chefe",
+    "cutoff_point": "Vencer o combate do chefe nesta câmara teletransporta você imediatamente para fora de volta a Eisengrad.",
+    "consequence": "Embora seja possível retornar com dificuldade mais tarde antes de ir para o continente americano, esquecer esse baú faz você perder uma das lanças de perfuração mais fortes do início do jogo.",
+    "instructions": "Ao entrar na câmara do chefe no fundo do desfiladeiro de Wyvern, contorne a área e abra todos os baús laterais (onde está a Impact Lance) ANTES de interagir com o gatilho da batalha do chefe."
+  },
+  {
+    "id": "short-barrel-beam-rifle",
+    "title": "Short Barrel Beam Rifle & Estoques Especiais de Lojas",
+    "category": "Equipamento Limitado de Loja",
+    "severity": "MEDIUM",
+    "location": "Lojas de Eisengrad / Marie Foley",
+    "window": "Antes do embarque no navio/continente americano",
+    "cutoff_point": "Transição de atos e avanço de capítulos altera os estoques das lojas locais.",
+    "consequence": "Armas de feixe compacto úteis para encaixar em grids pequenos de Mobile Suits ficam indisponíveis para compra.",
+    "instructions": "Sempre compre ao menos 1 unidade de cada arma de feixe compacta ou escudo antes de embarcar nas viagens de travessia continental."
+  }
+]

@@ -1,0 +1,818 @@
+gametitle=MS Saga: A New Dawn [SLUS-21270] (U)
+
+[60 FPS + Safe Turbo (Select+R1) + Encontros/Grind 4x (Select+L1) + QoL]
+author=Antigravity & Victor
+description=60 FPS real (1x), Turbo seguro sem travamentos em Select+R1 (1x -> 2x -> 3x com Auto-Guard de I/O e Menu Camp), Controle de Encontros e Grind 4x em Select+L1 (Normal -> Sem Encontros -> Grind 4x EXP/Gold/100% Drops validos), Texto Instantaneo e Transicoes/Fades 4x mais rapidos.
+
+// ============================================================================
+// CONTROLES IN-GAME (com aviso temporario de 2s no canto superior esquerdo):
+//   Select + R1 (Backspace + E): 1X (60FPS) -> 2X TURBO -> 3X TURBO
+//      * Cai automaticamente para 1X no Menu Camp e durante leituras de disco!
+//   Select + L1 (Backspace + Q): NORMAL -> NO ENCOUNTERS -> GRIND 4X
+//      * GRIND 4X: encontro ao dar 1 passo + 4x EXP + 4x Gold + 100% Drop Rate
+//        nos slots validos de inimigos (preserva quantidades, chefes e baus).
+//
+// OTIMIZACAO PCSX2 DYNAREC:
+//   Todos os blocos abaixo usam a guarda E0xx3F98 0010E67C para aplicar a
+//   Code Cave (0x003B0000) uma unica vez no boot/reset sem invalidar o cache
+//   do recompilador EE a cada VBlank e sem sobrescrever 0x003B2800 (estado).
+// ============================================================================
+
+// --- Auto-Upgrade de Save State da v1/v2 (0xC000/0xC001 -> re-aplica v3 0xC002) ---
+patch=1,EE,E002C000,extended,0010E67C
+patch=1,EE,1010E67C,extended,00003F98
+patch=1,EE,003B2800,extended,00000000
+patch=1,EE,E002C001,extended,0010E67C
+patch=1,EE,1010E67C,extended,00003F98
+patch=1,EE,003B2800,extended,00000000
+
+// --- Bloco de Inicializacao Unica #1 (200 instrucoes) ---
+patch=1,EE,E0C83F98,extended,0010E67C
+patch=1,EE,203B0000,extended,00000000 // v2 alignment pad 1
+patch=1,EE,203B0004,extended,00000000 // v3 alignment pad 2 so Mod_WaitVsync = 0x003B0008 (0x0C0EC002)
+patch=1,EE,203B0008,extended,3C020200
+patch=1,EE,203B000C,extended,9042F5AE // CurrGameMode at 0x01FFF5AE
+patch=1,EE,203B0010,extended,34030006
+patch=1,EE,203B0014,extended,10430007
+patch=1,EE,203B0018,extended,3C04004F
+patch=1,EE,203B001C,extended,8082F681 // MOVIE_Main active flag at 0x004EF681
+patch=1,EE,203B0020,extended,34030001
+patch=1,EE,203B0024,extended,10430003
+patch=1,EE,203B0028,extended,34050001 // default target VSync = 1 (60 FPS)
+patch=1,EE,203B002C,extended,10000002
+patch=1,EE,203B0030,extended,00000000 // nop
+patch=1,EE,203B0034,extended,34050002 // FMV target VSync = 2 (30 FPS)
+patch=1,EE,203B0038,extended,3C020044
+patch=1,EE,203B003C,extended,AC452CC8 // g_SysVsyncTargetInterval (0x00442CC8) = 1 or 2
+patch=1,EE,203B0040,extended,3C03003D
+patch=1,EE,203B0044,extended,A065941C // _rwDMAMinVsyncCnt (u8 at 0x003C941C) = 1 or 2
+patch=1,EE,203B0048,extended,08043F98 // tail-call original SYS_WaitVsync
+patch=1,EE,203B004C,extended,00000000 // nop
+patch=1,EE,203B0050,extended,3C03003B
+patch=1,EE,203B0054,extended,8C622808 // load g_ModVisualVsyncs
+patch=1,EE,203B0058,extended,1C400002
+patch=1,EE,203B005C,extended,3C170044 // restore $s7 = 0x00440000 expected by B3D_Main
+patch=1,EE,203B0060,extended,34020001 // clamp >= 1
+patch=1,EE,203B0064,extended,AEE2312C // g_B3D_ElapsedVsyncs (0x0044312C) = $v0
+patch=1,EE,203B0068,extended,08044EB8 // resume B3D_Main float conversion
+patch=1,EE,203B006C,extended,00000000 // nop
+patch=1,EE,203B0070,extended,12600009
+patch=1,EE,203B0074,extended,00139880 // $s3 *= 4
+patch=1,EE,203B0078,extended,2A630080
+patch=1,EE,203B007C,extended,14600002
+patch=1,EE,203B0080,extended,3407007F
+patch=1,EE,203B0084,extended,00E0982D // clamp max +127
+patch=1,EE,203B0088,extended,2A63FF81
+patch=1,EE,203B008C,extended,10600002
+patch=1,EE,203B0090,extended,2407FF81
+patch=1,EE,203B0094,extended,00E0982D // clamp min -127
+patch=1,EE,203B0098,extended,080412E4 // tail-call 0x00104B90
+patch=1,EE,203B009C,extended,00000000 // nop
+patch=1,EE,203B00A0,extended,3C08003D
+patch=1,EE,203B00A4,extended,8D09AB60 // g_DllListHead at 0x003CAB60
+patch=1,EE,203B00A8,extended,340C0010 // max list walk guard
+patch=1,EE,203B00AC,extended,11200014
+patch=1,EE,203B00B0,extended,340A0002
+patch=1,EE,203B00B4,extended,9122000C // node->status
+patch=1,EE,203B00B8,extended,144A004A // DLL still loading/relocating!
+patch=1,EE,203B00BC,extended,9123000F // node->unload_flag
+patch=1,EE,203B00C0,extended,14600048 // DLL unloading!
+patch=1,EE,203B00C4,extended,95220008 // node->dll_id
+patch=1,EE,203B00C8,extended,340B0005 // dll_id 5 = sub_dll (Camp Menu)
+patch=1,EE,203B00CC,extended,144B0007
+patch=1,EE,203B00D0,extended,8D2D0004 // node->dll_base
+patch=1,EE,203B00D4,extended,11A00005
+patch=1,EE,203B00D8,extended,3C030003
+patch=1,EE,203B00DC,extended,01A36821 // dll_base + 0x30000
+patch=1,EE,203B00E0,extended,8DA2E490 // *(u32*)(dll_base + 0x02E490) = SBMF_SubMainQuery
+patch=1,EE,203B00E4,extended,1440003F // Camp Menu open -> auto-drop to 1x!
+patch=1,EE,203B00E8,extended,00000000 // nop
+patch=1,EE,203B00EC,extended,258CFFFF
+patch=1,EE,203B00F0,extended,19800003
+patch=1,EE,203B00F4,extended,8D290000 // node = node->next
+patch=1,EE,203B00F8,extended,1000FFEC
+patch=1,EE,203B00FC,extended,00000000 // nop
+patch=1,EE,203B0100,extended,3C08003D
+patch=1,EE,203B0104,extended,91027941 // active ADXF_ReadNw count at 0x003D7941
+patch=1,EE,203B0108,extended,14400036
+patch=1,EE,203B010C,extended,91037942 // DISC stream busy flag at 0x003D7942
+patch=1,EE,203B0110,extended,14600034
+patch=1,EE,203B0114,extended,2509ABB0 // 0x003CABB0 = DISC 10-slot table
+patch=1,EE,203B0118,extended,340A000A
+patch=1,EE,203B011C,extended,340BFFFF
+patch=1,EE,203B0120,extended,95220000
+patch=1,EE,203B0124,extended,144B002F // slot != 0xFFFF -> async file read active!
+patch=1,EE,203B0128,extended,254AFFFF
+patch=1,EE,203B012C,extended,1D40FFFC
+patch=1,EE,203B0130,extended,25290014 // next 20-byte slot
+patch=1,EE,203B0134,extended,3C080044
+patch=1,EE,203B0138,extended,25092D4C // 0x00442D4C = SNDDRV bank state[0]
+patch=1,EE,203B013C,extended,340A0005
+patch=1,EE,203B0140,extended,95220000
+patch=1,EE,203B0144,extended,14400027 // sound bank/SE transfer active!
+patch=1,EE,203B0148,extended,254AFFFF
+patch=1,EE,203B014C,extended,1D40FFFC
+patch=1,EE,203B0150,extended,25290006
+patch=1,EE,203B0154,extended,3C080028
+patch=1,EE,203B0158,extended,8D096068 // LDBN task ptr
+patch=1,EE,203B015C,extended,11200007
+patch=1,EE,203B0160,extended,340B0001
+patch=1,EE,203B0164,extended,8D2A0004
+patch=1,EE,203B0168,extended,11400004
+patch=1,EE,203B016C,extended,00000000 // nop
+patch=1,EE,203B0170,extended,91420002
+patch=1,EE,203B0174,extended,104B001B // LDBN stage loading!
+patch=1,EE,203B0178,extended,00000000 // nop
+patch=1,EE,203B017C,extended,8D09606C // LDBA task ptr
+patch=1,EE,203B0180,extended,1120000A
+patch=1,EE,203B0184,extended,00000000 // nop
+patch=1,EE,203B0188,extended,8D2A0004
+patch=1,EE,203B018C,extended,11400007
+patch=1,EE,203B0190,extended,00000000 // nop
+patch=1,EE,203B0194,extended,91420001
+patch=1,EE,203B0198,extended,2442FFFF
+patch=1,EE,203B019C,extended,304200FF
+patch=1,EE,203B01A0,extended,2C420002 // state 1 or 2 = loading
+patch=1,EE,203B01A4,extended,1440000F
+patch=1,EE,203B01A8,extended,00000000 // nop
+patch=1,EE,203B01AC,extended,8D096074 // LDBE task ptr
+patch=1,EE,203B01B0,extended,1120000A
+patch=1,EE,203B01B4,extended,00000000 // nop
+patch=1,EE,203B01B8,extended,8D2A0004
+patch=1,EE,203B01BC,extended,11400007
+patch=1,EE,203B01C0,extended,00000000 // nop
+patch=1,EE,203B01C4,extended,91420001
+patch=1,EE,203B01C8,extended,2442FFFF
+patch=1,EE,203B01CC,extended,304200FF
+patch=1,EE,203B01D0,extended,2C420002 // state 1 or 2 = loading
+patch=1,EE,203B01D4,extended,14400003
+patch=1,EE,203B01D8,extended,00000000 // nop
+patch=1,EE,203B01DC,extended,03E00008
+patch=1,EE,203B01E0,extended,0000102D
+patch=1,EE,203B01E4,extended,03E00008
+patch=1,EE,203B01E8,extended,34020001
+patch=1,EE,203B01EC,extended,27BDFFA0
+patch=1,EE,203B01F0,extended,FFBF0010
+patch=1,EE,203B01F4,extended,7FB00020 // sq $s0, 32($sp)
+patch=1,EE,203B01F8,extended,7FB10030 // sq $s1, 48($sp)
+patch=1,EE,203B01FC,extended,7FB20040 // sq $s2, 64($sp)
+patch=1,EE,203B0200,extended,7FB30050 // sq $s3, 80($sp)
+patch=1,EE,203B0204,extended,0C048994
+patch=1,EE,203B0208,extended,34040001
+patch=1,EE,203B020C,extended,14400005
+patch=1,EE,203B0210,extended,34120001 // $s2 = font_id 1
+patch=1,EE,203B0214,extended,0C048994
+patch=1,EE,203B0218,extended,0000202D
+patch=1,EE,203B021C,extended,10400052 // no font loaded yet -> skip cleanly
+patch=1,EE,203B0220,extended,0000902D // $s2 = font_id 0
+patch=1,EE,203B0224,extended,0C048D40
+patch=1,EE,203B0228,extended,0000202D
+patch=1,EE,203B022C,extended,0C0488D6
+patch=1,EE,203B0230,extended,34040017 // camera 23 = standard 2D HUD camera
+patch=1,EE,203B0234,extended,0040882D // $s1 = old FSF camera
+patch=1,EE,203B0238,extended,0C048C96
+patch=1,EE,203B023C,extended,00000000 // nop
+patch=1,EE,203B0240,extended,0C049026
+patch=1,EE,203B0244,extended,3404FFFF
+patch=1,EE,203B0248,extended,0000202D
+patch=1,EE,203B024C,extended,0000282D
+patch=1,EE,203B0250,extended,34060200
+patch=1,EE,203B0254,extended,340701C0
+patch=1,EE,203B0258,extended,0C048B18
+patch=1,EE,203B025C,extended,0000402D
+patch=1,EE,203B0260,extended,0C048AF8
+patch=1,EE,203B0264,extended,0240202D
+patch=1,EE,203B0268,extended,0C048CC6
+patch=1,EE,203B026C,extended,340400FE
+patch=1,EE,203B0270,extended,3C10003B
+patch=1,EE,203B0274,extended,92022803
+patch=1,EE,203B0278,extended,14400012
+patch=1,EE,203B027C,extended,92032801
+patch=1,EE,203B0280,extended,2C640003
+patch=1,EE,203B0284,extended,0004180A
+patch=1,EE,203B0288,extended,00032140 // idx * 32
+patch=1,EE,203B028C,extended,36132000 // 0x003B2000
+patch=1,EE,203B0290,extended,02649821 // $s3 = string ptr
+patch=1,EE,203B0294,extended,3C1200B4
+patch=1,EE,203B0298,extended,3652FFFF
+patch=1,EE,203B029C,extended,1060001A
+patch=1,EE,203B02A0,extended,34040001
+patch=1,EE,203B02A4,extended,3C1200FF
+patch=1,EE,203B02A8,extended,3652E650
+patch=1,EE,203B02AC,extended,10640016
+patch=1,EE,203B02B0,extended,00000000 // nop
+patch=1,EE,203B02B4,extended,3C1200FF
+patch=1,EE,203B02B8,extended,36529B41
+patch=1,EE,203B02BC,extended,10000012
+patch=1,EE,203B02C0,extended,00000000 // nop
+patch=1,EE,203B02C4,extended,92032802
+patch=1,EE,203B02C8,extended,2C640003
+patch=1,EE,203B02CC,extended,0004180A
+patch=1,EE,203B02D0,extended,24640003 // indices 3, 4, 5
+patch=1,EE,203B02D4,extended,00042140 // idx * 32
+patch=1,EE,203B02D8,extended,36132000
+patch=1,EE,203B02DC,extended,02649821 // $s3 = string ptr
+patch=1,EE,203B02E0,extended,3C1200EB
+patch=1,EE,203B02E4,extended,3652EBEB
+patch=1,EE,203B02E8,extended,10600007
+patch=1,EE,203B02EC,extended,34040001
+patch=1,EE,203B02F0,extended,3C12006E
+patch=1,EE,203B02F4,extended,3652D7FF
+patch=1,EE,203B02F8,extended,10640003
+patch=1,EE,203B02FC,extended,00000000 // nop
+patch=1,EE,203B0300,extended,3C12006E
+patch=1,EE,203B0304,extended,3652FF82
+patch=1,EE,203B0308,extended,0000202D
+patch=1,EE,203B030C,extended,0000282D
+patch=1,EE,203B0310,extended,0000302D
+patch=1,EE,203B0314,extended,0C048C66
+patch=1,EE,203B0318,extended,340700DC
+patch=1,EE,203B031C,extended,34040011
+
+// --- Bloco de Inicializacao Unica #2 (200 instrucoes) ---
+patch=1,EE,E0C83F98,extended,0010E67C
+patch=1,EE,203B0320,extended,34050011
+patch=1,EE,203B0324,extended,0C0489C4
+patch=1,EE,203B0328,extended,0260302D
+patch=1,EE,203B032C,extended,00122402
+patch=1,EE,203B0330,extended,308400FF
+patch=1,EE,203B0334,extended,00122A02
+patch=1,EE,203B0338,extended,30A500FF
+patch=1,EE,203B033C,extended,324600FF
+patch=1,EE,203B0340,extended,0C048C66
+patch=1,EE,203B0344,extended,340700FF
+patch=1,EE,203B0348,extended,34040010
+patch=1,EE,203B034C,extended,34050010
+patch=1,EE,203B0350,extended,0C0489C4
+patch=1,EE,203B0354,extended,0260302D
+patch=1,EE,203B0358,extended,0C0488D6
+patch=1,EE,203B035C,extended,0220202D
+patch=1,EE,203B0360,extended,0C048D70
+patch=1,EE,203B0364,extended,0000202D
+patch=1,EE,203B0368,extended,DFBF0010
+patch=1,EE,203B036C,extended,7BB00020 // lq $s0, 32($sp)
+patch=1,EE,203B0370,extended,7BB10030 // lq $s1, 48($sp)
+patch=1,EE,203B0374,extended,7BB20040 // lq $s2, 64($sp)
+patch=1,EE,203B0378,extended,7BB30050 // lq $s3, 80($sp)
+patch=1,EE,203B037C,extended,03E00008
+patch=1,EE,203B0380,extended,27BD0060
+patch=1,EE,203B0384,extended,27BDFFB0
+patch=1,EE,203B0388,extended,FFBF0010
+patch=1,EE,203B038C,extended,7FB00020 // sq $s0, 32($sp)
+patch=1,EE,203B0390,extended,7FB10030 // sq $s1, 48($sp)
+patch=1,EE,203B0394,extended,7FB20040 // sq $s2, 64($sp)
+patch=1,EE,203B0398,extended,3C10003B // $s0 = 0x003B0000 base
+patch=1,EE,203B039C,extended,3C110044 // $s1 = 0x00440000 base
+patch=1,EE,203B03A0,extended,8E242CC0 // $a0 = g_SysHwVsyncCounter (60Hz)
+patch=1,EE,203B03A4,extended,92022800
+patch=1,EE,203B03A8,extended,14400014
+patch=1,EE,203B03AC,extended,34030001
+patch=1,EE,203B03B0,extended,A2032800
+patch=1,EE,203B03B4,extended,AE042804
+patch=1,EE,203B03B8,extended,AE042820
+patch=1,EE,203B03BC,extended,34030002
+patch=1,EE,203B03C0,extended,AE032808
+patch=1,EE,203B03C4,extended,3C08003D
+patch=1,EE,203B03C8,extended,8D12AB60 // g_DllListHead at 0x003CAB60
+patch=1,EE,203B03CC,extended,1240000A
+patch=1,EE,203B03D0,extended,34090002
+patch=1,EE,203B03D4,extended,9242000C // node->status
+patch=1,EE,203B03D8,extended,14490005
+patch=1,EE,203B03DC,extended,9243000F // node->unload_flag
+patch=1,EE,203B03E0,extended,14600003
+patch=1,EE,203B03E4,extended,00000000 // nop
+patch=1,EE,203B03E8,extended,0C0EC21E
+patch=1,EE,203B03EC,extended,0240202D
+patch=1,EE,203B03F0,extended,1000FFF6
+patch=1,EE,203B03F4,extended,8E520000 // node = node->next
+patch=1,EE,203B03F8,extended,8E242CC0 // reload $a0 = g_SysHwVsyncCounter
+patch=1,EE,203B03FC,extended,8E022820
+patch=1,EE,203B0400,extended,00829023 // $s2 = hw_delta
+patch=1,EE,203B0404,extended,AE042820
+patch=1,EE,203B0408,extended,9602280C
+patch=1,EE,203B040C,extended,10400004
+patch=1,EE,203B0410,extended,0052182B
+patch=1,EE,203B0414,extended,00521023
+patch=1,EE,203B0418,extended,0003100B // clamp timer >= 0
+patch=1,EE,203B041C,extended,A602280C
+patch=1,EE,203B0420,extended,3C08003D
+patch=1,EE,203B0424,extended,950998C8 // sys_padTrig2 at 0x003C98C8
+patch=1,EE,203B0428,extended,950A98C0 // sys_padTrig at 0x003C98C0
+patch=1,EE,203B042C,extended,950B98A8 // sys_pad at 0x003C98A8
+patch=1,EE,203B0430,extended,012A6025 // $t4 = any rising edge (trig2 | trig)
+patch=1,EE,203B0434,extended,016C5825 // $t3 = held | rising edge
+patch=1,EE,203B0438,extended,31620100
+patch=1,EE,203B043C,extended,10400020
+patch=1,EE,203B0440,extended,00000000 // nop
+patch=1,EE,203B0444,extended,31820008
+patch=1,EE,203B0448,extended,1040000D
+patch=1,EE,203B044C,extended,3405FEF7 // ~(0x0100 | 0x0008)
+patch=1,EE,203B0450,extended,01254824
+patch=1,EE,203B0454,extended,01455024
+patch=1,EE,203B0458,extended,A50998C8
+patch=1,EE,203B045C,extended,A50A98C0
+patch=1,EE,203B0460,extended,92022801
+patch=1,EE,203B0464,extended,24420001
+patch=1,EE,203B0468,extended,2C430003
+patch=1,EE,203B046C,extended,0003100A
+patch=1,EE,203B0470,extended,A2022801
+patch=1,EE,203B0474,extended,A2002803 // OSD kind = 0 (SPEED)
+patch=1,EE,203B0478,extended,34030078 // 120 VBlanks = 2.0s
+patch=1,EE,203B047C,extended,A603280C
+patch=1,EE,203B0480,extended,31820004
+patch=1,EE,203B0484,extended,1040000E
+patch=1,EE,203B0488,extended,3405FEFB // ~(0x0100 | 0x0004)
+patch=1,EE,203B048C,extended,01254824
+patch=1,EE,203B0490,extended,01455024
+patch=1,EE,203B0494,extended,A50998C8
+patch=1,EE,203B0498,extended,A50A98C0
+patch=1,EE,203B049C,extended,92022802
+patch=1,EE,203B04A0,extended,24420001
+patch=1,EE,203B04A4,extended,2C430003
+patch=1,EE,203B04A8,extended,0003100A
+patch=1,EE,203B04AC,extended,A2022802
+patch=1,EE,203B04B0,extended,34030001
+patch=1,EE,203B04B4,extended,A2032803 // OSD kind = 1 (ENC)
+patch=1,EE,203B04B8,extended,34030078
+patch=1,EE,203B04BC,extended,A603280C
+patch=1,EE,203B04C0,extended,3C020200
+patch=1,EE,203B04C4,extended,9042F5AE // CurrGameMode at 0x01FFF5AE
+patch=1,EE,203B04C8,extended,34030006
+patch=1,EE,203B04CC,extended,10430017
+patch=1,EE,203B04D0,extended,3C04004F
+patch=1,EE,203B04D4,extended,8082F681 // MOVIE_Main active at 0x004EF681
+patch=1,EE,203B04D8,extended,34030001
+patch=1,EE,203B04DC,extended,10430013
+patch=1,EE,203B04E0,extended,00000000 // nop
+patch=1,EE,203B04E4,extended,92022801
+patch=1,EE,203B04E8,extended,10400014
+patch=1,EE,203B04EC,extended,00000000 // nop
+patch=1,EE,203B04F0,extended,0C0EC028
+patch=1,EE,203B04F4,extended,00000000 // nop
+patch=1,EE,203B04F8,extended,14400010 // Auto-Guard or Camp Menu active -> safe 1x!
+patch=1,EE,203B04FC,extended,92032801
+patch=1,EE,203B0500,extended,34040001
+patch=1,EE,203B0504,extended,10640009
+patch=1,EE,203B0508,extended,A200280E
+patch=1,EE,203B050C,extended,9202280F
+patch=1,EE,203B0510,extended,38430001
+patch=1,EE,203B0514,extended,A203280F
+patch=1,EE,203B0518,extended,10400004
+patch=1,EE,203B051C,extended,34040004
+patch=1,EE,203B0520,extended,AE042808 // 2-tick frame -> visual VSyncs = 4
+patch=1,EE,203B0524,extended,10000020
+patch=1,EE,203B0528,extended,34120002 // $s2 = 2 ticks to execute
+patch=1,EE,203B052C,extended,34040002
+patch=1,EE,203B0530,extended,AE042808
+patch=1,EE,203B0534,extended,1000001C
+patch=1,EE,203B0538,extended,34120001 // $s2 = 1 tick to execute
+patch=1,EE,203B053C,extended,2E420002 // was hw_delta < 2 (true 60Hz VBlank)?
+patch=1,EE,203B0540,extended,1040FFFA // frame took >=2 VBlanks -> run 1 tick, vis=2
+patch=1,EE,203B0544,extended,34040001
+patch=1,EE,203B0548,extended,AE042808 // 60FPS 1x -> visual VSyncs = 1 every VBlank
+patch=1,EE,203B054C,extended,9202280E
+patch=1,EE,203B0550,extended,38430001
+patch=1,EE,203B0554,extended,A203280E
+patch=1,EE,203B0558,extended,10400013
+patch=1,EE,203B055C,extended,34120001 // even 60Hz frame -> 1 tick
+patch=1,EE,203B0560,extended,3C08003D
+patch=1,EE,203B0564,extended,950298C0 // sys_padTrig (0x003C98C0)
+patch=1,EE,203B0568,extended,96032810
+patch=1,EE,203B056C,extended,00621825
+patch=1,EE,203B0570,extended,A6032810
+patch=1,EE,203B0574,extended,950298C8 // sys_padTrig2 (0x003C98C8)
+patch=1,EE,203B0578,extended,96032812
+patch=1,EE,203B057C,extended,00621825
+patch=1,EE,203B0580,extended,A6032812
+patch=1,EE,203B0584,extended,950298A0 // sys_padRepeat (0x003C98A0)
+patch=1,EE,203B0588,extended,96032814
+patch=1,EE,203B058C,extended,00621825
+patch=1,EE,203B0590,extended,A6032814
+patch=1,EE,203B0594,extended,950298E8 // sys_padRepeat2 (0x003C98E8)
+patch=1,EE,203B0598,extended,96032816
+patch=1,EE,203B059C,extended,00621825
+patch=1,EE,203B05A0,extended,1000003C
+patch=1,EE,203B05A4,extended,A6032816
+patch=1,EE,203B05A8,extended,3C08003D
+patch=1,EE,203B05AC,extended,950298C0
+patch=1,EE,203B05B0,extended,96032810
+patch=1,EE,203B05B4,extended,00431025
+patch=1,EE,203B05B8,extended,A50298C0
+patch=1,EE,203B05BC,extended,A6002810
+patch=1,EE,203B05C0,extended,950298C8
+patch=1,EE,203B05C4,extended,96032812
+patch=1,EE,203B05C8,extended,00431025
+patch=1,EE,203B05CC,extended,A50298C8
+patch=1,EE,203B05D0,extended,A6002812
+patch=1,EE,203B05D4,extended,950298A0
+patch=1,EE,203B05D8,extended,96032814
+patch=1,EE,203B05DC,extended,00431025
+patch=1,EE,203B05E0,extended,A50298A0
+patch=1,EE,203B05E4,extended,A6002814
+patch=1,EE,203B05E8,extended,950298E8
+patch=1,EE,203B05EC,extended,96032816
+patch=1,EE,203B05F0,extended,00431025
+patch=1,EE,203B05F4,extended,A50298E8
+patch=1,EE,203B05F8,extended,A6002816
+patch=1,EE,203B05FC,extended,34020002
+patch=1,EE,203B0600,extended,AE22312C // 0x0044312C = 2 during SYS_TaskMain
+patch=1,EE,203B0604,extended,8E032804
+patch=1,EE,203B0608,extended,24630002
+patch=1,EE,203B060C,extended,AE032804
+patch=1,EE,203B0610,extended,0C04887E // unlink previous tick FSF glyphs
+patch=1,EE,203B0614,extended,00000000 // nop
+patch=1,EE,203B0618,extended,0C043C7E // run game logic tick 1
+patch=1,EE,203B061C,extended,00000000 // nop
+patch=1,EE,203B0620,extended,34020002
+patch=1,EE,203B0624,extended,16420016
+patch=1,EE,203B0628,extended,00000000 // nop
+patch=1,EE,203B062C,extended,0C0EC028
+patch=1,EE,203B0630,extended,00000000 // nop
+patch=1,EE,203B0634,extended,10400004
+patch=1,EE,203B0638,extended,34040002
+patch=1,EE,203B063C,extended,AE042808 // async load started on tick 1 -> cancel tick 2 & set vis=2
+
+// --- Bloco de Inicializacao Unica #3 (200 instrucoes) ---
+patch=1,EE,E0C83F98,extended,0010E67C
+patch=1,EE,203B0640,extended,1000000F
+patch=1,EE,203B0644,extended,00000000 // nop
+patch=1,EE,203B0648,extended,3C08003D
+patch=1,EE,203B064C,extended,A50098C0 // sys_padTrig = 0
+patch=1,EE,203B0650,extended,A50098C8 // sys_padTrig2 = 0
+patch=1,EE,203B0654,extended,A50098A0 // sys_padRepeat = 0
+patch=1,EE,203B0658,extended,A50098E8 // sys_padRepeat2 = 0
+patch=1,EE,203B065C,extended,34020002
+patch=1,EE,203B0660,extended,AE22312C // 0x0044312C = 2 during SYS_TaskMain
+patch=1,EE,203B0664,extended,8E032804
+patch=1,EE,203B0668,extended,24630002
+patch=1,EE,203B066C,extended,AE032804
+patch=1,EE,203B0670,extended,0C04887E // unlink tick 1 FSF glyphs before tick 2
+patch=1,EE,203B0674,extended,00000000 // nop
+patch=1,EE,203B0678,extended,0C043C7E // run game logic tick 2
+patch=1,EE,203B067C,extended,00000000 // nop
+patch=1,EE,203B0680,extended,9602280C
+patch=1,EE,203B0684,extended,10400003
+patch=1,EE,203B0688,extended,00000000 // nop
+patch=1,EE,203B068C,extended,0C0EC07B
+patch=1,EE,203B0690,extended,00000000 // nop
+patch=1,EE,203B0694,extended,DFBF0010
+patch=1,EE,203B0698,extended,7BB00020 // lq $s0, 32($sp)
+patch=1,EE,203B069C,extended,7BB10030 // lq $s1, 48($sp)
+patch=1,EE,203B06A0,extended,7BB20040 // lq $s2, 64($sp)
+patch=1,EE,203B06A4,extended,03E00008
+patch=1,EE,203B06A8,extended,27BD0050
+patch=1,EE,203B06AC,extended,3C03003B
+patch=1,EE,203B06B0,extended,90622802
+patch=1,EE,203B06B4,extended,10400007
+patch=1,EE,203B06B8,extended,34050001
+patch=1,EE,203B06BC,extended,10450003 // mode 1 (NO ENC) -> return 1 (suppress)
+patch=1,EE,203B06C0,extended,00000000 // nop
+patch=1,EE,203B06C4,extended,03E00008
+patch=1,EE,203B06C8,extended,0000102D
+patch=1,EE,203B06CC,extended,03E00008
+patch=1,EE,203B06D0,extended,34020001
+patch=1,EE,203B06D4,extended,8C632818 // EncSuppressChk + 8
+patch=1,EE,203B06D8,extended,3C020200 // original word 0: lui $v0, 0x200
+patch=1,EE,203B06DC,extended,00600008
+patch=1,EE,203B06E0,extended,8442FD1C // original word 1: lh $v0, -740($v0)
+patch=1,EE,203B06E4,extended,AFA20000 // original instruction: sw $v0, 0($sp)
+patch=1,EE,203B06E8,extended,3C08003B
+patch=1,EE,203B06EC,extended,91082802
+patch=1,EE,203B06F0,extended,34090001
+patch=1,EE,203B06F4,extended,15090007
+patch=1,EE,203B06F8,extended,00000000 // nop
+patch=1,EE,203B06FC,extended,AE40006C // time encounter timer = 0.0f
+patch=1,EE,203B0700,extended,AE400070 // walk distance = 0.0f
+patch=1,EE,203B0704,extended,A6400078 // step count = 0
+patch=1,EE,203B0708,extended,AE400080 // enc flag 1 = 0
+patch=1,EE,203B070C,extended,AE400084 // enc flag 2 = 0
+patch=1,EE,203B0710,extended,AE400088 // FMAP_EncountRitsu radar = 0.0f
+patch=1,EE,203B0714,extended,03E00008
+patch=1,EE,203B0718,extended,00000000 // nop
+patch=1,EE,203B071C,extended,0220A82D // original instruction: daddu $s5, $s1, $zero
+patch=1,EE,203B0720,extended,3C03003B
+patch=1,EE,203B0724,extended,90622802
+patch=1,EE,203B0728,extended,1040001A
+patch=1,EE,203B072C,extended,34040001
+patch=1,EE,203B0730,extended,1444000A
+patch=1,EE,203B0734,extended,00000000 // nop
+patch=1,EE,203B0738,extended,AE40006C
+patch=1,EE,203B073C,extended,AE400070
+patch=1,EE,203B0740,extended,A6400078
+patch=1,EE,203B0744,extended,AE400080
+patch=1,EE,203B0748,extended,AE400084
+patch=1,EE,203B074C,extended,AE400088
+patch=1,EE,203B0750,extended,44800000
+patch=1,EE,203B0754,extended,03E00008
+patch=1,EE,203B0758,extended,44800800
+patch=1,EE,203B075C,extended,8222001B // FMAP_glb_encount[27]
+patch=1,EE,203B0760,extended,2403FFFF
+patch=1,EE,203B0764,extended,1043000B // no encounters in this zone -> do nothing
+patch=1,EE,203B0768,extended,8E44007C // player step distance float bits
+patch=1,EE,203B076C,extended,3C053C23 // 0.01f threshold
+patch=1,EE,203B0770,extended,34A5D70A
+patch=1,EE,203B0774,extended,00A4102A // moved > 0.01f this tick?
+patch=1,EE,203B0778,extended,10400006
+patch=1,EE,203B077C,extended,00000000 // nop
+patch=1,EE,203B0780,extended,3C024270 // 60.0f (>= 50.0f 1-step unit)
+patch=1,EE,203B0784,extended,44820000
+patch=1,EE,203B0788,extended,44800800
+patch=1,EE,203B078C,extended,3C0342C8 // 100.0f radar
+patch=1,EE,203B0790,extended,AE430088
+patch=1,EE,203B0794,extended,03E00008
+patch=1,EE,203B0798,extended,00000000 // nop
+patch=1,EE,203B079C,extended,3C03003B
+patch=1,EE,203B07A0,extended,90622802
+patch=1,EE,203B07A4,extended,10400007
+patch=1,EE,203B07A8,extended,34080001
+patch=1,EE,203B07AC,extended,10480003
+patch=1,EE,203B07B0,extended,00000000 // nop
+patch=1,EE,203B07B4,extended,03E00008
+patch=1,EE,203B07B8,extended,0000102D
+patch=1,EE,203B07BC,extended,03E00008
+patch=1,EE,203B07C0,extended,34027FFF
+patch=1,EE,203B07C4,extended,8C63281C
+patch=1,EE,203B07C8,extended,00600008
+patch=1,EE,203B07CC,extended,00000000 // nop
+patch=1,EE,203B07D0,extended,3C04003B
+patch=1,EE,203B07D4,extended,90842802
+patch=1,EE,203B07D8,extended,34050002
+patch=1,EE,203B07DC,extended,1485000A
+patch=1,EE,203B07E0,extended,340200C8 // restore $v0 = 200 expected at +0x0067A4
+patch=1,EE,203B07E4,extended,2464FFFF
+patch=1,EE,203B07E8,extended,2C8400C8 // 1 <= drop_rate <= 200?
+patch=1,EE,203B07EC,extended,10800006
+patch=1,EE,203B07F0,extended,96440000 // item_id at 0($s2)
+patch=1,EE,203B07F4,extended,10800004
+patch=1,EE,203B07F8,extended,3405FFFF
+patch=1,EE,203B07FC,extended,10850002
+patch=1,EE,203B0800,extended,00000000 // nop
+patch=1,EE,203B0804,extended,340300C8 // promote valid item drop slot to 100% (200/200)!
+patch=1,EE,203B0808,extended,03E00008
+patch=1,EE,203B080C,extended,00000000 // nop
+patch=1,EE,203B0810,extended,8E830018 // full 32-bit battle EXP
+patch=1,EE,203B0814,extended,8E82001C // full 32-bit battle Gold
+patch=1,EE,203B0818,extended,3C08003B
+patch=1,EE,203B081C,extended,91082802
+patch=1,EE,203B0820,extended,34090002
+patch=1,EE,203B0824,extended,1509000B
+patch=1,EE,203B0828,extended,00000000 // nop
+patch=1,EE,203B082C,extended,3C0A000F // max 999,999 cap
+patch=1,EE,203B0830,extended,354A423F
+patch=1,EE,203B0834,extended,00031880 // EXP * 4
+patch=1,EE,203B0838,extended,0143582A
+patch=1,EE,203B083C,extended,014B180B
+patch=1,EE,203B0840,extended,AE830018
+patch=1,EE,203B0844,extended,00021080 // Gold * 4
+patch=1,EE,203B0848,extended,0142582A
+patch=1,EE,203B084C,extended,014B100B
+patch=1,EE,203B0850,extended,AE82001C
+patch=1,EE,203B0854,extended,3C080001 // 0x10000
+patch=1,EE,203B0858,extended,340AFFFF
+patch=1,EE,203B085C,extended,0068482B
+patch=1,EE,203B0860,extended,0149180A // clamp UI EXP <= 65535
+patch=1,EE,203B0864,extended,A7A3002E
+patch=1,EE,203B0868,extended,0048482B
+patch=1,EE,203B086C,extended,0149100A // clamp UI Gold <= 65535
+patch=1,EE,203B0870,extended,03E00008
+patch=1,EE,203B0874,extended,A7A2002C
+patch=1,EE,203B0878,extended,27BDFFD0
+patch=1,EE,203B087C,extended,FFBF0010
+patch=1,EE,203B0880,extended,7FB00020 // sq $s0, 32($sp)
+patch=1,EE,203B0884,extended,8C900004 // $s0 = dll_base
+patch=1,EE,203B0888,extended,120000A7
+patch=1,EE,203B088C,extended,94830008 // $v1 = dll_id
+patch=1,EE,203B0890,extended,34040002
+patch=1,EE,203B0894,extended,1464002F
+patch=1,EE,203B0898,extended,00000000 // nop
+patch=1,EE,203B089C,extended,3C080008
+patch=1,EE,203B08A0,extended,02084021
+patch=1,EE,203B08A4,extended,AD000DB0 // bmap EVMA_msg_speed[0]=0.0f
+patch=1,EE,203B08A8,extended,3C080008
+patch=1,EE,203B08AC,extended,02084021
+patch=1,EE,203B08B0,extended,AD000DB4 // bmap EVMA_msg_speed[1]=0.0f
+patch=1,EE,203B08B4,extended,3C080008
+patch=1,EE,203B08B8,extended,02084021
+patch=1,EE,203B08BC,extended,AD000DB8 // bmap EVMA_msg_speed[2]=0.0f
+patch=1,EE,203B08C0,extended,3C080006
+patch=1,EE,203B08C4,extended,02084021
+patch=1,EE,203B08C8,extended,3C09E600 // bmap MSF_MsgCreate restore swc1 $f0, 108($s0)
+patch=1,EE,203B08CC,extended,3529006C
+patch=1,EE,203B08D0,extended,AD09D8CC
+patch=1,EE,203B08D4,extended,3409AD68
+patch=1,EE,203B08D8,extended,02094821
+patch=1,EE,203B08DC,extended,3C0A003B
+patch=1,EE,203B08E0,extended,AD492818 // bmap EncSuppressChk + 8
+patch=1,EE,203B08E4,extended,3409A150
+patch=1,EE,203B08E8,extended,02094821
+patch=1,EE,203B08EC,extended,AD49281C // bmap GetStepThreshold
+patch=1,EE,203B08F0,extended,3C080001
+patch=1,EE,203B08F4,extended,02084021
+patch=1,EE,203B08F8,extended,3C09080E // bmap EncSuppressHook (hi)
+patch=1,EE,203B08FC,extended,3529C1AB // bmap EncSuppressHook (lo)
+patch=1,EE,203B0900,extended,AD09AD60 // bmap EncSuppressHook (store)
+patch=1,EE,203B0904,extended,3C080001
+patch=1,EE,203B0908,extended,02084021
+patch=1,EE,203B090C,extended,AD00AD64 // bmap EncSuppressHook delay nop
+patch=1,EE,203B0910,extended,3C080001
+patch=1,EE,203B0914,extended,02084021
+patch=1,EE,203B0918,extended,3C090C0E // bmap EncHeadHook (hi)
+patch=1,EE,203B091C,extended,3529C1B9 // bmap EncHeadHook (lo)
+patch=1,EE,203B0920,extended,AD09A260 // bmap EncHeadHook (store)
+patch=1,EE,203B0924,extended,3C080001
+patch=1,EE,203B0928,extended,02084021
+patch=1,EE,203B092C,extended,3C090C0E // bmap EncWalkHook (hi)
+patch=1,EE,203B0930,extended,3529C1C7 // bmap EncWalkHook (lo)
+patch=1,EE,203B0934,extended,AD09AB9C // bmap EncWalkHook (store)
+patch=1,EE,203B0938,extended,3C080001
+patch=1,EE,203B093C,extended,02084021
+patch=1,EE,203B0940,extended,3C090C0E // bmap EncStepRollHook (hi)
+patch=1,EE,203B0944,extended,3529C1E7 // bmap EncStepRollHook (lo)
+patch=1,EE,203B0948,extended,AD09ABE0 // bmap EncStepRollHook (store)
+patch=1,EE,203B094C,extended,10000072
+patch=1,EE,203B0950,extended,00000000 // nop
+patch=1,EE,203B0954,extended,34040003
+patch=1,EE,203B0958,extended,1464002F
+patch=1,EE,203B095C,extended,00000000 // nop
+
+// --- Bloco de Inicializacao Unica #4 (178 instrucoes) ---
+patch=1,EE,E0B23F98,extended,0010E67C
+patch=1,EE,203B0960,extended,3C080007
+patch=1,EE,203B0964,extended,02084021
+patch=1,EE,203B0968,extended,AD001B58 // fmap EVMA_msg_speed[0]=0.0f
+patch=1,EE,203B096C,extended,3C080007
+patch=1,EE,203B0970,extended,02084021
+patch=1,EE,203B0974,extended,AD001B5C // fmap EVMA_msg_speed[1]=0.0f
+patch=1,EE,203B0978,extended,3C080007
+patch=1,EE,203B097C,extended,02084021
+patch=1,EE,203B0980,extended,AD001B60 // fmap EVMA_msg_speed[2]=0.0f
+patch=1,EE,203B0984,extended,3C080005
+patch=1,EE,203B0988,extended,02084021
+patch=1,EE,203B098C,extended,3C09E600 // fmap MSF_MsgCreate restore swc1 $f0, 108($s0)
+patch=1,EE,203B0990,extended,3529006C
+patch=1,EE,203B0994,extended,AD092BAC
+patch=1,EE,203B0998,extended,34096A30
+patch=1,EE,203B099C,extended,02094821
+patch=1,EE,203B09A0,extended,3C0A003B
+patch=1,EE,203B09A4,extended,AD492818 // fmap EncSuppressChk + 8
+patch=1,EE,203B09A8,extended,34095E18
+patch=1,EE,203B09AC,extended,02094821
+patch=1,EE,203B09B0,extended,AD49281C // fmap GetStepThreshold
+patch=1,EE,203B09B4,extended,3C080000
+patch=1,EE,203B09B8,extended,02084021
+patch=1,EE,203B09BC,extended,3C09080E // fmap EncSuppressHook (hi)
+patch=1,EE,203B09C0,extended,3529C1AB // fmap EncSuppressHook (lo)
+patch=1,EE,203B09C4,extended,AD096A28 // fmap EncSuppressHook (store)
+patch=1,EE,203B09C8,extended,3C080000
+patch=1,EE,203B09CC,extended,02084021
+patch=1,EE,203B09D0,extended,AD006A2C // fmap EncSuppressHook delay nop
+patch=1,EE,203B09D4,extended,3C080000
+patch=1,EE,203B09D8,extended,02084021
+patch=1,EE,203B09DC,extended,3C090C0E // fmap EncHeadHook (hi)
+patch=1,EE,203B09E0,extended,3529C1B9 // fmap EncHeadHook (lo)
+patch=1,EE,203B09E4,extended,AD095F28 // fmap EncHeadHook (store)
+patch=1,EE,203B09E8,extended,3C080000
+patch=1,EE,203B09EC,extended,02084021
+patch=1,EE,203B09F0,extended,3C090C0E // fmap EncWalkHook (hi)
+patch=1,EE,203B09F4,extended,3529C1C7 // fmap EncWalkHook (lo)
+patch=1,EE,203B09F8,extended,AD096864 // fmap EncWalkHook (store)
+patch=1,EE,203B09FC,extended,3C080000
+patch=1,EE,203B0A00,extended,02084021
+patch=1,EE,203B0A04,extended,3C090C0E // fmap EncStepRollHook (hi)
+patch=1,EE,203B0A08,extended,3529C1E7 // fmap EncStepRollHook (lo)
+patch=1,EE,203B0A0C,extended,AD0968A8 // fmap EncStepRollHook (store)
+patch=1,EE,203B0A10,extended,10000041
+patch=1,EE,203B0A14,extended,00000000 // nop
+patch=1,EE,203B0A18,extended,34040004
+patch=1,EE,203B0A1C,extended,1464002D
+patch=1,EE,203B0A20,extended,00000000 // nop
+patch=1,EE,203B0A24,extended,3C080008
+patch=1,EE,203B0A28,extended,02084021
+patch=1,EE,203B0A2C,extended,AD006728 // sento EVMA_msg_speed[0]=0.0f
+patch=1,EE,203B0A30,extended,3C080008
+patch=1,EE,203B0A34,extended,02084021
+patch=1,EE,203B0A38,extended,AD00672C // sento EVMA_msg_speed[1]=0.0f
+patch=1,EE,203B0A3C,extended,3C080008
+patch=1,EE,203B0A40,extended,02084021
+patch=1,EE,203B0A44,extended,AD006730 // sento EVMA_msg_speed[2]=0.0f
+patch=1,EE,203B0A48,extended,3C080005
+patch=1,EE,203B0A4C,extended,02084021
+patch=1,EE,203B0A50,extended,3C09E600 // sento MSF_MsgCreate restore swc1 $f0, 108($s0)
+patch=1,EE,203B0A54,extended,3529006C
+patch=1,EE,203B0A58,extended,AD09F2BC
+patch=1,EE,203B0A5C,extended,3C080001
+patch=1,EE,203B0A60,extended,02084021
+patch=1,EE,203B0A64,extended,3C092843 // sento victory wait 80 -> 20
+patch=1,EE,203B0A68,extended,35290014
+patch=1,EE,203B0A6C,extended,AD099024
+patch=1,EE,203B0A70,extended,3C080001
+patch=1,EE,203B0A74,extended,02084021
+patch=1,EE,203B0A78,extended,3C092843 // sento victory wait 40 -> 10
+patch=1,EE,203B0A7C,extended,3529000A
+patch=1,EE,203B0A80,extended,AD099064
+patch=1,EE,203B0A84,extended,3C080000
+patch=1,EE,203B0A88,extended,02084021
+patch=1,EE,203B0A8C,extended,3C090C0E // sento DropHook (hi)
+patch=1,EE,203B0A90,extended,3529C1F4 // sento DropHook (lo)
+patch=1,EE,203B0A94,extended,AD09679C // sento DropHook (store)
+patch=1,EE,203B0A98,extended,3C080000
+patch=1,EE,203B0A9C,extended,02084021
+patch=1,EE,203B0AA0,extended,3C098C43 // sento DropHook delay: lw $v1, 16($v0)
+patch=1,EE,203B0AA4,extended,35290010
+patch=1,EE,203B0AA8,extended,AD0967A0
+patch=1,EE,203B0AAC,extended,3C080001
+patch=1,EE,203B0AB0,extended,02084021
+patch=1,EE,203B0AB4,extended,3C090C0E // sento ExpGoldHook (hi)
+patch=1,EE,203B0AB8,extended,3529C204 // sento ExpGoldHook (lo)
+patch=1,EE,203B0ABC,extended,AD099164 // sento ExpGoldHook (store)
+patch=1,EE,203B0AC0,extended,3C080001
+patch=1,EE,203B0AC4,extended,02084021
+patch=1,EE,203B0AC8,extended,AD009168 // sento ExpGoldHook delay nop
+patch=1,EE,203B0ACC,extended,10000012
+patch=1,EE,203B0AD0,extended,00000000 // nop
+patch=1,EE,203B0AD4,extended,34040006
+patch=1,EE,203B0AD8,extended,14640013
+patch=1,EE,203B0ADC,extended,00000000 // nop
+patch=1,EE,203B0AE0,extended,3C080007
+patch=1,EE,203B0AE4,extended,02084021
+patch=1,EE,203B0AE8,extended,AD007F80 // tmap EVMA_msg_speed[0]=0.0f
+patch=1,EE,203B0AEC,extended,3C080007
+patch=1,EE,203B0AF0,extended,02084021
+patch=1,EE,203B0AF4,extended,AD007F84 // tmap EVMA_msg_speed[1]=0.0f
+patch=1,EE,203B0AF8,extended,3C080007
+patch=1,EE,203B0AFC,extended,02084021
+patch=1,EE,203B0B00,extended,AD007F88 // tmap EVMA_msg_speed[2]=0.0f
+patch=1,EE,203B0B04,extended,3C080004
+patch=1,EE,203B0B08,extended,02084021
+patch=1,EE,203B0B0C,extended,3C09E600 // tmap MSF_MsgCreate restore swc1 $f0, 108($s0)
+patch=1,EE,203B0B10,extended,3529006C
+patch=1,EE,203B0B14,extended,AD0946D4
+patch=1,EE,203B0B18,extended,0C09E4E8 // FlushCache(0) = writeback D-cache
+patch=1,EE,203B0B1C,extended,0000202D
+patch=1,EE,203B0B20,extended,0C09E4E8 // FlushCache(2) = invalidate I-cache
+patch=1,EE,203B0B24,extended,34040002
+patch=1,EE,203B0B28,extended,DFBF0010
+patch=1,EE,203B0B2C,extended,7BB00020 // lq $s0, 32($sp)
+patch=1,EE,203B0B30,extended,03E00008
+patch=1,EE,203B0B34,extended,27BD0030
+patch=1,EE,203B0B38,extended,27BDFFD0
+patch=1,EE,203B0B3C,extended,FFBF0010
+patch=1,EE,203B0B40,extended,7FB20020 // sq $s2, 32($sp)
+patch=1,EE,203B0B44,extended,0C04C8C6 // call original snDllLoaded
+patch=1,EE,203B0B48,extended,00000000 // nop
+patch=1,EE,203B0B4C,extended,14400004 // relocation failed -> return error code
+patch=1,EE,203B0B50,extended,0040902D // $s2 = 0
+patch=1,EE,203B0B54,extended,0C0EC21E
+patch=1,EE,203B0B58,extended,0220202D
+patch=1,EE,203B0B5C,extended,0240102D // return 0
+patch=1,EE,203B0B60,extended,DFBF0010
+patch=1,EE,203B0B64,extended,7BB20020 // lq $s2, 32($sp)
+patch=1,EE,203B0B68,extended,03E00008
+patch=1,EE,203B0B6C,extended,27BD0030
+patch=1,EE,203B2000,extended,45455053 // OSD "SPEED: 1X (60FPS)"
+patch=1,EE,203B2004,extended,31203A44
+patch=1,EE,203B2008,extended,36282058
+patch=1,EE,203B200C,extended,53504630
+patch=1,EE,203B2010,extended,00000029
+patch=1,EE,203B2020,extended,45455053 // OSD "SPEED: 2X TURBO"
+patch=1,EE,203B2024,extended,32203A44
+patch=1,EE,203B2028,extended,55542058
+patch=1,EE,203B202C,extended,004F4252
+patch=1,EE,203B2040,extended,45455053 // OSD "SPEED: 3X TURBO"
+patch=1,EE,203B2044,extended,33203A44
+patch=1,EE,203B2048,extended,55542058
+patch=1,EE,203B204C,extended,004F4252
+patch=1,EE,203B2060,extended,3A434E45 // OSD "ENC: NORMAL"
+patch=1,EE,203B2064,extended,524F4E20
+patch=1,EE,203B2068,extended,004C414D
+patch=1,EE,203B2080,extended,3A434E45 // OSD "ENC: NO ENCOUNTERS"
+patch=1,EE,203B2084,extended,204F4E20
+patch=1,EE,203B2088,extended,4F434E45
+patch=1,EE,203B208C,extended,45544E55
+patch=1,EE,203B2090,extended,00005352
+patch=1,EE,203B20A0,extended,3A434E45 // OSD "ENC: GRIND 4X"
+patch=1,EE,203B20A4,extended,49524720
+patch=1,EE,203B20A8,extended,3420444E
+patch=1,EE,203B20AC,extended,00000058
+patch=1,EE,20112C08,extended,10000037 // SNDDRV sceMSIn_PutMsg full -> retry next VBlank
+patch=1,EE,20112C58,extended,10000023 // SNDDRV sceMSIn_PutHsMsg #1 full -> retry next VBlank
+patch=1,EE,20112CB8,extended,1000000B // SNDDRV sceMSIn_PutHsMsg #2 full -> retry next VBlank
+patch=1,EE,2010B790,extended,10000038 // DISC_Main ADXF_OpenAfs==0 -> retry next VBlank
+patch=1,EE,2010F168,extended,03E00008 // SYS_GetVsyncVal: jr $ra
+patch=1,EE,2010F16C,extended,24020002 // SYS_GetVsyncVal: return 2
+patch=1,EE,2010F178,extended,3C03003B // SYS_GetVsyncCnt: lui $v1, 0x003B
+patch=1,EE,2010F17C,extended,8C622804 // SYS_GetVsyncCnt: lw $v0, g_SimVsyncCounter
+patch=1,EE,201009D4,extended,3C030044 // GAME_Main PlayTime: read raw 60Hz 0x00442CC0 (hi)
+patch=1,EE,201009D8,extended,8C622CC0 // GAME_Main PlayTime: read raw 60Hz 0x00442CC0 (lo)
+patch=1,EE,20100AE8,extended,3C030044 // GAME_PlayTimeStart: read raw 60Hz 0x00442CC0 (hi)
+patch=1,EE,20100AEC,extended,8C622CC0 // GAME_PlayTimeStart: read raw 60Hz 0x00442CC0 (lo)
+patch=1,EE,20113AA8,extended,080EC014 // B3D_Main: j Mod_B3D_SetElapsed
+patch=1,EE,20113AAC,extended,00000000 // B3D_Main: delay nop
+patch=1,EE,20104DC4,extended,0C0EC01C // FUN_00104D98: 4x fade step
+patch=1,EE,20101D58,extended,AE200058 // SWEF battle swirl peel step 1 -> 1 tick
+patch=1,EE,20101FEC,extended,AE200058 // SWEF battle swirl peel step 2 -> 1 tick
+patch=1,EE,201066B8,extended,0C0EC2CE // SYS_DLLMain: jal Mod_OnDllLoaded
+patch=1,EE,2010E6AC,extended,00000000 // SYS_MainLoop: move FSF_Man inside Mod_RunFrameLogic
+patch=1,EE,2010E6B4,extended,0C0EC0E1 // SYS_MainLoop: jal Mod_RunFrameLogic
+patch=1,EE,2010E67C,extended,0C0EC002 // SYS_MainLoop: jal Mod_WaitVsync (GUARD TRIGGER)
+

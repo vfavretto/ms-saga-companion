@@ -1,0 +1,199 @@
+[
+  {
+    "id": "tristan",
+    "name": "Tristan",
+    "role": "Main Protagonist",
+    "description": "Young pilot seeking revenge for the destroyed orphanage. Balanced all-around melee and shooting fighter.",
+    "skills": [
+      {
+        "name": "Sonic Storm",
+        "level": 1,
+        "en_cost": 2,
+        "effect": "Melee attack that damages all enemies in line."
+      },
+      {
+        "name": "Snipe",
+        "level": 10,
+        "en_cost": 3,
+        "effect": "Precision shot with elevated critical hit rate."
+      },
+      {
+        "name": "Charge Up",
+        "level": 20,
+        "en_cost": 4,
+        "effect": "Boosts all attack power by 50% for next turn."
+      },
+      {
+        "name": "Final Impact",
+        "level": 35,
+        "en_cost": 6,
+        "effect": "Massive single-target burst attack."
+      }
+    ],
+    "strengths": [
+      "Balanced melee and ranged",
+      "High HP growth",
+      "Versatile boost attacks"
+    ],
+    "join_chapter": "Prologue"
+  },
+  {
+    "id": "fritz",
+    "name": "Fritz",
+    "role": "Mechanic & Tactician",
+    "description": "Tristan's childhood friend and engineering genius. High tactical intellect and defensive options.",
+    "skills": [
+      {
+        "name": "Repair Unit",
+        "level": 1,
+        "en_cost": 2,
+        "effect": "Restores 35% HP to a target Mobile Suit."
+      },
+      {
+        "name": "Smoke Screen",
+        "level": 8,
+        "en_cost": 2,
+        "effect": "Increases party evasion by 30% for 3 turns."
+      },
+      {
+        "name": "System Hack",
+        "level": 18,
+        "en_cost": 4,
+        "effect": "Inflicts Stun/Overheat on enemy machine."
+      },
+      {
+        "name": "Grand Repair",
+        "level": 30,
+        "en_cost": 6,
+        "effect": "Restores 60% HP and cures status ailments for whole party."
+      }
+    ],
+    "strengths": [
+      "Essential healer",
+      "High defense and EN efficiency",
+      "Crucial debuffs"
+    ],
+    "join_chapter": "Prologue"
+  },
+  {
+    "id": "aeon",
+    "name": "Aeon",
+    "role": "Mysterious Psychic / Newtype",
+    "description": "A calm girl discovered inside the ancient G-System capsule. Possesses rare resonance with ancient Psycommu weaponry.",
+    "skills": [
+      {
+        "name": "Mind Field",
+        "level": 1,
+        "en_cost": 2,
+        "effect": "Deploys a barrier blocking energy beam attacks."
+      },
+      {
+        "name": "Psycommu Link",
+        "level": 14,
+        "en_cost": 4,
+        "effect": "Guarantees 100% accuracy and increases Funnel damage."
+      },
+      {
+        "name": "Miracle Light",
+        "level": 28,
+        "en_cost": 5,
+        "effect": "Revives a fallen Mobile Suit with 50% HP."
+      }
+    ],
+    "strengths": [
+      "Best Funnel/Psycommu user",
+      "Beam defense shield",
+      "High speed"
+    ],
+    "join_chapter": "Chapter 2 (Mt. Heidi)"
+  },
+  {
+    "id": "tremmie",
+    "name": "Tremmie",
+    "role": "Rebel Guerrilla Ace",
+    "description": "Fierce guerrilla pilot from North America with blistering speed and deadly rapid-fire technique.",
+    "skills": [
+      {
+        "name": "Barrage Shot",
+        "level": 1,
+        "en_cost": 3,
+        "effect": "Fires a rapid 6-hit Gatling burst at random foes."
+      },
+      {
+        "name": "Quick Step",
+        "level": 12,
+        "en_cost": 2,
+        "effect": "Grants high dodge rate and immediate extra initiative."
+      },
+      {
+        "name": "Gatling Rain",
+        "level": 26,
+        "en_cost": 5,
+        "effect": "Unleashes heavy projectile rain on all enemies."
+      }
+    ],
+    "strengths": [
+      "Extreme agility",
+      "High hit count for breaking enemy shields",
+      "Rapid EN recovery"
+    ],
+    "join_chapter": "Chapter 3 (Dark Continent)"
+  },
+  {
+    "id": "gavane",
+    "name": "Gavane",
+    "role": "Veteran Mercenary / Heavy Gunner",
+    "description": "Hard-boiled veteran pilot specializing in heavy cannons, bazookas and explosive ordnance.",
+    "skills": [
+      {
+        "name": "Power Blast",
+        "level": 1,
+        "en_cost": 3,
+        "effect": "Heavy explosive cannon strike ignoring 30% enemy armor."
+      },
+      {
+        "name": "Armor Fortify",
+        "level": 15,
+        "en_cost": 3,
+        "effect": "Reduces physical damage taken by 40%."
+      },
+      {
+        "name": "Full Cannonade",
+        "level": 32,
+        "en_cost": 6,
+        "effect": "Fires all installed artillery for devastating area damage."
+      }
+    ],
+    "strengths": [
+      "Highest physical armor",
+      "Devastating artillery damage",
+      "Great against armored bosses"
+    ],
+    "join_chapter": "Chapter 4"
+  },
+  {
+    "id": "lapis",
+    "name": "Lapis",
+    "role": "Cybernetic / Newtype Prodigy",
+    "description": "Gifted young ace with supernatural reflex tuning and high-tier Gundam mastery.",
+    "skills": [
+      {
+        "name": "Flash Strike",
+        "level": 1,
+        "en_cost": 3,
+        "effect": "Super-fast beam saber strike with critical pierce."
+      },
+      {
+        "name": "Hyperspeed Focus",
+        "level": 16,
+        "en_cost": 4,
+        "effect": "Double attack actions for 1 turn."
+      }
+    ],
+    "strengths": [
+      "High speed and critical strike",
+      "Exceptional Gundam synergy"
+    ],
+    "join_chapter": "Chapter 5"
+  }
+]

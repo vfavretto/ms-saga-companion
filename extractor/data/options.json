@@ -1,0 +1,58 @@
+[
+  {
+    "id": "high-speed-booster",
+    "name": "High Speed Booster",
+    "category": "Mobility",
+    "effect": "Aumenta a velocidade e iniciativa de combate em +25%.",
+    "grid": "2x2",
+    "obtain": "Baú em Tohai ou Oficina de Eisengrad"
+  },
+  {
+    "id": "titanium-armor-plate",
+    "name": "Titanium Armor Plate",
+    "category": "Defense",
+    "effect": "Aumenta a blindagem física em +180 e HP máximo em +400.",
+    "grid": "2x3",
+    "obtain": "Lojas de Eisengrad"
+  },
+  {
+    "id": "chobham-armor",
+    "name": "Chobham Composite Armor",
+    "category": "Defense",
+    "effect": "Aumenta HP em +800 e reduz dano de explosões em 30%.",
+    "grid": "3x3",
+    "obtain": "Diggings - América do Norte"
+  },
+  {
+    "id": "extra-propellant-tank",
+    "name": "Extra Propellant Tank",
+    "category": "Energy",
+    "effect": "Aumenta a capacidade de energia do Mobile Suit em +2 EN por turno.",
+    "grid": "1x3",
+    "obtain": "Oficinas espaciais e G-System 02"
+  },
+  {
+    "id": "medical-bay-unit",
+    "name": "Field Medical Bay",
+    "category": "Support",
+    "effect": "Recupera automaticamente 15% do HP do robô no final de cada rodada.",
+    "grid": "2x3",
+    "obtain": "Recompensa de quest secundária em Marie Foley"
+  },
+  {
+    "id": "psycommu-frame",
+    "name": "Psycommu Resonance Frame",
+    "category": "Special",
+    "effect": "Permite que pilotos Newtype (Aeon / Lapis) causem +40% de dano com Funnels e Beam Weapons.",
+    "grid": "2x2",
+    "obtain": "Laboratório de Neo Zarth"
+  },
+  {
+    "id": "death-cloak",
+    "name": "Death Cloak Device",
+    "category": "Stealth",
+    "effect": "Concede 50% de chance de esquiva nos primeiros 2 turnos da batalha.",
+    "grid": "2x2",
+    "obtain": "Sky Fortress - Sala Secreta"
+  }
+]

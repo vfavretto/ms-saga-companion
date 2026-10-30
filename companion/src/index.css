@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080c18;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e3a6c;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00d4ff;
+  }
+}
+
+/* Authentic MS Saga / PS2 Beveled Box styling */
+.ps2-panel {
+  background: linear-gradient(180deg, #0e1a38 0%, #080f22 100%);
+  border: 2px solid #1e3a6c;
+  box-shadow: inset 1px 1px 0px rgba(0, 212, 255, 0.3),
+              inset -1px -1px 0px rgba(0, 0, 0, 0.8),
+              0 4px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.ps2-panel-active {
+  background: linear-gradient(180deg, #132752 0%, #0a1633 100%);
+  border-color: #00d4ff;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4),
+              inset -1px -1px 0px rgba(0, 0, 0, 0.8),
+              0 0 15px rgba(0, 212, 255, 0.25);
+}
+
+.ps2-header-strip {
+  background: linear-gradient(90deg, #0055aa 0%, #001a44 100%);
+  border-bottom: 2px solid #00d4ff;
+}
+
+.ps2-bevel-btn {
+  background: linear-gradient(180deg, #142852 0%, #0d1b38 100%);
+  border: 1px solid #2a5298;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.2),
+              inset -1px -1px 0px rgba(0, 0, 0, 0.6);
+  transition: all 0.15s ease-in-out;
+}
+
+.ps2-bevel-btn:hover {
+  background: linear-gradient(180deg, #1e3d7a 0%, #12254d 100%);
+  border-color: #00d4ff;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4),
+              0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.ps2-bevel-btn-active {
+  background: linear-gradient(180deg, #0066cc 0%, #003366 100%) !important;
+  border-color: #00f5ff !important;
+  color: #ffffff !important;
+  box-shadow: inset -1px -1px 0px rgba(255, 255, 255, 0.3),
+              inset 1px 1px 0px rgba(0, 0, 0, 0.7),
+              0 0 12px rgba(0, 212, 255, 0.4) !important;
+}
+
+/* Subtle CRT scanline effect */
+.crt-scanlines::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 50;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.75;
+}

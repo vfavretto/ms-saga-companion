@@ -1,0 +1,206 @@
+[
+  {
+    "id": "zaku-i",
+    "name": "Zaku I",
+    "model_number": "MS-05B",
+    "faction": "Zeon / Inicial",
+    "type": "Early Light Mecha",
+    "base_hp": 850,
+    "base_en": 4,
+    "speed": "Normal",
+    "grid_size": "4x5",
+    "obtain": "Disponível no início do jogo (Prólogo)",
+    "description": "Mobile Suit veterano com blindagem leve. Excelente para o início, com baixo consumo de energia.",
+    "compatible_roles": [
+      "Melee",
+      "Light Gunner"
+    ]
+  },
+  {
+    "id": "zaku-ii",
+    "name": "Zaku II",
+    "model_number": "MS-06F",
+    "faction": "Zeon",
+    "type": "Standard Mass Production",
+    "base_hp": 1200,
+    "base_en": 5,
+    "speed": "Normal",
+    "grid_size": "4x6",
+    "obtain": "Produção no G-System 01 (Mt. Heidi) ou drop de patrulhas",
+    "description": "O símbolo das forças de Zeon. Robusto e altamente versátil para armamentos físicos como machados de calor e metralhadoras.",
+    "compatible_roles": [
+      "All-Round",
+      "Assault"
+    ]
+  },
+  {
+    "id": "gm",
+    "name": "GM",
+    "model_number": "RGM-79",
+    "faction": "Federação da Terra",
+    "type": "Mass Production Federation",
+    "base_hp": 1100,
+    "base_en": 6,
+    "speed": "Fast",
+    "grid_size": "4x6",
+    "obtain": "G-System 01 após resgatar Aeon",
+    "description": "Primeiro Mobile Suit de produção em massa da Federação. Ótima afinidade com armas de feixe compactas (Beam Spray Gun).",
+    "compatible_roles": [
+      "Beam Gunner",
+      "Skirmisher"
+    ]
+  },
+  {
+    "id": "guncannon",
+    "name": "Guncannon",
+    "model_number": "RX-77-2",
+    "faction": "Federação da Terra",
+    "type": "Heavy Artillery",
+    "base_hp": 1850,
+    "base_en": 6,
+    "speed": "Slow",
+    "grid_size": "5x6",
+    "obtain": "Eisengrad - Projeto especial da fábrica militar",
+    "description": "Blindagem pesada de liga de titânio e dois canhões de 240mm nos ombros. Ideal para Gavane ou Fritz dispararem artilharia de suporte.",
+    "compatible_roles": [
+      "Heavy Artillery",
+      "Tank"
+    ]
+  },
+  {
+    "id": "gouf",
+    "name": "Gouf",
+    "model_number": "MS-07B",
+    "faction": "Zeon / Especialista",
+    "type": "Close Combat Specialist",
+    "base_hp": 1600,
+    "base_en": 6,
+    "speed": "Fast",
+    "grid_size": "5x6",
+    "obtain": "Derrote o chefe Vallas em Wyvern Ravine e desbloqueie o blueprint",
+    "description": "Especialista letal em combate corpo-a-corpo. Vem equipado nativamente com Heat Rod para eletrocutar inimigos.",
+    "compatible_roles": [
+      "Melee Duelist",
+      "Crowd Control"
+    ]
+  },
+  {
+    "id": "dom",
+    "name": "Dom",
+    "model_number": "MS-09",
+    "faction": "Zeon",
+    "type": "Heavy Hovercraft Mecha",
+    "base_hp": 2100,
+    "base_en": 7,
+    "speed": "High Hover",
+    "grid_size": "5x7",
+    "obtain": "América do Norte - Território dos Diggings",
+    "description": "Movimenta-se deslizando sobre jatos térmicos. Excelente estabilidade para empunhar a Giant Bazooka e sabres pesados.",
+    "compatible_roles": [
+      "Bazooka Raider",
+      "Breaker"
+    ]
+  },
+  {
+    "id": "rx-78-gundam",
+    "name": "RX-78-2 Gundam",
+    "model_number": "RX-78-2",
+    "faction": "Federação da Terra",
+    "type": "Legendary Prototype",
+    "base_hp": 2600,
+    "base_en": 8,
+    "speed": "Very Fast",
+    "grid_size": "6x7",
+    "obtain": "G-System 02 no continente americano após completar a missão de Tremmie",
+    "description": "O lendário 'Demônio Branco'. Armadura de liga Lunar Titanium e afinidade imbatível com Beam Rifle e Beam Sabers de alta potência.",
+    "compatible_roles": [
+      "Ace Pilot",
+      "Hybrid Striker"
+    ]
+  },
+  {
+    "id": "zeta-gundam",
+    "name": "Zeta Gundam",
+    "model_number": "MSZ-006",
+    "faction": "AEUG",
+    "type": "Transformable High-Spec",
+    "base_hp": 3400,
+    "base_en": 9,
+    "speed": "Maximum",
+    "grid_size": "6x8",
+    "obtain": "G-System 03 (Ásia) com Bio-Sensor Data",
+    "description": "Equipado com o Bio-Sensor de nova geração. Sincroniza excepcionalmente com os poderes psíquicos de Aeon ou reflexos de Tristan.",
+    "compatible_roles": [
+      "Newtype Ace",
+      "Hyper Sniper"
+    ]
+  },
+  {
+    "id": "qubeley",
+    "name": "Qubeley",
+    "model_number": "AMX-004",
+    "faction": "Neo Zeon",
+    "type": "Psycommu / Funnel Platform",
+    "base_hp": 3200,
+    "base_en": 10,
+    "speed": "High",
+    "grid_size": "6x8",
+    "obtain": "QG Secreto de Neo Zarth / Drop de Chefe Feminina",
+    "description": "Design orgânico elegante com dois casulos de ombro contendo 12 Funnels guiados pela mente do piloto.",
+    "compatible_roles": [
+      "Funnel Master",
+      "Area Disruption"
+    ]
+  },
+  {
+    "id": "sazabi",
+    "name": "Sazabi",
+    "model_number": "MSN-04",
+    "faction": "Neo Zeon Comandante",
+    "type": "Heavy Supreme Commander",
+    "base_hp": 4600,
+    "base_en": 10,
+    "speed": "Fast",
+    "grid_size": "7x9",
+    "obtain": "Base Espacial Final (G-System Especial)",
+    "description": "Poder esmagador em blindagem vermelha. Combina Funnels de grande porte, Beam Shotrifle e o Mega Particle Cannon no torso.",
+    "compatible_roles": [
+      "Ultimate Heavy Striker",
+      "Supreme Tank"
+    ]
+  },
+  {
+    "id": "shining-gundam",
+    "name": "Shining Gundam",
+    "model_number": "GF13-017NJ",
+    "faction": "Neo Japan / Mobile Fighter",
+    "type": "Martial Arts Striker",
+    "base_hp": 3800,
+    "base_en": 9,
+    "speed": "Ultra",
+    "grid_size": "6x8",
+    "obtain": "Dungeon Oculta da Ásia Oriental / Coliseu Secreto",
+    "description": "Mobile Fighter construído para combate marcial puro. Executa o lendário Shining Finger quando atinge o Super Mode.",
+    "compatible_roles": [
+      "Melee God",
+      "Burst Finisher"
+    ]
+  },
+  {
+    "id": "deathscythe",
+    "name": "Gundam Deathscythe",
+    "model_number": "XXXG-01D",
+    "faction": "Colônias Espaciais",
+    "type": "Stealth Reaper",
+    "base_hp": 3500,
+    "base_en": 8,
+    "speed": "Maximum",
+    "grid_size": "6x8",
+    "obtain": "Recompensa por completar os desafios da Sky Fortress",
+    "description": "Equipado com Hyper Jammer para ficar invisível nos radares inimigos e Beam Scythe para decapitar esquadrões inteiros.",
+    "compatible_roles": [
+      "Stealth Assassin",
+      "Critical Striker"
+    ]
+  }
+]

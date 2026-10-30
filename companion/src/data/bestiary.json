@@ -1,0 +1,7454 @@
+[
+  {
+    "id": 1,
+    "number": "001",
+    "name": "Type 61 Tank",
+    "category": "Veículo / Tanque",
+    "region": "G System 01 & Moon Ark (Início da Campanha)",
+    "hp": 280,
+    "exp": 18,
+    "gold": 40,
+    "weaknesses": [
+      "Solid",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Repair Kit",
+        "rate": "25%"
+      },
+      {
+        "item": "Machine Gun Ammo",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Tanque terrestre padrão da Federação equipado com canhão duplo de 155mm."
+  },
+  {
+    "id": 2,
+    "number": "002",
+    "name": "Type 61 Tank Kai",
+    "category": "Veículo / Tanque",
+    "region": "G System 01 & Moon Ark (Início da Campanha)",
+    "hp": 420,
+    "exp": 32,
+    "gold": 65,
+    "weaknesses": [
+      "Solid",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Repair Kit",
+        "rate": "20%"
+      },
+      {
+        "item": "Armor Plate",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Versão reforçada do Type 61 com blindagem aprimorada."
+  },
+  {
+    "id": 3,
+    "number": "003",
+    "name": "Magella Attack",
+    "category": "Veículo / Tanque",
+    "region": "G System 01 & Moon Ark (Início da Campanha)",
+    "hp": 460,
+    "exp": 45,
+    "gold": 80,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "High Explosive Shell",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Tanque com torre destacável Magella Top."
+  },
+  {
+    "id": 4,
+    "number": "004",
+    "name": "Magella Top",
+    "category": "Aéreo Leve",
+    "region": "G System 01 & Moon Ark (Início da Campanha)",
+    "hp": 210,
+    "exp": 25,
+    "gold": 40,
+    "weaknesses": [
+      "Solid",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Small Propellant",
+        "rate": "15%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Parte aérea do Magella Attack após a separação da base."
+  },
+  {
+    "id": 5,
+    "number": "005",
+    "name": "Prototype Zaku",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "G System 01 & Moon Ark (Início da Campanha)",
+    "hp": 650,
+    "exp": 75,
+    "gold": 110,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "12%"
+      },
+      {
+        "item": "Machine Gun",
+        "rate": "5%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "O clássico Mobile Suit de produção inicial da série Zaku.",
+    "aliases": [
+      "Zaku I Grunt",
+      "Protótipo Zaku",
+      "Old Zaku"
+    ]
+  },
+  {
+    "id": 6,
+    "number": "006",
+    "name": "Zaku I",
+    "category": "Chefe de Fase",
+    "region": "G System 01 & Moon Ark (Início da Campanha)",
+    "hp": 950,
+    "exp": 240,
+    "gold": 350,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "100%"
+      },
+      {
+        "item": "Heat Hawk",
+        "rate": "50%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Comandante do ataque inicial ao orfanato.",
+    "aliases": [
+      "Zaku I Commander",
+      "Zaku 1"
+    ]
+  },
+  {
+    "id": 7,
+    "number": "007",
+    "name": "Zaku Tank",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Planícies de Angelia & Moon Ark",
+    "hp": 820,
+    "exp": 110,
+    "gold": 140,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Cracker",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "A espinha dorsal das forças de Zeon, balanceado e perigoso.",
+    "aliases": [
+      "Zaku Tank"
+    ]
+  },
+  {
+    "id": 8,
+    "number": "008",
+    "name": "Zaku II",
+    "category": "Elite",
+    "region": "Planícies de Angelia & Moon Ark",
+    "hp": 1100,
+    "exp": 180,
+    "gold": 220,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Special Data",
+        "rate": "25%"
+      },
+      {
+        "item": "Zaku Shield",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Equipado com antena de comando e propulsores adicionais.",
+    "aliases": [
+      "Zaku 2",
+      "Zaku II Grunt"
+    ]
+  },
+  {
+    "id": 9,
+    "number": "009",
+    "name": "Zaku Cannon",
+    "category": "Veículo / Tanque",
+    "region": "Planícies de Angelia & Moon Ark",
+    "hp": 920,
+    "exp": 130,
+    "gold": 160,
+    "weaknesses": [
+      "Beam",
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Large Tread Unit",
+        "rate": "10%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Híbrido de torso Zaku com esteiras de tanque de combate.",
+    "aliases": [
+      "Zaku Cannon"
+    ]
+  },
+  {
+    "id": 10,
+    "number": "010",
+    "name": "Boost Gouf",
+    "category": "Artilharia",
+    "region": "Planícies de Angelia & Moon Ark",
+    "hp": 1050,
+    "exp": 160,
+    "gold": 190,
+    "weaknesses": [
+      "Pierce",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Cannon Shell",
+        "rate": "15%"
+      },
+      {
+        "item": "Zaku II Data",
+        "rate": "12%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Unidade de apoio com canhão antiaéreo de 180mm montado no ombro.",
+    "aliases": [
+      "Gouf Booster"
+    ]
+  },
+  {
+    "id": 11,
+    "number": "011",
+    "name": "Shield Zaku",
+    "category": "Raro / Perdível",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 120,
+    "exp": 2000,
+    "gold": 5000,
+    "weaknesses": [
+      "Armor Piercing",
+      "Critical"
+    ],
+    "drops": [
+      {
+        "item": "ECAP (S)",
+        "rate": "40%"
+      },
+      {
+        "item": "Gold Nugget",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": true,
+    "is_missable": false,
+    "notes": "Inimigo reluzente raro! Possui defesa astronômica e foge rapidamente. Use ataques perfurantes!",
+    "aliases": [
+      "Zaku Shield"
+    ]
+  },
+  {
+    "id": 12,
+    "number": "012",
+    "name": "Zaku Sniper",
+    "category": "Mobile Suit Federal",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 780,
+    "exp": 95,
+    "gold": 120,
+    "weaknesses": [
+      "Heat",
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Beam Spray Gun",
+        "rate": "6%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit padrão das forças terrestres aliadas.",
+    "aliases": [
+      "Sniper Zaku"
+    ]
+  },
+  {
+    "id": 13,
+    "number": "013",
+    "name": "Acid GM",
+    "category": "Mobile Suit Federal",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 690,
+    "exp": 110,
+    "gold": 130,
+    "weaknesses": [
+      "Solid",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Speed Booster",
+        "rate": "10%"
+      },
+      {
+        "item": "Beam Saber",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante aliviada com alta velocidade de esquiva.",
+    "aliases": [
+      "GM Acid"
+    ]
+  },
+  {
+    "id": 14,
+    "number": "014",
+    "name": "GM Tank",
+    "category": "Artilharia",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 980,
+    "exp": 140,
+    "gold": 170,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "GM Cannon Data",
+        "rate": "14%"
+      },
+      {
+        "item": "Solid Shell",
+        "rate": "12%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Artilharia média da Federação.",
+    "aliases": [
+      "Tank GM",
+      "Guntank GM"
+    ]
+  },
+  {
+    "id": 15,
+    "number": "015",
+    "name": "Underwater Zaku",
+    "category": "Mobile Suit Federal",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 1150,
+    "exp": 180,
+    "gold": 210,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "GM Command Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Command Shield",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Modelo de alta performance para comandantes de esquadrão.",
+    "aliases": [
+      "Zaku Marine Type",
+      "Zaku Aquático"
+    ]
+  },
+  {
+    "id": 16,
+    "number": "016",
+    "name": "Acguy",
+    "category": "Sniper",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 1080,
+    "exp": 190,
+    "gold": 230,
+    "weaknesses": [
+      "Solid",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "GM Sniper Data",
+        "rate": "18%"
+      },
+      {
+        "item": "Sniper Rifle",
+        "rate": "5%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Equipado com rifle de precisão de longo alcance.",
+    "aliases": [
+      "Acguy Grunt"
+    ]
+  },
+  {
+    "id": 17,
+    "number": "017",
+    "name": "Gogg",
+    "category": "Mobile Suit Federal",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 1250,
+    "exp": 210,
+    "gold": 240,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Beam Pick",
+        "rate": "12%"
+      },
+      {
+        "item": "GM Data",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante corpo a corpo agressiva com lâminas duplas.",
+    "aliases": [
+      "Gogg Heavy"
+    ]
+  },
+  {
+    "id": 18,
+    "number": "018",
+    "name": "Repair GM",
+    "category": "Artilharia",
+    "region": "Fort Verde & Pátio da Fortaleza",
+    "hp": 1600,
+    "exp": 260,
+    "gold": 310,
+    "weaknesses": [
+      "Beam",
+      "Acid"
+    ],
+    "drops": [
+      {
+        "item": "Guncannon Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Heavy Cannon",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Suporte pesado blindado com canhões duplos de 240mm.",
+    "aliases": [
+      "GM Medic"
+    ]
+  },
+  {
+    "id": 19,
+    "number": "019",
+    "name": "Desert Zaku",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1350,
+    "exp": 220,
+    "gold": 260,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Heat Rod",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Especialista em combate próximo com chicote eletrificado.",
+    "aliases": [
+      "Zaku Desert Type"
+    ]
+  },
+  {
+    "id": 20,
+    "number": "020",
+    "name": "Gouf Tank",
+    "category": "Elite",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1520,
+    "exp": 280,
+    "gold": 320,
+    "weaknesses": [
+      "Solid",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Mirror Coating",
+        "rate": "10%"
+      },
+      {
+        "item": "Gouf Spikes",
+        "rate": "12%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Gouf com revestimento reflexivo imune a armas de feixe fracas.",
+    "aliases": [
+      "Gouf com Esteiras"
+    ]
+  },
+  {
+    "id": 21,
+    "number": "021",
+    "name": "Light Armor GM",
+    "category": "Chefe de Fase",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 2800,
+    "exp": 1200,
+    "gold": 1800,
+    "weaknesses": [
+      "Energy / Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gatling Shield",
+        "rate": "100%"
+      },
+      {
+        "item": "Heat Saber Kai",
+        "rate": "50%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "A lendária máquina azul do Comandante Vallas com escudo gatling.",
+    "aliases": [
+      "GM Light"
+    ]
+  },
+  {
+    "id": 22,
+    "number": "022",
+    "name": "Counter Zaku",
+    "category": "Anfíbio",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1480,
+    "exp": 240,
+    "gold": 290,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Iron Nail",
+        "rate": "12%"
+      },
+      {
+        "item": "Z'Gok Claw",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit anfíbio letal em combates costeiros.",
+    "aliases": [
+      "Zaku Counter"
+    ]
+  },
+  {
+    "id": 23,
+    "number": "023",
+    "name": "Spear Gouf",
+    "category": "Elite",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1850,
+    "exp": 340,
+    "gold": 390,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Z'Gok Data",
+        "rate": "25%"
+      },
+      {
+        "item": "Mega Particle Gun",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Comandante dos piratas navais com garras perfurantes.",
+    "aliases": [
+      "Gouf Lance"
+    ]
+  },
+  {
+    "id": 24,
+    "number": "024",
+    "name": "Grenade Zaku",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1720,
+    "exp": 290,
+    "gold": 350,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "18%"
+      },
+      {
+        "item": "Giant Bazooka",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit pesado que desliza em terra via propulsão hover.",
+    "aliases": [
+      "Zaku Grenadier"
+    ]
+  },
+  {
+    "id": 25,
+    "number": "025",
+    "name": "Speed Cannon",
+    "category": "Elite",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1950,
+    "exp": 340,
+    "gold": 410,
+    "weaknesses": [
+      "Pierce",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Shield",
+        "rate": "15%"
+      },
+      {
+        "item": "Dom Data",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Dom com grande escudo frontal e bazuca reforçada.",
+    "aliases": [
+      "Cannon Speed"
+    ]
+  },
+  {
+    "id": 26,
+    "number": "026",
+    "name": "MP Guntank",
+    "category": "Espacial / Pesado",
+    "region": "Base de Mineração & Fort Berg",
+    "hp": 1880,
+    "exp": 320,
+    "gold": 380,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Rick Dom Data",
+        "rate": "18%"
+      },
+      {
+        "item": "Propellant L",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de alta propulsão do Dom para gravidade zero.",
+    "aliases": [
+      "Mass Production Guntank"
+    ]
+  },
+  {
+    "id": 27,
+    "number": "027",
+    "name": "Zaku Charge",
+    "category": "Artilharia",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 1680,
+    "exp": 290,
+    "gold": 340,
+    "weaknesses": [
+      "Beam",
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Buster Zaku Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Zaku Bazooka",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Zaku reforçado para demolição pesada de desfiladeiros.",
+    "aliases": [
+      "Charge Zaku"
+    ]
+  },
+  {
+    "id": 28,
+    "number": "028",
+    "name": "Mirror Gouf",
+    "category": "Chefe de Fase",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 3400,
+    "exp": 1800,
+    "gold": 2500,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Xamel Cannon",
+        "rate": "100%"
+      },
+      {
+        "item": "ECAP (L)",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Colossal peça de artilharia automotora com canhão de 680mm.",
+    "aliases": [
+      "Gouf Mirror"
+    ]
+  },
+  {
+    "id": 29,
+    "number": "029",
+    "name": "Heavy Gouf",
+    "category": "Chefe de Fase",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 4800,
+    "exp": 2800,
+    "gold": 3800,
+    "weaknesses": [
+      "Solid Impact",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Dragon Fang L",
+        "rate": "100%"
+      },
+      {
+        "item": "Twin Beam Trident",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Gundam com presas retráteis e combate acrobático impiedoso.",
+    "aliases": [
+      "Gouf Pesado"
+    ]
+  },
+  {
+    "id": 30,
+    "number": "030",
+    "name": "Metal Zaku",
+    "category": "Gundam Wing Series",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 1280,
+    "exp": 210,
+    "gold": 260,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Dober Gun Ammo",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit produzido em massa da série After Colony.",
+    "aliases": [
+      "Rare Metal Zaku",
+      "Zaku Metálico"
+    ]
+  },
+  {
+    "id": 31,
+    "number": "031",
+    "name": "Leo Space Type",
+    "category": "Gundam Wing Series",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 1420,
+    "exp": 250,
+    "gold": 300,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "18%"
+      },
+      {
+        "item": "Round Shield",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Equipado com mochila propulsora espacial."
+  },
+  {
+    "id": 32,
+    "number": "032",
+    "name": "Aries",
+    "category": "Aéreo Leve",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 1310,
+    "exp": 230,
+    "gold": 270,
+    "weaknesses": [
+      "Solid",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Missile Pod",
+        "rate": "12%"
+      },
+      {
+        "item": "Wing Thruster",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit aéreo com turbinas nas asas e alta mobilidade."
+  },
+  {
+    "id": 33,
+    "number": "033",
+    "name": "Taurus",
+    "category": "Gundam Wing Series",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 1950,
+    "exp": 380,
+    "gold": 440,
+    "weaknesses": [
+      "Solid Impact",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Beam Cannon",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit com modo de voo de alta velocidade."
+  },
+  {
+    "id": 34,
+    "number": "034",
+    "name": "Serpent",
+    "category": "Gundam Wing Series",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 2600,
+    "exp": 520,
+    "gold": 600,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Double Gatling",
+        "rate": "10%"
+      },
+      {
+        "item": "Serpent Data",
+        "rate": "15%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit pesado armado com canhões rotativos duplos."
+  },
+  {
+    "id": 35,
+    "number": "035",
+    "name": "Gelgoog",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Wyvern Ravine & Entrada de Eisengrad",
+    "hp": 2100,
+    "exp": 410,
+    "gold": 480,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Beam Rifle",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "O ápice dos Mobile Suits produzidos em massa por Zeon."
+  },
+  {
+    "id": 36,
+    "number": "036",
+    "name": "Gelgoog Cannon",
+    "category": "Artilharia",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2350,
+    "exp": 460,
+    "gold": 530,
+    "weaknesses": [
+      "Solid",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "22%"
+      },
+      {
+        "item": "Beam Cannon Arm",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Gelgoog armado com canhão de feixe de alta energia no dorso."
+  },
+  {
+    "id": 37,
+    "number": "037",
+    "name": "Gyan",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2200,
+    "exp": 430,
+    "gold": 490,
+    "weaknesses": [
+      "Solid Impact",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gyan Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Needle Missile",
+        "rate": "12%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Especialista em esgrima com escudo lançador de agulhas e minas."
+  },
+  {
+    "id": 38,
+    "number": "038",
+    "name": "Black Assassin",
+    "category": "Raro / Perdível",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 1800,
+    "exp": 4000,
+    "gold": 1500,
+    "weaknesses": [
+      "Physical Impact",
+      "Explosive"
+    ],
+    "drops": [
+      {
+        "item": "Ninja Sword",
+        "rate": "100%"
+      },
+      {
+        "item": "Kämpfer Spikes R",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": true,
+    "is_missable": true,
+    "notes": "ENCONTRO ÚNICO PERDÍVEL! Mate-o antes de avançar em Tohai para obter a espada Ninja Sword!"
+  },
+  {
+    "id": 39,
+    "number": "039",
+    "name": "Metal Hizack",
+    "category": "Raro / Perdível",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 350,
+    "exp": 20000,
+    "gold": 12000,
+    "weaknesses": [
+      "Armor Piercing",
+      "Critical"
+    ],
+    "drops": [
+      {
+        "item": "ECAP (L)",
+        "rate": "60%"
+      },
+      {
+        "item": "Rare Core",
+        "rate": "30%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": true,
+    "is_missable": false,
+    "notes": "A mina de ouro suprema de EXP do jogo! Dá 20.000 EXP por vitória. Não deixe escapar!"
+  },
+  {
+    "id": 40,
+    "number": "040",
+    "name": "Hizack",
+    "category": "Titans / Neo Zarth",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2250,
+    "exp": 440,
+    "gold": 510,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Heat Saber",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Fusão da engenharia da Federação com o design Zaku."
+  },
+  {
+    "id": 41,
+    "number": "041",
+    "name": "Marasai",
+    "category": "Titans / Neo Zarth",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2650,
+    "exp": 530,
+    "gold": 620,
+    "weaknesses": [
+      "Physical Impact",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Fedayeen Rifle",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Unidade de alta saída energética utilizada pelas forças de elite."
+  },
+  {
+    "id": 42,
+    "number": "042",
+    "name": "Barrier Marasai",
+    "category": "Elite",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2900,
+    "exp": 600,
+    "gold": 710,
+    "weaknesses": [
+      "Physical Impact",
+      "Acid"
+    ],
+    "drops": [
+      {
+        "item": "Barrier Generator",
+        "rate": "12%"
+      },
+      {
+        "item": "Marasai Data",
+        "rate": "25%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Marasai com barreira ativa que anula feixes fracos."
+  },
+  {
+    "id": 43,
+    "number": "043",
+    "name": "Nemo",
+    "category": "Mobile Suit Federal",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2400,
+    "exp": 480,
+    "gold": 560,
+    "weaknesses": [
+      "Solid",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Beam Saber Kai",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit da Federação desenvolvido pela Anaheim Electronics."
+  },
+  {
+    "id": 44,
+    "number": "044",
+    "name": "Rick Dias",
+    "category": "Mobile Suit Federal",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 2700,
+    "exp": 550,
+    "gold": 640,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Rick Dias Data",
+        "rate": "20%"
+      },
+      {
+        "item": "Clay Bazooka",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Construído em liga de Gundarium γ, alta durabilidade."
+  },
+  {
+    "id": 45,
+    "number": "045",
+    "name": "Bawoo",
+    "category": "Titans / Neo Zarth",
+    "region": "Fortaleza Eisengrad & Porto Marley",
+    "hp": 3100,
+    "exp": 640,
+    "gold": 740,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "25%"
+      },
+      {
+        "item": "Wing Shield",
+        "rate": "12%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Suit transformável que se separa em Bawoo Attacker e Nutter."
+  },
+  {
+    "id": 46,
+    "number": "046",
+    "name": "Asshimar",
+    "category": "Titans / Neo Zarth",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3250,
+    "exp": 680,
+    "gold": 790,
+    "weaknesses": [
+      "Solid Impact",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Large Beam Rifle",
+        "rate": "12%"
+      },
+      {
+        "item": "Asshimar Data",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Armor atmosférico transformável em formato discoide."
+  },
+  {
+    "id": 47,
+    "number": "047",
+    "name": "Gaplant",
+    "category": "Titans / Neo Zarth",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3600,
+    "exp": 780,
+    "gold": 890,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Booster Unit",
+        "rate": "15%"
+      },
+      {
+        "item": "Gaplant Data",
+        "rate": "22%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Interceptador de alta altitude equipado com enormes propulsores móveis."
+  },
+  {
+    "id": 48,
+    "number": "048",
+    "name": "Messala",
+    "category": "Titans / Neo Zarth",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3900,
+    "exp": 850,
+    "gold": 960,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Mega Particle Cannon",
+        "rate": "15%"
+      },
+      {
+        "item": "Messala Data",
+        "rate": "25%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Mobile Armor de geometria variável com propulsão para gravidade de Júpiter."
+  },
+  {
+    "id": 49,
+    "number": "049",
+    "name": "Claw Messala",
+    "category": "Elite",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 4200,
+    "exp": 940,
+    "gold": 1050,
+    "weaknesses": [
+      "Heat",
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Heavy Claw",
+        "rate": "18%"
+      },
+      {
+        "item": "ECAP (L)",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante corpo a corpo equipada com garras de trituração."
+  },
+  {
+    "id": 50,
+    "number": "050",
+    "name": "Zaku III",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3800,
+    "exp": 820,
+    "gold": 940,
+    "weaknesses": [
+      "Beam",
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Zaku III Data",
+        "rate": "25%"
+      },
+      {
+        "item": "Beam Cannon",
+        "rate": "12%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "A evolução final pesada da linhagem de combate Zaku."
+  },
+  {
+    "id": 51,
+    "number": "051",
+    "name": "Death Army",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 2800,
+    "exp": 580,
+    "gold": 670,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "DG Cell Sample",
+        "rate": "25%"
+      },
+      {
+        "item": "Club Spike",
+        "rate": "10%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Zumbis de combate criados pelas células malignas do Devil Gundam."
+  },
+  {
+    "id": 52,
+    "number": "052",
+    "name": "Death Beast",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3300,
+    "exp": 710,
+    "gold": 820,
+    "weaknesses": [
+      "Beam",
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Beast Leg Unit",
+        "rate": "18%"
+      },
+      {
+        "item": "DG Cell Sample",
+        "rate": "30%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Death Army montado sobre corpo quadrupedal mecânico."
+  },
+  {
+    "id": 53,
+    "number": "053",
+    "name": "Death Birdy",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3100,
+    "exp": 670,
+    "gold": 780,
+    "weaknesses": [
+      "Solid",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Wing Spikes",
+        "rate": "15%"
+      },
+      {
+        "item": "DG Cell Sample",
+        "rate": "28%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante com asas afiadas e bombardeio de mergulho."
+  },
+  {
+    "id": 54,
+    "number": "054",
+    "name": "Death Master",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 4100,
+    "exp": 920,
+    "gold": 1100,
+    "weaknesses": [
+      "Pierce",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Master Cloth",
+        "rate": "15%"
+      },
+      {
+        "item": "DG Cell Core",
+        "rate": "20%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Comandante das tropas DG imitando golpes do Master Gundam."
+  },
+  {
+    "id": 55,
+    "number": "055",
+    "name": "Death Knight",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3600,
+    "exp": 790,
+    "gold": 910,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Knight Sword",
+        "rate": "15%"
+      },
+      {
+        "item": "DG Cell Core",
+        "rate": "22%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Guerreiro DG revestido em armadura espelhada de alta tenacidade."
+  },
+  {
+    "id": 56,
+    "number": "056",
+    "name": "Death Guardian",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3400,
+    "exp": 740,
+    "gold": 860,
+    "weaknesses": [
+      "Solid",
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Heavy Shield",
+        "rate": "15%"
+      },
+      {
+        "item": "DG Cell Sample",
+        "rate": "35%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Guardião DG focado em bloqueio de portões e reatores."
+  },
+  {
+    "id": 57,
+    "number": "057",
+    "name": "Big Zam",
+    "category": "Mobile Armor / Gigante",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 15000,
+    "exp": 6500,
+    "gold": 9000,
+    "weaknesses": [
+      "Solid Impact",
+      "Armor Piercing"
+    ],
+    "drops": [
+      {
+        "item": "I-Field Generator",
+        "rate": "100%"
+      },
+      {
+        "item": "Large Mega Cannon",
+        "rate": "50%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Colossal fortaleza móvel bípeda protegida por campo I-Field impenetrável."
+  },
+  {
+    "id": 58,
+    "number": "058",
+    "name": "Psycho Gundam",
+    "category": "Mobile Armor / Gigante",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 18000,
+    "exp": 8000,
+    "gold": 11000,
+    "weaknesses": [
+      "Hyper Energy",
+      "Critical"
+    ],
+    "drops": [
+      {
+        "item": "Psycho Frame Data",
+        "rate": "100%"
+      },
+      {
+        "item": "Mega Diffuse Cannon",
+        "rate": "50%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Titã negro transformável comandado por ondas cerebrais Psycommu."
+  },
+  {
+    "id": 59,
+    "number": "059",
+    "name": "Sazabi Custom (General Gabriel)",
+    "category": "Chefe de Fase",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 12500,
+    "exp": 12000,
+    "gold": 15000,
+    "weaknesses": [
+      "Critical Melee",
+      "Hyper Energy"
+    ],
+    "drops": [
+      {
+        "item": "Sazabi Funnel Rack",
+        "rate": "100%"
+      },
+      {
+        "item": "Beam Shot Rifle",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "A máquina carmesim suprema de Neo Zeon liderada pelo General Gabriel."
+  },
+  {
+    "id": 60,
+    "number": "060",
+    "name": "Devil Gundam (Forma 1)",
+    "category": "Chefe de Fase",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 18000,
+    "exp": 14000,
+    "gold": 18000,
+    "weaknesses": [
+      "Hyper Beam",
+      "Armor Piercing"
+    ],
+    "drops": [
+      {
+        "item": "DG Cells Ultimate",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Primeira manifestação da arma suprema com tentáculos mecânicos."
+  },
+  {
+    "id": 61,
+    "number": "061",
+    "name": "Devil Gundam (Forma Final)",
+    "category": "Chefe de Fase",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 30000,
+    "exp": 25000,
+    "gold": 30000,
+    "weaknesses": [
+      "Nenhuma Fraqueza"
+    ],
+    "drops": [
+      {
+        "item": "God Finger Manual",
+        "rate": "100%"
+      },
+      {
+        "item": "Devil Gundam Data",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "O desafio supremo de MS Saga! Regenera 2500 HP por rodada."
+  },
+  {
+    "id": 62,
+    "number": "062",
+    "name": "Hizack Custom",
+    "category": "Titans / Neo Zarth",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 2767,
+    "exp": 541,
+    "gold": 625,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 63,
+    "number": "063",
+    "name": "Bawoo Custom",
+    "category": "Titans / Neo Zarth",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3861,
+    "exp": 796,
+    "gold": 917,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 64,
+    "number": "064",
+    "name": "Death Army Custom",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3509,
+    "exp": 726,
+    "gold": 847,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 65,
+    "number": "065",
+    "name": "Death Birdy Custom",
+    "category": "Death Army (DG Cells)",
+    "region": "Deserto de El Dar Samnia & Fort Arid",
+    "hp": 3882,
+    "exp": 837,
+    "gold": 970,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 66,
+    "number": "066",
+    "name": "Leo Custom",
+    "category": "Gundam Wing Series",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 1642,
+    "exp": 267,
+    "gold": 328,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 67,
+    "number": "067",
+    "name": "Taurus Custom",
+    "category": "Gundam Wing Series",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 2440,
+    "exp": 475,
+    "gold": 549,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 68,
+    "number": "068",
+    "name": "Type 61 Tank Custom",
+    "category": "Veículo / Tanque",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 428,
+    "exp": 30,
+    "gold": 61,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 69,
+    "number": "069",
+    "name": "Zaku I Commander",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 858,
+    "exp": 98,
+    "gold": 147,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 70,
+    "number": "070",
+    "name": "Zaku II Commander",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 1082,
+    "exp": 147,
+    "gold": 184,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 71,
+    "number": "071",
+    "name": "Gouf Commander",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 1726,
+    "exp": 283,
+    "gold": 333,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 72,
+    "number": "072",
+    "name": "Dom Commander",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 2226,
+    "exp": 383,
+    "gold": 457,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 73,
+    "number": "073",
+    "name": "Gelgoog Commander",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 2728,
+    "exp": 520,
+    "gold": 620,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 74,
+    "number": "074",
+    "name": "GM Commander",
+    "category": "Mobile Suit Federal",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 994,
+    "exp": 124,
+    "gold": 161,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 75,
+    "number": "075",
+    "name": "GM II Commander",
+    "category": "Mobile Suit Federal",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 1869,
+    "exp": 324,
+    "gold": 386,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 76,
+    "number": "076",
+    "name": "GM III Commander",
+    "category": "Mobile Suit Federal",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 3125,
+    "exp": 625,
+    "gold": 750,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 77,
+    "number": "077",
+    "name": "Nemo Commander",
+    "category": "Mobile Suit Federal",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 3070,
+    "exp": 614,
+    "gold": 714,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 78,
+    "number": "078",
+    "name": "Marasai Commander",
+    "category": "Titans / Neo Zarth",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 3393,
+    "exp": 678,
+    "gold": 791,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 79,
+    "number": "079",
+    "name": "Hizack Commander",
+    "category": "Titans / Neo Zarth",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 2898,
+    "exp": 567,
+    "gold": 655,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 80,
+    "number": "080",
+    "name": "Bawoo Commander",
+    "category": "Titans / Neo Zarth",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 4042,
+    "exp": 833,
+    "gold": 960,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 81,
+    "number": "081",
+    "name": "Death Army Commander",
+    "category": "Death Army (DG Cells)",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 3673,
+    "exp": 760,
+    "gold": 886,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 82,
+    "number": "082",
+    "name": "Death Birdy Commander",
+    "category": "Death Army (DG Cells)",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 4064,
+    "exp": 876,
+    "gold": 1016,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 83,
+    "number": "083",
+    "name": "Leo Commander",
+    "category": "Gundam Wing Series",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 1719,
+    "exp": 280,
+    "gold": 343,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 84,
+    "number": "084",
+    "name": "Taurus Commander",
+    "category": "Gundam Wing Series",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 2553,
+    "exp": 497,
+    "gold": 574,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 85,
+    "number": "085",
+    "name": "Type 61 Tank Commander",
+    "category": "Veículo / Tanque",
+    "region": "Túnel Subterrâneo & Dark Alliance Base",
+    "hp": 448,
+    "exp": 32,
+    "gold": 64,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Commander adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 86,
+    "number": "086",
+    "name": "Zaku I Sniper",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 898,
+    "exp": 102,
+    "gold": 154,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 87,
+    "number": "087",
+    "name": "Zaku II Sniper",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1132,
+    "exp": 154,
+    "gold": 193,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 88,
+    "number": "088",
+    "name": "Gouf Sniper",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1806,
+    "exp": 296,
+    "gold": 348,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 89,
+    "number": "089",
+    "name": "Dom Sniper",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 2328,
+    "exp": 400,
+    "gold": 478,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 90,
+    "number": "090",
+    "name": "Gelgoog Sniper",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 2852,
+    "exp": 544,
+    "gold": 648,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 91,
+    "number": "091",
+    "name": "GM Sniper",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1040,
+    "exp": 130,
+    "gold": 169,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 92,
+    "number": "092",
+    "name": "GM II Sniper",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1954,
+    "exp": 338,
+    "gold": 404,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 93,
+    "number": "093",
+    "name": "GM III Sniper",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 3266,
+    "exp": 653,
+    "gold": 784,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 94,
+    "number": "094",
+    "name": "Nemo Sniper",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 3209,
+    "exp": 641,
+    "gold": 746,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 95,
+    "number": "095",
+    "name": "Marasai Sniper",
+    "category": "Titans / Neo Zarth",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 3546,
+    "exp": 709,
+    "gold": 827,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 96,
+    "number": "096",
+    "name": "Hizack Sniper",
+    "category": "Titans / Neo Zarth",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 3028,
+    "exp": 592,
+    "gold": 684,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 97,
+    "number": "097",
+    "name": "Bawoo Sniper",
+    "category": "Titans / Neo Zarth",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 4224,
+    "exp": 871,
+    "gold": 1003,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 98,
+    "number": "098",
+    "name": "Death Army Sniper",
+    "category": "Death Army (DG Cells)",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 3837,
+    "exp": 794,
+    "gold": 926,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 99,
+    "number": "099",
+    "name": "Death Birdy Sniper",
+    "category": "Death Army (DG Cells)",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 4245,
+    "exp": 915,
+    "gold": 1061,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 100,
+    "number": "100",
+    "name": "Leo Sniper",
+    "category": "Gundam Wing Series",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1795,
+    "exp": 292,
+    "gold": 359,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 101,
+    "number": "101",
+    "name": "Taurus Sniper",
+    "category": "Gundam Wing Series",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 2666,
+    "exp": 520,
+    "gold": 600,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 102,
+    "number": "102",
+    "name": "Type 61 Tank Sniper",
+    "category": "Veículo / Tanque",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 467,
+    "exp": 33,
+    "gold": 66,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Sniper adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 103,
+    "number": "103",
+    "name": "Zaku I Heavy",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 938,
+    "exp": 107,
+    "gold": 160,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 104,
+    "number": "104",
+    "name": "Zaku II Heavy",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1182,
+    "exp": 161,
+    "gold": 201,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 105,
+    "number": "105",
+    "name": "Gouf Heavy",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1885,
+    "exp": 309,
+    "gold": 363,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 106,
+    "number": "106",
+    "name": "Dom Heavy",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 2430,
+    "exp": 418,
+    "gold": 499,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 107,
+    "number": "107",
+    "name": "Gelgoog Heavy",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 2977,
+    "exp": 568,
+    "gold": 676,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 108,
+    "number": "108",
+    "name": "GM Heavy",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 1085,
+    "exp": 135,
+    "gold": 176,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 109,
+    "number": "109",
+    "name": "GM II Heavy",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 2039,
+    "exp": 353,
+    "gold": 421,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 110,
+    "number": "110",
+    "name": "GM III Heavy",
+    "category": "Mobile Suit Federal",
+    "region": "Arredores de Tohai & Terras Áridas",
+    "hp": 3408,
+    "exp": 681,
+    "gold": 818,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 111,
+    "number": "111",
+    "name": "Nemo Heavy",
+    "category": "Mobile Suit Federal",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3348,
+    "exp": 669,
+    "gold": 779,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 112,
+    "number": "112",
+    "name": "Marasai Heavy",
+    "category": "Titans / Neo Zarth",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3699,
+    "exp": 739,
+    "gold": 863,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 113,
+    "number": "113",
+    "name": "Hizack Heavy",
+    "category": "Titans / Neo Zarth",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3158,
+    "exp": 618,
+    "gold": 714,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 114,
+    "number": "114",
+    "name": "Bawoo Heavy",
+    "category": "Titans / Neo Zarth",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 4405,
+    "exp": 908,
+    "gold": 1046,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 115,
+    "number": "115",
+    "name": "Death Army Heavy",
+    "category": "Death Army (DG Cells)",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 4001,
+    "exp": 827,
+    "gold": 965,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 116,
+    "number": "116",
+    "name": "Death Birdy Heavy",
+    "category": "Death Army (DG Cells)",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 4426,
+    "exp": 954,
+    "gold": 1106,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 117,
+    "number": "117",
+    "name": "Leo Heavy",
+    "category": "Gundam Wing Series",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 1872,
+    "exp": 305,
+    "gold": 374,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 118,
+    "number": "118",
+    "name": "Taurus Heavy",
+    "category": "Gundam Wing Series",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 2780,
+    "exp": 542,
+    "gold": 625,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 119,
+    "number": "119",
+    "name": "Type 61 Tank Heavy",
+    "category": "Veículo / Tanque",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 487,
+    "exp": 34,
+    "gold": 69,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Heavy adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 120,
+    "number": "120",
+    "name": "Zaku I Reinforced",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 977,
+    "exp": 111,
+    "gold": 167,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 121,
+    "number": "121",
+    "name": "Zaku II Reinforced",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 1232,
+    "exp": 168,
+    "gold": 210,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 122,
+    "number": "122",
+    "name": "Gouf Reinforced",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 1964,
+    "exp": 322,
+    "gold": 378,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 123,
+    "number": "123",
+    "name": "Dom Reinforced",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 2532,
+    "exp": 436,
+    "gold": 520,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 124,
+    "number": "124",
+    "name": "Gelgoog Reinforced",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3102,
+    "exp": 592,
+    "gold": 705,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 125,
+    "number": "125",
+    "name": "GM Reinforced",
+    "category": "Mobile Suit Federal",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 1130,
+    "exp": 141,
+    "gold": 183,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 126,
+    "number": "126",
+    "name": "GM II Reinforced",
+    "category": "Mobile Suit Federal",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 2125,
+    "exp": 368,
+    "gold": 439,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 127,
+    "number": "127",
+    "name": "GM III Reinforced",
+    "category": "Mobile Suit Federal",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3550,
+    "exp": 710,
+    "gold": 852,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 128,
+    "number": "128",
+    "name": "Nemo Reinforced",
+    "category": "Mobile Suit Federal",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3487,
+    "exp": 697,
+    "gold": 811,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 129,
+    "number": "129",
+    "name": "Marasai Reinforced",
+    "category": "Titans / Neo Zarth",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3852,
+    "exp": 770,
+    "gold": 898,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 130,
+    "number": "130",
+    "name": "Hizack Reinforced",
+    "category": "Titans / Neo Zarth",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 3289,
+    "exp": 643,
+    "gold": 743,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 131,
+    "number": "131",
+    "name": "Bawoo Reinforced",
+    "category": "Titans / Neo Zarth",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 4586,
+    "exp": 946,
+    "gold": 1089,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 132,
+    "number": "132",
+    "name": "Death Army Reinforced",
+    "category": "Death Army (DG Cells)",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 4166,
+    "exp": 861,
+    "gold": 1005,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 133,
+    "number": "133",
+    "name": "Death Birdy Reinforced",
+    "category": "Death Army (DG Cells)",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 4608,
+    "exp": 993,
+    "gold": 1152,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 134,
+    "number": "134",
+    "name": "Leo Reinforced",
+    "category": "Gundam Wing Series",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 1948,
+    "exp": 317,
+    "gold": 389,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 135,
+    "number": "135",
+    "name": "Taurus Reinforced",
+    "category": "Gundam Wing Series",
+    "region": "Planícies de Falldust & Quartel Unicorn",
+    "hp": 2893,
+    "exp": 564,
+    "gold": 651,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 136,
+    "number": "136",
+    "name": "Type 61 Tank Reinforced",
+    "category": "Veículo / Tanque",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 507,
+    "exp": 36,
+    "gold": 72,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Reinforced adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 137,
+    "number": "137",
+    "name": "Zaku I Desert",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 1017,
+    "exp": 116,
+    "gold": 174,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 138,
+    "number": "138",
+    "name": "Zaku II Desert",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 1281,
+    "exp": 174,
+    "gold": 218,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 139,
+    "number": "139",
+    "name": "Gouf Desert",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2044,
+    "exp": 335,
+    "gold": 394,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 140,
+    "number": "140",
+    "name": "Dom Desert",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2634,
+    "exp": 453,
+    "gold": 541,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 141,
+    "number": "141",
+    "name": "Gelgoog Desert",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 3226,
+    "exp": 616,
+    "gold": 733,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 142,
+    "number": "142",
+    "name": "GM Desert",
+    "category": "Mobile Suit Federal",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 1176,
+    "exp": 147,
+    "gold": 191,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 143,
+    "number": "143",
+    "name": "GM II Desert",
+    "category": "Mobile Suit Federal",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2210,
+    "exp": 383,
+    "gold": 456,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 144,
+    "number": "144",
+    "name": "GM III Desert",
+    "category": "Mobile Suit Federal",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 3691,
+    "exp": 738,
+    "gold": 886,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 145,
+    "number": "145",
+    "name": "Nemo Desert",
+    "category": "Mobile Suit Federal",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 3626,
+    "exp": 725,
+    "gold": 843,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 146,
+    "number": "146",
+    "name": "Marasai Desert",
+    "category": "Titans / Neo Zarth",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 4005,
+    "exp": 801,
+    "gold": 934,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 147,
+    "number": "147",
+    "name": "Hizack Desert",
+    "category": "Titans / Neo Zarth",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 3419,
+    "exp": 669,
+    "gold": 773,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 148,
+    "number": "148",
+    "name": "Bawoo Desert",
+    "category": "Titans / Neo Zarth",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 4768,
+    "exp": 983,
+    "gold": 1132,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 149,
+    "number": "149",
+    "name": "Death Army Desert",
+    "category": "Death Army (DG Cells)",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 4330,
+    "exp": 896,
+    "gold": 1045,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 150,
+    "number": "150",
+    "name": "Death Birdy Desert",
+    "category": "Death Army (DG Cells)",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 4789,
+    "exp": 1032,
+    "gold": 1197,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 151,
+    "number": "151",
+    "name": "Leo Desert",
+    "category": "Gundam Wing Series",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2025,
+    "exp": 330,
+    "gold": 405,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 152,
+    "number": "152",
+    "name": "Taurus Desert",
+    "category": "Gundam Wing Series",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 3006,
+    "exp": 586,
+    "gold": 676,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 153,
+    "number": "153",
+    "name": "Type 61 Tank Desert",
+    "category": "Veículo / Tanque",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 527,
+    "exp": 37,
+    "gold": 75,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Desert adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 154,
+    "number": "154",
+    "name": "Zaku I Arctic",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 1057,
+    "exp": 120,
+    "gold": 181,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 155,
+    "number": "155",
+    "name": "Zaku II Arctic",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 1331,
+    "exp": 181,
+    "gold": 226,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 156,
+    "number": "156",
+    "name": "Gouf Arctic",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2123,
+    "exp": 348,
+    "gold": 409,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 157,
+    "number": "157",
+    "name": "Dom Arctic",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2736,
+    "exp": 471,
+    "gold": 562,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 158,
+    "number": "158",
+    "name": "Gelgoog Arctic",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 3351,
+    "exp": 639,
+    "gold": 761,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 159,
+    "number": "159",
+    "name": "GM Arctic",
+    "category": "Mobile Suit Federal",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 1221,
+    "exp": 152,
+    "gold": 198,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 160,
+    "number": "160",
+    "name": "GM II Arctic",
+    "category": "Mobile Suit Federal",
+    "region": "Escavações de Diggins Rock & Floresta de Hory",
+    "hp": 2295,
+    "exp": 397,
+    "gold": 474,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 161,
+    "number": "161",
+    "name": "GM III Arctic",
+    "category": "Mobile Suit Federal",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3833,
+    "exp": 766,
+    "gold": 919,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 162,
+    "number": "162",
+    "name": "Nemo Arctic",
+    "category": "Mobile Suit Federal",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3764,
+    "exp": 752,
+    "gold": 875,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 163,
+    "number": "163",
+    "name": "Marasai Arctic",
+    "category": "Titans / Neo Zarth",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 4158,
+    "exp": 831,
+    "gold": 970,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 164,
+    "number": "164",
+    "name": "Hizack Arctic",
+    "category": "Titans / Neo Zarth",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3549,
+    "exp": 694,
+    "gold": 802,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 165,
+    "number": "165",
+    "name": "Bawoo Arctic",
+    "category": "Titans / Neo Zarth",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 4949,
+    "exp": 1020,
+    "gold": 1175,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 166,
+    "number": "166",
+    "name": "Death Army Arctic",
+    "category": "Death Army (DG Cells)",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 4495,
+    "exp": 930,
+    "gold": 1085,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 167,
+    "number": "167",
+    "name": "Death Birdy Arctic",
+    "category": "Death Army (DG Cells)",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 4970,
+    "exp": 1071,
+    "gold": 1242,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 168,
+    "number": "168",
+    "name": "Leo Arctic",
+    "category": "Gundam Wing Series",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 2101,
+    "exp": 342,
+    "gold": 420,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 169,
+    "number": "169",
+    "name": "Taurus Arctic",
+    "category": "Gundam Wing Series",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3120,
+    "exp": 608,
+    "gold": 702,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 170,
+    "number": "170",
+    "name": "Type 61 Tank Arctic",
+    "category": "Veículo / Tanque",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 547,
+    "exp": 39,
+    "gold": 78,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Arctic adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 171,
+    "number": "171",
+    "name": "Zaku I Space",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 1096,
+    "exp": 125,
+    "gold": 188,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 172,
+    "number": "172",
+    "name": "Zaku II Space",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 1381,
+    "exp": 188,
+    "gold": 235,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 173,
+    "number": "173",
+    "name": "Gouf Space",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 2202,
+    "exp": 361,
+    "gold": 424,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 174,
+    "number": "174",
+    "name": "Dom Space",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 2838,
+    "exp": 488,
+    "gold": 583,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 175,
+    "number": "175",
+    "name": "Gelgoog Space",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3476,
+    "exp": 663,
+    "gold": 790,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 176,
+    "number": "176",
+    "name": "GM Space",
+    "category": "Mobile Suit Federal",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 1266,
+    "exp": 158,
+    "gold": 205,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 177,
+    "number": "177",
+    "name": "GM II Space",
+    "category": "Mobile Suit Federal",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 2380,
+    "exp": 412,
+    "gold": 491,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 178,
+    "number": "178",
+    "name": "GM III Space",
+    "category": "Mobile Suit Federal",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3974,
+    "exp": 794,
+    "gold": 953,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 179,
+    "number": "179",
+    "name": "Nemo Space",
+    "category": "Mobile Suit Federal",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3903,
+    "exp": 780,
+    "gold": 908,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 180,
+    "number": "180",
+    "name": "Marasai Space",
+    "category": "Titans / Neo Zarth",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 4311,
+    "exp": 862,
+    "gold": 1005,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 181,
+    "number": "181",
+    "name": "Hizack Space",
+    "category": "Titans / Neo Zarth",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 3680,
+    "exp": 720,
+    "gold": 832,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 182,
+    "number": "182",
+    "name": "Bawoo Space",
+    "category": "Titans / Neo Zarth",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 5130,
+    "exp": 1058,
+    "gold": 1218,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 183,
+    "number": "183",
+    "name": "Death Army Space",
+    "category": "Death Army (DG Cells)",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 4659,
+    "exp": 964,
+    "gold": 1124,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 184,
+    "number": "184",
+    "name": "Death Birdy Space",
+    "category": "Death Army (DG Cells)",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 5152,
+    "exp": 1110,
+    "gold": 1288,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 185,
+    "number": "185",
+    "name": "Leo Space",
+    "category": "Gundam Wing Series",
+    "region": "Monte do Julgamento (Mt. Trial) & Coliseu",
+    "hp": 2178,
+    "exp": 354,
+    "gold": 435,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 186,
+    "number": "186",
+    "name": "Taurus Space",
+    "category": "Gundam Wing Series",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 3233,
+    "exp": 630,
+    "gold": 727,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 187,
+    "number": "187",
+    "name": "Type 61 Tank Space",
+    "category": "Veículo / Tanque",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 567,
+    "exp": 40,
+    "gold": 81,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Space adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 188,
+    "number": "188",
+    "name": "Zaku I High Mobility",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 1136,
+    "exp": 129,
+    "gold": 194,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 189,
+    "number": "189",
+    "name": "Zaku II High Mobility",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 1431,
+    "exp": 195,
+    "gold": 244,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 190,
+    "number": "190",
+    "name": "Gouf High Mobility",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 2282,
+    "exp": 374,
+    "gold": 440,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 191,
+    "number": "191",
+    "name": "Dom High Mobility",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 2940,
+    "exp": 506,
+    "gold": 604,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 192,
+    "number": "192",
+    "name": "Gelgoog High Mobility",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 3600,
+    "exp": 687,
+    "gold": 818,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 193,
+    "number": "193",
+    "name": "GM High Mobility",
+    "category": "Mobile Suit Federal",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 1312,
+    "exp": 164,
+    "gold": 213,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 194,
+    "number": "194",
+    "name": "GM II High Mobility",
+    "category": "Mobile Suit Federal",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 2465,
+    "exp": 427,
+    "gold": 509,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 195,
+    "number": "195",
+    "name": "GM III High Mobility",
+    "category": "Mobile Suit Federal",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 4116,
+    "exp": 823,
+    "gold": 987,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 196,
+    "number": "196",
+    "name": "Nemo High Mobility",
+    "category": "Mobile Suit Federal",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 4042,
+    "exp": 808,
+    "gold": 940,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 197,
+    "number": "197",
+    "name": "Marasai High Mobility",
+    "category": "Titans / Neo Zarth",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 4464,
+    "exp": 892,
+    "gold": 1041,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 198,
+    "number": "198",
+    "name": "Hizack High Mobility",
+    "category": "Titans / Neo Zarth",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 3810,
+    "exp": 745,
+    "gold": 861,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 199,
+    "number": "199",
+    "name": "Bawoo High Mobility",
+    "category": "Titans / Neo Zarth",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 5312,
+    "exp": 1095,
+    "gold": 1261,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 200,
+    "number": "200",
+    "name": "Death Army High Mobility",
+    "category": "Death Army (DG Cells)",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 4823,
+    "exp": 998,
+    "gold": 1164,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 201,
+    "number": "201",
+    "name": "Death Birdy High Mobility",
+    "category": "Death Army (DG Cells)",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 5333,
+    "exp": 1150,
+    "gold": 1333,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 202,
+    "number": "202",
+    "name": "Leo High Mobility",
+    "category": "Gundam Wing Series",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 2254,
+    "exp": 367,
+    "gold": 450,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 203,
+    "number": "203",
+    "name": "Taurus High Mobility",
+    "category": "Gundam Wing Series",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 3346,
+    "exp": 652,
+    "gold": 753,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 204,
+    "number": "204",
+    "name": "Type 61 Tank High Mobility",
+    "category": "Veículo / Tanque",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 586,
+    "exp": 41,
+    "gold": 83,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate High Mobility adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 205,
+    "number": "205",
+    "name": "Zaku I Alpha",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 1176,
+    "exp": 134,
+    "gold": 201,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 206,
+    "number": "206",
+    "name": "Zaku II Alpha",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 1481,
+    "exp": 202,
+    "gold": 252,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 207,
+    "number": "207",
+    "name": "Gouf Alpha",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 2361,
+    "exp": 387,
+    "gold": 455,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 208,
+    "number": "208",
+    "name": "Dom Alpha",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 3042,
+    "exp": 523,
+    "gold": 625,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 209,
+    "number": "209",
+    "name": "Gelgoog Alpha",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 3725,
+    "exp": 711,
+    "gold": 846,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 210,
+    "number": "210",
+    "name": "GM Alpha",
+    "category": "Mobile Suit Federal",
+    "region": "Cidade Perdida (Lost City) & G System 04",
+    "hp": 1357,
+    "exp": 169,
+    "gold": 220,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 211,
+    "number": "211",
+    "name": "GM II Alpha",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 2550,
+    "exp": 442,
+    "gold": 527,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 212,
+    "number": "212",
+    "name": "GM III Alpha",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4258,
+    "exp": 851,
+    "gold": 1022,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 213,
+    "number": "213",
+    "name": "Nemo Alpha",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4181,
+    "exp": 836,
+    "gold": 972,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 214,
+    "number": "214",
+    "name": "Marasai Alpha",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4617,
+    "exp": 923,
+    "gold": 1077,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 215,
+    "number": "215",
+    "name": "Hizack Alpha",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 3940,
+    "exp": 771,
+    "gold": 890,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 216,
+    "number": "216",
+    "name": "Bawoo Alpha",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 5493,
+    "exp": 1133,
+    "gold": 1304,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 217,
+    "number": "217",
+    "name": "Death Army Alpha",
+    "category": "Death Army (DG Cells)",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4988,
+    "exp": 1032,
+    "gold": 1204,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 218,
+    "number": "218",
+    "name": "Death Birdy Alpha",
+    "category": "Death Army (DG Cells)",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 5514,
+    "exp": 1189,
+    "gold": 1378,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 219,
+    "number": "219",
+    "name": "Leo Alpha",
+    "category": "Gundam Wing Series",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 2331,
+    "exp": 379,
+    "gold": 466,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 220,
+    "number": "220",
+    "name": "Taurus Alpha",
+    "category": "Gundam Wing Series",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 3460,
+    "exp": 674,
+    "gold": 778,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 221,
+    "number": "221",
+    "name": "Type 61 Tank Alpha",
+    "category": "Veículo / Tanque",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 606,
+    "exp": 43,
+    "gold": 86,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Alpha adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 222,
+    "number": "222",
+    "name": "Zaku I Beta",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 1215,
+    "exp": 138,
+    "gold": 208,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 223,
+    "number": "223",
+    "name": "Zaku II Beta",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 1531,
+    "exp": 208,
+    "gold": 261,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 224,
+    "number": "224",
+    "name": "Gouf Beta",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 2440,
+    "exp": 400,
+    "gold": 470,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 225,
+    "number": "225",
+    "name": "Dom Beta",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 3144,
+    "exp": 541,
+    "gold": 646,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 226,
+    "number": "226",
+    "name": "Gelgoog Beta",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 3850,
+    "exp": 735,
+    "gold": 875,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 227,
+    "number": "227",
+    "name": "GM Beta",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 1402,
+    "exp": 175,
+    "gold": 227,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 228,
+    "number": "228",
+    "name": "GM II Beta",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 2635,
+    "exp": 456,
+    "gold": 544,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 229,
+    "number": "229",
+    "name": "GM III Beta",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4400,
+    "exp": 880,
+    "gold": 1056,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 230,
+    "number": "230",
+    "name": "Nemo Beta",
+    "category": "Mobile Suit Federal",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4320,
+    "exp": 864,
+    "gold": 1005,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 231,
+    "number": "231",
+    "name": "Marasai Beta",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4770,
+    "exp": 954,
+    "gold": 1113,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 232,
+    "number": "232",
+    "name": "Hizack Beta",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 4071,
+    "exp": 796,
+    "gold": 920,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 233,
+    "number": "233",
+    "name": "Bawoo Beta",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 5674,
+    "exp": 1170,
+    "gold": 1347,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 234,
+    "number": "234",
+    "name": "Death Army Beta",
+    "category": "Death Army (DG Cells)",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 5152,
+    "exp": 1066,
+    "gold": 1243,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 235,
+    "number": "235",
+    "name": "Death Birdy Beta",
+    "category": "Death Army (DG Cells)",
+    "region": "Base Secreta de Neo Zarth & Fort Taiga",
+    "hp": 5696,
+    "exp": 1228,
+    "gold": 1424,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 236,
+    "number": "236",
+    "name": "Leo Beta",
+    "category": "Gundam Wing Series",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 2407,
+    "exp": 392,
+    "gold": 481,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 237,
+    "number": "237",
+    "name": "Taurus Beta",
+    "category": "Gundam Wing Series",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 3573,
+    "exp": 696,
+    "gold": 804,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 238,
+    "number": "238",
+    "name": "Type 61 Tank Beta",
+    "category": "Veículo / Tanque",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 626,
+    "exp": 44,
+    "gold": 89,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Beta adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 239,
+    "number": "239",
+    "name": "Zaku I Gamma",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 1255,
+    "exp": 143,
+    "gold": 215,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 240,
+    "number": "240",
+    "name": "Zaku II Gamma",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 1581,
+    "exp": 215,
+    "gold": 269,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 241,
+    "number": "241",
+    "name": "Gouf Gamma",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 2520,
+    "exp": 414,
+    "gold": 486,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 242,
+    "number": "242",
+    "name": "Dom Gamma",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 3246,
+    "exp": 559,
+    "gold": 667,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 243,
+    "number": "243",
+    "name": "Gelgoog Gamma",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 3974,
+    "exp": 758,
+    "gold": 903,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 244,
+    "number": "244",
+    "name": "GM Gamma",
+    "category": "Mobile Suit Federal",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 1448,
+    "exp": 181,
+    "gold": 235,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 245,
+    "number": "245",
+    "name": "GM II Gamma",
+    "category": "Mobile Suit Federal",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 2720,
+    "exp": 471,
+    "gold": 562,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 246,
+    "number": "246",
+    "name": "GM III Gamma",
+    "category": "Mobile Suit Federal",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 4541,
+    "exp": 908,
+    "gold": 1090,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 247,
+    "number": "247",
+    "name": "Nemo Gamma",
+    "category": "Mobile Suit Federal",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 4459,
+    "exp": 891,
+    "gold": 1037,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 248,
+    "number": "248",
+    "name": "Marasai Gamma",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 4923,
+    "exp": 984,
+    "gold": 1148,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 249,
+    "number": "249",
+    "name": "Hizack Gamma",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 4201,
+    "exp": 822,
+    "gold": 949,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 250,
+    "number": "250",
+    "name": "Bawoo Gamma",
+    "category": "Titans / Neo Zarth",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 5856,
+    "exp": 1207,
+    "gold": 1390,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 251,
+    "number": "251",
+    "name": "Death Army Gamma",
+    "category": "Death Army (DG Cells)",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 5316,
+    "exp": 1100,
+    "gold": 1283,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 252,
+    "number": "252",
+    "name": "Death Birdy Gamma",
+    "category": "Death Army (DG Cells)",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 5877,
+    "exp": 1267,
+    "gold": 1469,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 253,
+    "number": "253",
+    "name": "Leo Gamma",
+    "category": "Gundam Wing Series",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 2484,
+    "exp": 404,
+    "gold": 496,
+    "weaknesses": [
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Leo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 254,
+    "number": "254",
+    "name": "Taurus Gamma",
+    "category": "Gundam Wing Series",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 3686,
+    "exp": 718,
+    "gold": 829,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Taurus Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 255,
+    "number": "255",
+    "name": "Type 61 Tank Gamma",
+    "category": "Veículo / Tanque",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 646,
+    "exp": 46,
+    "gold": 92,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Type 61 Tank Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Gamma adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 256,
+    "number": "256",
+    "name": "Zaku I Custom",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 1295,
+    "exp": 148,
+    "gold": 222,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku I Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 257,
+    "number": "257",
+    "name": "Zaku II Custom",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 1630,
+    "exp": 222,
+    "gold": 278,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Zaku II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 258,
+    "number": "258",
+    "name": "Gouf Custom",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 2599,
+    "exp": 427,
+    "gold": 501,
+    "weaknesses": [
+      "Beam",
+      "Pierce"
+    ],
+    "drops": [
+      {
+        "item": "Gouf Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 259,
+    "number": "259",
+    "name": "Dom Custom",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 3348,
+    "exp": 576,
+    "gold": 688,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Dom Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 260,
+    "number": "260",
+    "name": "Gelgoog Custom",
+    "category": "Grunt Zaku / Gouf / Dom",
+    "region": "Base Lunar (Moon Base Alpha & Beta)",
+    "hp": 4099,
+    "exp": 782,
+    "gold": 931,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Gelgoog Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 261,
+    "number": "261",
+    "name": "GM Custom",
+    "category": "Mobile Suit Federal",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 1493,
+    "exp": 186,
+    "gold": 242,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 262,
+    "number": "262",
+    "name": "GM II Custom",
+    "category": "Mobile Suit Federal",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 2805,
+    "exp": 486,
+    "gold": 579,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM II Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 263,
+    "number": "263",
+    "name": "GM III Custom",
+    "category": "Mobile Suit Federal",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 4683,
+    "exp": 936,
+    "gold": 1124,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "GM III Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 264,
+    "number": "264",
+    "name": "Nemo Custom",
+    "category": "Mobile Suit Federal",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 4597,
+    "exp": 919,
+    "gold": 1069,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Nemo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 265,
+    "number": "265",
+    "name": "Marasai Custom",
+    "category": "Titans / Neo Zarth",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 5076,
+    "exp": 1015,
+    "gold": 1184,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Marasai Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 266,
+    "number": "266",
+    "name": "Hizack Custom",
+    "category": "Titans / Neo Zarth",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 4331,
+    "exp": 847,
+    "gold": 979,
+    "weaknesses": [
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Hizack Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 267,
+    "number": "267",
+    "name": "Bawoo Custom",
+    "category": "Titans / Neo Zarth",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 6037,
+    "exp": 1245,
+    "gold": 1433,
+    "weaknesses": [
+      "Beam"
+    ],
+    "drops": [
+      {
+        "item": "Bawoo Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 268,
+    "number": "268",
+    "name": "Death Army Custom",
+    "category": "Death Army (DG Cells)",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 5481,
+    "exp": 1134,
+    "gold": 1323,
+    "weaknesses": [
+      "Beam",
+      "Heat"
+    ],
+    "drops": [
+      {
+        "item": "Death Army Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 269,
+    "number": "269",
+    "name": "Death Birdy Custom",
+    "category": "Death Army (DG Cells)",
+    "region": "Another G System / Labirinto do Caos (Pós-Jogo)",
+    "hp": 6058,
+    "exp": 1306,
+    "gold": 1514,
+    "weaknesses": [
+      "Solid"
+    ],
+    "drops": [
+      {
+        "item": "Death Birdy Data",
+        "rate": "15%"
+      },
+      {
+        "item": "Repair Kit DX",
+        "rate": "8%"
+      }
+    ],
+    "is_boss": false,
+    "is_rare": false,
+    "is_missable": false,
+    "notes": "Variante de combate Custom adaptada para operações em zonas de alta densidade de partículas Minovsky."
+  },
+  {
+    "id": 270,
+    "number": "270",
+    "name": "Black Assassin (Shinobi MS)",
+    "category": "Raro / Perdível",
+    "region": "Tohai / Deserto Sombrio (CHEFE SECRETO SUPREMO)",
+    "hp": 1800,
+    "exp": 4000,
+    "gold": 1500,
+    "weaknesses": [
+      "Physical Impact",
+      "Explosive"
+    ],
+    "drops": [
+      {
+        "item": "Ninja Sword",
+        "rate": "100%"
+      },
+      {
+        "item": "Kämpfer Spikes R",
+        "rate": "100%"
+      }
+    ],
+    "is_boss": true,
+    "is_rare": true,
+    "is_missable": true,
+    "notes": "O lendário inimigo #270 da enciclopédia! Encontro único e perdível nos arredores de Tohai antes de entrar na reunião da base rebelde. Derruba a exclusiva Ninja Sword!"
+  }
+]
